@@ -17,18 +17,36 @@ fun main() {
 
     val stations = session.run("MATCH (s:Station) RETURN s LIMIT 10;").list()
 
-    val churches = session.run("MATCH (c:Church) RETURN c LIMIT 10;").list()
+    val churches = session.run("MATCH (c:Church) RETURN c;").list()
 
-    stations.forEach { s ->
+    DuplicateOption.values().forEach { findDuplicates(churches, it) }
+
+    /*stations.forEach { s ->
         churches.forEach { c ->
             val station = s.get("s").asNode()
             val church = c.get("c").asNode()
-            distance(station, church)
+            val distance = distance(station, church)
+            //recordDistance(church, station, distance)
         }
-    }
+    }*/
 
     session.close()
     driver.close()
+}
+
+enum class DuplicateOption { NAME, ADDRESS, LAT_LNG , URL}
+
+private fun findDuplicates(churches: MutableList<Record>, duplicateOption: DuplicateOption) {
+    churches.groupBy { it.get("c").asNode().get("url") }
+    println(churches.map {
+
+        when(duplicateOption){
+            DuplicateOption.NAME -> it.get("c").asNode().get("name").toString()
+            DuplicateOption.ADDRESS -> it.get("c").asNode().get("address").toString()
+            DuplicateOption.LAT_LNG -> it.get("c").asNode().get("lat").toString() + it.get("c").asNode().get("lng").toString()
+            DuplicateOption.URL -> it.get("c").asNode().get("url").toString()
+        }
+    }.groupingBy { it }.eachCount().filter { it.value > 1 })
 }
 
 fun distance(station: org.neo4j.driver.types.Node, church: org.neo4j.driver.types.Node): Double {
