@@ -15,38 +15,65 @@ fun main() {
     )
     val session = driver.session()
 
-    val stations = session.run("MATCH (s:Station) RETURN s LIMIT 10;").list()
+    val stations = session.run("MATCH (s:Station) RETURN s;").list()
 
     val churches = session.run("MATCH (c:Church) RETURN c;").list()
 
-    DuplicateOption.values().forEach { findDuplicates(churches, it) }
+    // DuplicateOption.values().forEach { findDuplicates(churches, it) }
 
-    /*stations.forEach { s ->
+    val totalRoutes = stations.size * churches.size
+
+    var searchCount: Int = 1
+    var recordCount: Int = 1
+
+    stations.forEach { s ->
         churches.forEach { c ->
             val station = s.get("s").asNode()
             val church = c.get("c").asNode()
             val distance = distance(station, church)
-            //recordDistance(church, station, distance)
+            if (distance < 10 * 1000) {
+                println(
+                    "recording $recordCount routes, " +
+                            "searched $searchCount routes of total routes: $totalRoutes, " +
+                            "${(searchCount.toDouble() / totalRoutes) * 100} % search done"
+                )
+                val query = query(station, church, distance)
+                session.run(query)
+                recordCount++
+            }
+            searchCount++
         }
-    }*/
+    }
 
     session.close()
     driver.close()
 }
 
-enum class DuplicateOption { NAME, ADDRESS, LAT_LNG , URL}
+enum class DuplicateOption { NAME, ADDRESS, LAT_LNG, URL }
 
 private fun findDuplicates(churches: MutableList<Record>, duplicateOption: DuplicateOption) {
     churches.groupBy { it.get("c").asNode().get("url") }
     println(churches.map {
-
-        when(duplicateOption){
-            DuplicateOption.NAME -> it.get("c").asNode().get("name").toString()
-            DuplicateOption.ADDRESS -> it.get("c").asNode().get("address").toString()
-            DuplicateOption.LAT_LNG -> it.get("c").asNode().get("lat").toString() + it.get("c").asNode().get("lng").toString()
-            DuplicateOption.URL -> it.get("c").asNode().get("url").toString()
+        val church = it.get("c").asNode()
+        when (duplicateOption) {
+            DuplicateOption.NAME -> church.get("name").toString()
+            DuplicateOption.ADDRESS -> church.get("address").toString()
+            DuplicateOption.LAT_LNG -> church.get("lat").toString() + church.get("lng").toString()
+            DuplicateOption.URL -> church.get("url").toString()
         }
     }.groupingBy { it }.eachCount().filter { it.value > 1 })
+}
+
+fun query(station: org.neo4j.driver.types.Node, church: org.neo4j.driver.types.Node, distance: Double): String {
+    val id = station.get("id").asString()
+    val url = church.get("url").asString()
+
+    return """
+        MATCH (c:Church), (s:Station)
+        WHERE s.id = '$id' AND c.url = '$url'
+        CREATE (s)-[r:ROUTE {distance: toFloat($distance)} ]->(c)
+        RETURN type(r)
+    """.trimIndent()
 }
 
 fun distance(station: org.neo4j.driver.types.Node, church: org.neo4j.driver.types.Node): Double {
@@ -56,8 +83,8 @@ fun distance(station: org.neo4j.driver.types.Node, church: org.neo4j.driver.type
     val lng2 = church.get("lng").asDouble()
     val distance = distance(lat1 = lat1, lat2 = lat2, lon1 = lng1, lon2 = lng2, el1 = 1.0, el2 = 1.0)
 
-    if(distance < 500 * 1000)
-        println("distance from station ${station.get("name")} to church ${church.get("name")} is ${(distance / 1000).toInt()} km")
+    //if(distance < 10 * 1000)
+    //println("distance from station ${station.get("name")} to church ${church.get("name")} is ${(distance / 1000).toInt()} km")
 
     return distance
 }
