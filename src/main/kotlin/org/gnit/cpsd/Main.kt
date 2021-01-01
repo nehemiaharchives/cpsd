@@ -1,7 +1,6 @@
 package org.gnit.cpsd
 
 import org.neo4j.driver.*
-
 import java.util.Properties
 
 // cpsd: church planting strategy database
@@ -16,15 +15,17 @@ fun main() {
     )
     val session = driver.session()
 
-    val stations = session.run("MATCH (s:Station) RETURN s;").list()
+    val stations = session.run("MATCH (s:Station) RETURN s LIMIT 10;").list()
 
-    val churches = session.run("MATCH (c:Church) RETURN c;").list()
+    val churches = session.run("MATCH (c:Church) RETURN c LIMIT 10;").list()
 
-    val station = stations.first().get("s").asNode()
-
-    val church = churches.first().get("c").asNode()
-
-    distance(station, church)
+    stations.forEach { s ->
+        churches.forEach { c ->
+            val station = s.get("s").asNode()
+            val church = c.get("c").asNode()
+            distance(station, church)
+        }
+    }
 
     session.close()
     driver.close()
@@ -36,7 +37,10 @@ fun distance(station: org.neo4j.driver.types.Node, church: org.neo4j.driver.type
     val lat2 = church.get("lat").asDouble()
     val lng2 = church.get("lng").asDouble()
     val distance = distance(lat1 = lat1, lat2 = lat2, lon1 = lng1, lon2 = lng2, el1 = 1.0, el2 = 1.0)
-    println("distance from station ${station.get("station")} to church ${church.get("name")} is ${(distance / 1000).toInt()} km")
+
+    if(distance < 500 * 1000)
+        println("distance from station ${station.get("station")} to church ${church.get("name")} is ${(distance / 1000).toInt()} km")
+
     return distance
 }
 
