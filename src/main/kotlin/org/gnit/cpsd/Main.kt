@@ -39,7 +39,7 @@ fun distance(station: org.neo4j.driver.types.Node, church: org.neo4j.driver.type
     val distance = distance(lat1 = lat1, lat2 = lat2, lon1 = lng1, lon2 = lng2, el1 = 1.0, el2 = 1.0)
 
     if(distance < 500 * 1000)
-        println("distance from station ${station.get("station")} to church ${church.get("name")} is ${(distance / 1000).toInt()} km")
+        println("distance from station ${station.get("name")} to church ${church.get("name")} is ${(distance / 1000).toInt()} km")
 
     return distance
 }
