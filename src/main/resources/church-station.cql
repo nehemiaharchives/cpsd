@@ -23,7 +23,7 @@ LIMIT 3
 
 MATCH (c:Church {name:"Tokyo Sophia International Church"}) RETURN c;
 
-MATCH (c:Church { id: 172 }) RETURN c;
+MATCH (c:Church { id: '9bf2d6e1182dbd1490d3074d0888d4fe68677aa6' }) RETURN c;
 
 MATCH (c:Church) DELETE c;
 
@@ -61,7 +61,13 @@ RETURN type(r)
 MATCH (c:Church)-[r:ROUTE]-(s) 
 WHERE r.distance > 400000 RETURN c, s;
 
-MATCH (s { name: '二月田' })-[r:ROUTE]->() DELETE r
+// create relationships
+LOAD CSV WITH HEADERS FROM 'file:///routes.csv' AS row
+MATCH (s:Station {id: row.stationId})
+MATCH (c:Church {id: row.churchId})
+MERGE (s)-[r:ROUTE {distance: toFloat(row.distance)}]->(c)
+RETURN count(r);
 
+MATCH (s { name: 'お台場海浜公園' })-[r:ROUTE]->() DELETE r
 
-
+MATCH (s:Station)-[r:ROUTE]->(c:Church) WHERE r.distance < 100 RETURN c,s LIMIT 100;
