@@ -71,3 +71,25 @@ RETURN count(r);
 MATCH (s { name: 'お台場海浜公園' })-[r:ROUTE]->() DELETE r
 
 MATCH (s:Station)-[r:ROUTE]->(c:Church) WHERE r.distance < 100 RETURN c,s LIMIT 100;
+
+OPTIONAL MATCH (s:Station)-[r:ROUTE]->(c:Church)
+WHERE r.distance < 1000 AND s.passengers > 10000
+RETURN s.company, s.line, s.name, s.passengers, count(c)
+ORDER BY s.passengers DESC;
+
+MATCH (s:Station)-[r:ROUTE]->(c:Church)
+WHERE r.distance < 500 AND s.passengers > 10000
+RETURN s.id, s.lat, s.lng, s.company, s.line, s.name, s.passengers; 
+
+MATCH (s:Station)-[r:ROUTE]->(c:Church)
+WHERE r.distance < 500 AND s.passengers > 10000
+RETURN s.lat, s.lng, c.lat, c.lng, s.company, s.line, s.name, r.distance, c.name
+
+MATCH (s:Station)-[r:ROUTE]->(c:Church)
+WHERE r.distance < 500 AND s.passengers > 10000
+RETURN s.id, s.company, s.line, s.name, s.passengers, count(c) as churches
+UNION
+MATCH (s:Station)
+WHERE s.passengers > 10000
+RETURN s.id, s.company, s.line, s.name, s.passengers, toInteger(0) as churches
+ORDER by s.id
