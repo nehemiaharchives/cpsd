@@ -84,7 +84,7 @@ RETURN s.id, s.lat, s.lng, s.company, s.line, s.name, s.passengers;
 
 MATCH (s:Station)-[r:ROUTE]->(c:Church)
 WHERE r.distance < 3000 AND s.passengers > 1000
-RETURN s.lat, s.lng, s.company, s.line, s.name, r.distance, c.name, c.lat, c.lng, c.catholic;
+RETURN s.lat, s.lng, s.company, s.line, s.name, s.passengers, r.distance, c.name, c.lat, c.lng, c.catholic;
 
 MATCH (s:Station)-[r:ROUTE]->(c:Church)
 WHERE r.distance < 500 AND s.passengers > 10000
