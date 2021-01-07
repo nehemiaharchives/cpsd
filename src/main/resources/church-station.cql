@@ -3,15 +3,15 @@
 CREATE CONSTRAINT ON (c:Church) ASSERT c.id IS UNIQUE;
 
 LOAD CSV WITH HEADERS FROM 'file:///churches.csv' AS row 
-WITH toFloat(row.lat) AS lat, toFloat(row.lng) AS lng, toBoolean(row.cathoric) AS cathoric 
-RETURN lat, lng, cathoric
+WITH toFloat(row.lat) AS lat, toFloat(row.lng) AS lng, toBoolean(row.catholic) AS catholic
+RETURN lat, lng, catholic
 LIMIT 3
 
 
 LOAD CSV WITH HEADERS FROM 'file:///churches.csv' AS row 
-WITH toFloat(row.lat) AS lat, toFloat(row.lng) AS lng, toBoolean(row.cathoric) AS cathoric, row.url AS url, row.address AS address, row.name AS name, apoc.util.sha1([row.url]) AS id
+WITH toFloat(row.lat) AS lat, toFloat(row.lng) AS lng, toBoolean(row.catholic) AS catholic, row.url AS url, row.address AS address, row.name AS name, apoc.util.sha1([row.url]) AS id
 MERGE (c:Church {id:id})
-	SET c.url = url, c.lat = lat, c.lng = lng, c.cathoric = cathoric, c.address = address, c.name = name
+	SET c.url = url, c.lat = lat, c.lng = lng, c.catholic = catholic, c.address = address, c.name = name
 RETURN count(c)
 
 CREATE CONSTRAINT ON (s:Station) ASSERT s.id IS UNIQUE;
@@ -21,7 +21,7 @@ WITH row.id AS id, toFloat(row.lat) AS lat, toFloat(row.lng) AS lng, row.name AS
 RETURN id, lat, lng, name, passengers
 LIMIT 3
 
-MATCH (c:Church {name:"Tokyo Sophia International Church"}) RETURN c;
+MATCH (c:Church {name:'Tokyo Sophia International Church'}) RETURN c;
 
 MATCH (c:Church { id: '9bf2d6e1182dbd1490d3074d0888d4fe68677aa6' }) RETURN c;
 
@@ -46,7 +46,6 @@ RETURN round(distance(trainPoint, officePoint)) AS travelDistance
 
 MATCH (s:Station) DELETE s;
 
-
 //Relationship
 
 MATCH (c:Church),(s:Station)
@@ -68,7 +67,9 @@ MATCH (c:Church {id: row.churchId})
 MERGE (s)-[r:ROUTE {distance: toFloat(row.distance)}]->(c)
 RETURN count(r);
 
-MATCH (s { name: 'お台場海浜公園' })-[r:ROUTE]->() DELETE r
+MATCH (s { name: 'お台場海浜公園' })-[r:ROUTE]->() DELETE r;
+MATCH (s:Station)-[r:ROUTE]->(c:Church) DELETE r;
+MATCH (s:Station)-[r:ROUTE]->(c:Church) RETURN count(r);
 
 MATCH (s:Station)-[r:ROUTE]->(c:Church) WHERE r.distance < 100 RETURN c,s LIMIT 100;
 
@@ -82,14 +83,14 @@ WHERE r.distance < 500 AND s.passengers > 10000
 RETURN s.id, s.lat, s.lng, s.company, s.line, s.name, s.passengers; 
 
 MATCH (s:Station)-[r:ROUTE]->(c:Church)
-WHERE r.distance < 500 AND s.passengers > 10000
-RETURN s.lat, s.lng, c.lat, c.lng, s.company, s.line, s.name, r.distance, c.name
+WHERE r.distance < 3000 AND s.passengers > 1000
+RETURN s.lat, s.lng, s.company, s.line, s.name, r.distance, c.name, c.lat, c.lng, c.catholic;
 
 MATCH (s:Station)-[r:ROUTE]->(c:Church)
 WHERE r.distance < 500 AND s.passengers > 10000
-RETURN s.id, s.company, s.line, s.name, s.passengers, count(c) as churches
+RETURN s.id, s.company, s.line, s.name, s.passengers, count(c) AS churches
 UNION
 MATCH (s:Station)
 WHERE s.passengers > 10000
-RETURN s.id, s.company, s.line, s.name, s.passengers, toInteger(0) as churches
-ORDER by s.id
+RETURN s.id, s.company, s.line, s.name, s.passengers, toInteger(0) AS churches
+ORDER BY s.id
