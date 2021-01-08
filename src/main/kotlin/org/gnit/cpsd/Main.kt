@@ -9,14 +9,9 @@ import java.util.Properties
 
 // cpsd: church planting strategy database
 fun main() {
-    val props = Properties()
-    Thread.currentThread().contextClassLoader.getResourceAsStream("db.properties")
-        .use { resourceStream -> props.load(resourceStream) }
 
-    val driver = GraphDatabase.driver(
-        "bolt://localhost:7687",
-        AuthTokens.basic(props.getProperty("username"), props.getProperty("password"))
-    )
+    val driver = getDriver();
+
     val session = driver.session()
 
     val stations = session.run("MATCH (s:Station) RETURN s;").list()
@@ -65,8 +60,6 @@ fun main() {
     } catch (ex: IOException) {
         ex.printStackTrace()
     }
-
-
 
     session.close()
     driver.close()

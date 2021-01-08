@@ -19,26 +19,38 @@ class LineString(val type: String, val crs: Crs, val coordinates: Array<Array<Do
 class Geometry(val type: String, val coordinates: Array<Array<Double>>)
 
 @Serializable
-class FeatureProperty(val name: String)
+class RouteProperty(val distance: String)
 
 @Serializable
-class Feature(val type: String, val geometry: Geometry, val properties: FeatureProperty)
+class Route(val type: String, val geometry: Geometry, val properties: RouteProperty)
 
 @Serializable
-class FeatureCollection(val type: String, val features: Array<Feature>)
+class FeatureCollection(val type: String, val features: Array<Route>)
+
+val crs84property = Properties(name = "urn:ogc:def:crs:OGC:1.3:CRS84")
+val crs84 = Crs(type = "name", properties = crs84property)
+val format = Json { prettyPrint = true }
 
 fun main() {
-    val crs84property = Properties(name = "urn:ogc:def:crs:OGC:1.3:CRS84")
-    val crs84 = Crs(type = "name", properties = crs84property)
-    val mp = MultiPoint(type = "MultiPoint", crs = crs84, coordinates = arrayOf(arrayOf(0.0, 0.0), arrayOf(1.0, 1.0)))
-    println(Json.encodeToString(mp))
+    printSingleLineString()
+    printMultiPoint()
+    printRoutes()
+}
 
-    val ls = LineString(type = "LineString", crs = crs84, coordinates = arrayOf(arrayOf(0.0, 0.0), arrayOf(1.0, 1.0)))
-    println(Json.encodeToString(ls))
-
-    val f1 = Feature(type = "Feature", geometry = Geometry(type = "LineString", coordinates = arrayOf(arrayOf(5.0, 0.0), arrayOf(7.0, 1.0))), properties = FeatureProperty(name = "line1"))
-    val f2 = Feature(type = "Feature", geometry = Geometry(type = "LineString", coordinates = arrayOf(arrayOf(3.0, 2.0), arrayOf(2.0, 1.0))), properties = FeatureProperty(name = "line2"))
+fun printRoutes(){
+    val f1 = Route(type = "Feature", geometry = Geometry(type = "LineString", coordinates = arrayOf(arrayOf(5.0, 0.0), arrayOf(7.0, 1.0))), properties = RouteProperty(distance = "line1"))
+    val f2 = Route(type = "Feature", geometry = Geometry(type = "LineString", coordinates = arrayOf(arrayOf(3.0, 2.0), arrayOf(2.0, 1.0))), properties = RouteProperty(distance = "line2"))
 
     val fc = FeatureCollection(type = "FeatureCollection", features = arrayOf(f1, f2))
-    println(Json.encodeToString(fc))
+    println(format.encodeToString(fc))
+}
+
+fun printMultiPoint(){
+    val mp = MultiPoint(type = "MultiPoint", crs = crs84, coordinates = arrayOf(arrayOf(0.0, 0.0), arrayOf(1.0, 1.0)))
+    println(format.encodeToString(mp))
+}
+
+fun printSingleLineString(){
+    val ls = LineString(type = "LineString", crs = crs84, coordinates = arrayOf(arrayOf(0.0, 0.0), arrayOf(1.0, 1.0)))
+    println(format.encodeToString(ls))
 }
