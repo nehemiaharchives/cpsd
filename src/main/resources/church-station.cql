@@ -70,6 +70,11 @@ WHERE r.distance < 2000 AND s.passengers > 0
 RETURN s.company, s.line, s.name, s.passengers, r.distance
 ORDER BY r.distance;
 
+MATCH (c:Church)<-[r:ROUTE]-(s:Station {id: 'cv6953'})
+WHERE r.distance < 2000
+RETURN c.name AS name, r.distance AS distance
+ORDER BY distance;
+
 // Query 5
 LOAD CSV WITH HEADERS FROM 'file:///routes.csv' AS row
 MATCH (s:Station {id: row.stationId})
@@ -97,6 +102,10 @@ WHERE r.distance < 3000 AND s.passengers > 1000
 RETURN s.lat, s.lng, s.company, s.line, s.name, s.passengers, r.distance, c.name, c.lat, c.lng, c.catholic;
 
 MATCH (s:Station)-[r:ROUTE]->(c:Church)
+WHERE r.distance < 2500 AND s.passengers > 1000
+RETURN s.lat, s.lng, s.company, s.line, s.name, s.passengers, r.distance, c.name, c.lat, c.lng, c.catholic;
+
+MATCH (s:Station)-[r:ROUTE]->(c:Church)
 WHERE r.distance < 500 AND s.passengers > 10000
 RETURN s.id, s.company, s.line, s.name, s.passengers, count(c) AS churches
 UNION
@@ -104,3 +113,11 @@ MATCH (s:Station)
 WHERE s.passengers > 10000
 RETURN s.id, s.company, s.line, s.name, s.passengers, toInteger(0) AS churches
 ORDER BY s.id;
+
+MATCH (s:Station)-[r:ROUTE]->(c:Church)
+WHERE 0 < r.distance AND r.distance < 500 AND s.passengers > 1000
+RETURN DISTINCT s;
+
+MATCH (s:Station)
+WHERE s.passengers > 1000
+RETURN s;
