@@ -20,3 +20,15 @@ fun writeRouteCsv(stationId: String, churchId: String, distance: Double) {
         ex.printStackTrace()
     }
 }
+
+fun writeJson(name: String, json: String) {
+
+    val path: Path = Paths.get("src/main/resources/$name.json")
+    try {
+        FileOutputStream(path.toFile(), true).bufferedWriter().use {
+                writer -> writer.appendLine(json)
+        }
+    } catch (ex: IOException) {
+        ex.printStackTrace()
+    }
+}
