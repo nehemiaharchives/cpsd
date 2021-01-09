@@ -19,7 +19,7 @@ class LineString(val type: String, val crs: Crs, val coordinates: Array<Array<Do
 class Geometry(val type: String, val coordinates: Array<Array<Double>>)
 
 @Serializable
-class RouteProperty(val distance: String)
+class RouteProperty(val distance: Double)
 
 @Serializable
 class Route(val type: String, val geometry: Geometry, val properties: RouteProperty)
@@ -38,8 +38,8 @@ fun main() {
 }
 
 fun printRoutes(){
-    val f1 = Route(type = "Feature", geometry = Geometry(type = "LineString", coordinates = arrayOf(arrayOf(5.0, 0.0), arrayOf(7.0, 1.0))), properties = RouteProperty(distance = "line1"))
-    val f2 = Route(type = "Feature", geometry = Geometry(type = "LineString", coordinates = arrayOf(arrayOf(3.0, 2.0), arrayOf(2.0, 1.0))), properties = RouteProperty(distance = "line2"))
+    val f1 = Route(type = "Feature", geometry = Geometry(type = "LineString", coordinates = arrayOf(arrayOf(5.0, 0.0), arrayOf(7.0, 1.0))), properties = RouteProperty(distance = 500.0))
+    val f2 = Route(type = "Feature", geometry = Geometry(type = "LineString", coordinates = arrayOf(arrayOf(3.0, 2.0), arrayOf(2.0, 1.0))), properties = RouteProperty(distance = 600.0))
 
     val fc = FeatureCollection(type = "FeatureCollection", features = arrayOf(f1, f2))
     println(format.encodeToString(fc))
