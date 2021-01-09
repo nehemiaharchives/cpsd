@@ -65,6 +65,11 @@ MATCH (c:Church {name: '東京バプテスト教会'})<-[r:ROUTE]-(s:Station)
 WHERE r.distance < 2000
 RETURN c, r, s;
 
+MATCH (c:Church {name: '東京バプテスト教会'})<-[r:ROUTE]-(s:Station)
+WHERE r.distance < 2000 AND s.passengers > 0
+RETURN s.company, s.line, s.name, s.passengers, r.distance
+ORDER BY r.distance;
+
 // Query 5
 LOAD CSV WITH HEADERS FROM 'file:///routes.csv' AS row
 MATCH (s:Station {id: row.stationId})
