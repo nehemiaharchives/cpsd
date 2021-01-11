@@ -63,11 +63,9 @@ fun main(){
         val routeGeoJson = format.encodeToString(Routes(type = "FeatureCollection", routes.toTypedArray()))
 
         val segment = "$minDistance-$maxDistance"
-        println(routeGeoJson)
+
         writeJson("$segment-route", routeGeoJson)
-        println(churchGeoJson)
         writeJson("$segment-church", churchGeoJson)
-        println(stationGeoJson)
         writeJson("$segment-station-with-church", stationGeoJson)
     }
 
