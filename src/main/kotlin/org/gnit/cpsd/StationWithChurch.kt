@@ -11,7 +11,7 @@ fun main(){
 
         val minDistance = maxDistance - 500
 
-        val stations = mutableListOf<Station>()
+        val stations = mutableListOf<StationPoint>()
         val churches = mutableListOf<Church>()
         val routes = mutableListOf<Route>()
 
@@ -35,7 +35,7 @@ fun main(){
             val churchAddress = r.get("c.address").asString()
             val isCatholic = r.get("c.catholic").asBoolean()
 
-            val station = Station(
+            val station = StationPoint(
                 type = "Feature",
                 geometry = PointGeometry(type = "Point", coordinates = arrayOf(stationLng, stationLat)),
                 properties = StationProperty(company = stationCompany, line = stationLine, name = stationName, passengers = stationPassengers)
@@ -59,7 +59,7 @@ fun main(){
         }
 
         val churchGeoJson = format.encodeToString(Churches(type = "FeatureCollection", churches.toTypedArray()))
-        val stationGeoJson = format.encodeToString(Stations(type = "FeatureCollection", stations.toTypedArray()))
+        val stationGeoJson = format.encodeToString(StationPoints(type = "FeatureCollection", stations.toTypedArray()))
         val routeGeoJson = format.encodeToString(Routes(type = "FeatureCollection", routes.toTypedArray()))
 
         val segment = "$minDistance-$maxDistance"

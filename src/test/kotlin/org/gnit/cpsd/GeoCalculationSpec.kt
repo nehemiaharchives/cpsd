@@ -39,19 +39,23 @@ object GeoCalculationSpec : Spek({
         }
 
         it("generates square coordinates around a coordinate") {
-            val centerLat = 35.681208784564994
-            val centerLng = 139.7676318883896
+            val centerLat = 35.64805
+            val centerLng = 139.70316
             val square = arrayOf(
-                arrayOf(139.76663947105408, 35.680385235128604),
-                arrayOf(139.76858139038083, 35.680385235128604),
-                arrayOf(139.76858139038083, 35.6819713227605),
-                arrayOf(139.76663947105408, 35.6819713227605),
-                arrayOf(139.76663947105408, 35.680385235128604)
+                arrayOf(139.70259342920963, 35.64758959761317),
+                arrayOf(139.70372657079034, 35.64758959761317),
+                arrayOf(139.70372657079034, 35.64851040238682),
+                arrayOf(139.70259342920963, 35.64851040238682),
+                arrayOf(139.70259342920963, 35.64758959761317)
             )
 
             val generated = squareOf(centerLat, centerLng, 100.0)
 
-            assertEquals(square, generated)
+            (0..4).forEach { i ->
+                (0..1).forEach { j ->
+                    assertEquals(square[i][j], generated[i][j])
+                }
+            }
         }
     }
 })

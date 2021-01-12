@@ -49,6 +49,10 @@ fun distanceJava(
 
 /**
  * [Reference](https://stackoverflow.com/questions/13861616/drawing-a-square-around-a-lat-long-point)
+ * @param lat latitude of center coordinate for square polygon
+ * @param lon longitude of center coordinate for square polygon
+ * @param side length of the side of square in meters
+ * @return array of 5 coordinates to draw square polygon with GeoJson, order of corner is SW->SE->NE->NW->SW
  */
 fun squareOf(lat: Double, lon: Double, side: Double): Array<Array<Double>> {
     val ec = 40075 // equatorial circumference of Earth
@@ -56,41 +60,49 @@ fun squareOf(lat: Double, lon: Double, side: Double): Array<Array<Double>> {
     val latInDecimals = Math.toRadians(lat)
     val longInDecimals = Math.toRadians(lon)
 
-    // Calculating change in latitude for square of side
-    val changeInLong = (side / 1000) * (360.0 / ec)
-
     // Calculating length of longitude at that point of latitude
     val lineOfLat = cos(lon) * ec
 
     // Calculating change in longitude for square of side 'side'
-    val changeInLat = (side / 1000) * (360.0 / lineOfLat)
+    val changeInLat = (side / 10000) * (360.0 / lineOfLat)
 
     // Converting changes into radians
     val changeInLatRad = Math.toRadians(changeInLat)
-    val changeInLongRad = Math.toRadians(changeInLong)
 
-    val nLat = changeInLatRad * (sqrt(2.0) / 2)
-    val nLong = changeInLongRad * (sqrt(2.0) / 2)
+    // longitudinal_length = latitudinal_length / cos(latitude)
+    val changeInLongRad = changeInLatRad / cos(latInDecimals)
+
+    val nLat = changeInLatRad / 2
+    val nLong = changeInLongRad / 2
 
     // Getting square coordinates in degrees
-    val lat1 = Math.toDegrees(latInDecimals + nLat)
-    val lng1 = Math.toDegrees(longInDecimals + nLong)
-    val lat2 = Math.toDegrees(latInDecimals + nLat)
-    val lng2 = Math.toDegrees(longInDecimals + nLong)
-    val lat3 = Math.toDegrees(latInDecimals - nLat)
-    val lng3 = Math.toDegrees(longInDecimals - nLong)
-    val lat4 = Math.toDegrees(latInDecimals - nLat)
-    val lng4 = Math.toDegrees(longInDecimals + nLong)
+    val lat1 = Math.toDegrees(latInDecimals - nLat)
+    val lng1 = Math.toDegrees(longInDecimals - nLong)
 
-    return arrayOf(arrayOf(lng1, lat1), arrayOf(lng2, lat2), arrayOf(lng3, lat3), arrayOf(lng4, lat4))
+    val lat2 = Math.toDegrees(latInDecimals - nLat)
+    val lng2 = Math.toDegrees(longInDecimals + nLong)
+
+    val lat3 = Math.toDegrees(latInDecimals + nLat)
+    val lng3 = Math.toDegrees(longInDecimals + nLong)
+
+    val lat4 = Math.toDegrees(latInDecimals + nLat)
+    val lng4 = Math.toDegrees(longInDecimals - nLong)
+
+    return arrayOf(
+        arrayOf(lng1, lat1),
+        arrayOf(lng2, lat2),
+        arrayOf(lng3, lat3),
+        arrayOf(lng4, lat4),
+        arrayOf(lng1, lat1)
+    )
 }
 
-fun toDecimals (latitude: Double): Double {
+fun toDecimals(latitude: Double): Double {
     val latInDecimals = (Math.PI / 180) * latitude
     return latInDecimals
 }
 
-fun toDegrees (latitudeInDecimals: Double): Double {
-    val latitude = latitudeInDecimals * ( 180 / Math.PI )
+fun toDegrees(latitudeInDecimals: Double): Double {
+    val latitude = latitudeInDecimals * (180 / Math.PI)
     return latitude
 }

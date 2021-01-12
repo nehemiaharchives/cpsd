@@ -12,7 +12,7 @@ fun main(){
 
         val minDistance = maxDistance - 500
 
-        val stations = mutableListOf<Station>()
+        val stations = mutableListOf<StationPoint>()
 
         val stationsRecord = session.run("""
             MATCH (s:Station) WHERE s.passengers > $minPassengers RETURN s;
@@ -39,7 +39,7 @@ fun main(){
             val stationName = n.get("name").asString()
             val stationPassengers = n.get(("passengers")).asInt()
 
-            val station = Station(
+            val station = StationPoint(
                 type = "Feature",
                 geometry = PointGeometry(type = "Point", coordinates = arrayOf(stationLng, stationLat)),
                 properties = StationProperty(company = stationCompany, line = stationLine, name = stationName, passengers = stationPassengers)
@@ -47,7 +47,7 @@ fun main(){
             stations.add(station)
         }
 
-        val stationGeoJson = format.encodeToString(Stations(type = "FeatureCollection", stations.toTypedArray()))
+        val stationGeoJson = format.encodeToString(StationPoints(type = "FeatureCollection", stations.toTypedArray()))
 
         //something like:
         //segment 0    - 500  has 4307 stations, 1722 with church, 2585 without church

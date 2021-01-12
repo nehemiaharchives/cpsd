@@ -34,7 +34,7 @@ class Route(val type: String, val geometry: LineStringGeometry, val properties: 
 @Serializable
 class Routes(val type: String, val features: Array<Route>)
 
-// Stations
+// Station Points
 @Serializable
 class StationProperty(val company: String, val line: String, val name: String, val passengers: Int)
 
@@ -42,10 +42,20 @@ class StationProperty(val company: String, val line: String, val name: String, v
 class PointGeometry(val type: String, val coordinates: Array<Double>)
 
 @Serializable
-class Station(val type: String, val geometry: PointGeometry, val properties: StationProperty)
+class StationPoint(val type: String, val geometry: PointGeometry, val properties: StationProperty)
 
 @Serializable
-class Stations(val type: String, val features: Array<Station>)
+class StationPoints(val type: String, val features: Array<StationPoint>)
+
+// Station Polygons
+@Serializable
+class PolygonGeometry(val type: String, val coordinates: Array<Array<Array<Double>>>)
+
+@Serializable
+class StationPolygon(val type: String, val geometry: PolygonGeometry, val properties: StationProperty)
+
+@Serializable
+class StationPolygons(val type: String, val features: Array<StationPolygon>)
 
 // Churches
 @Serializable
@@ -58,11 +68,12 @@ class Church(val type: String, val geometry: PointGeometry, val properties: Chur
 class Churches(val type: String, val features: Array<Church>)
 
 fun main() {
-    printSingleLineString()
-    printMultiPoint()
-    printRoutes()
-    printStations()
-    printChurches()
+    //printSingleLineString()
+    //printMultiPoint()
+    //printRoutes()
+    //printStationPoints()
+    printStationPolygons()
+    //printChurches()
 }
 
 fun printChurches() {
@@ -83,22 +94,44 @@ fun printChurches() {
     println(format.encodeToString(churches))
 }
 
-fun printStations() {
-    val s1 = Station(
+val sp1 = StationProperty(company = "東京急行電鉄", line = "東横線", name = "代官山", passengers = 32148)
+val sp2 = StationProperty(company = "東京地下鉄", line = "3号線銀座線", name = "渋谷", passengers = 224784)
+
+fun printStationPoints() {
+
+    val s1 = StationPoint(
         type = "Feature",
         geometry = PointGeometry(type = "Point", coordinates = arrayOf(139.70316, 35.64805)),
-        properties = StationProperty(company = "東京急行電鉄", line = "東横線", name = "代官山", passengers = 32148)
+        properties = sp1
     )
 
-    val s2 = Station(
+    val s2 = StationPoint(
         type = "Feature",
         geometry = PointGeometry(type = "Point", coordinates = arrayOf(139.701968, 35.658869)),
-        properties = StationProperty(company = "東京地下鉄", line = "3号線銀座線", name = "渋谷", passengers = 224784)
+        properties = sp2
     )
 
-    val stations = Stations(type = "FeatureCollection", features = arrayOf(s1, s2))
+    val stationPoints = StationPoints(type = "FeatureCollection", features = arrayOf(s1, s2))
 
-    println(format.encodeToString(stations))
+    println(format.encodeToString(stationPoints))
+}
+
+fun printStationPolygons() {
+    val s1 = StationPolygon(
+        type = "Feature",
+        geometry = PolygonGeometry(type = "Polygon", arrayOf(squareOf(35.64805, 139.70316, 100.0))),
+        properties = sp1
+    )
+
+    val s2 = StationPolygon(
+        type = "Feature",
+        geometry = PolygonGeometry(type = "Polygon", arrayOf(squareOf(35.658869, 139.701968, 100.0))),
+        properties = sp2
+    )
+
+    val stationPolygons = StationPolygons(type = "FeatureCollection", features = arrayOf(s1, s2))
+
+    println(format.encodeToString(stationPolygons))
 }
 
 fun printRoutes() {
