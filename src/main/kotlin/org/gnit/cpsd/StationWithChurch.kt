@@ -11,7 +11,8 @@ fun main(){
 
         val minDistance = maxDistance - 500
 
-        val stations = mutableListOf<StationPoint>()
+        val stationPoints = mutableListOf<StationPoint>()
+        val stationPolygons = mutableListOf<StationPolygon>()
         val churches = mutableListOf<Church>()
         val routes = mutableListOf<Route>()
 
@@ -35,12 +36,21 @@ fun main(){
             val churchAddress = r.get("c.address").asString()
             val isCatholic = r.get("c.catholic").asBoolean()
 
-            val station = StationPoint(
+            val stationProperty = StationProperty(company = stationCompany, line = stationLine, name = stationName, passengers = stationPassengers)
+
+            val stationPoint = StationPoint(
                 type = "Feature",
                 geometry = PointGeometry(type = "Point", coordinates = arrayOf(stationLng, stationLat)),
-                properties = StationProperty(company = stationCompany, line = stationLine, name = stationName, passengers = stationPassengers)
+                properties = stationProperty
             )
-            stations.add(station)
+            stationPoints.add(stationPoint)
+
+            val stationPolygon = StationPolygon(
+                type = "Feature",
+                geometry = PolygonGeometry(type = "Polygon", coordinates = arrayOf(squareOf(stationLat, stationLng, 100.0))),
+                properties = stationProperty
+            )
+            stationPolygons.add(stationPolygon)
 
             val route = Route(
                 type = "Feature", geometry = LineStringGeometry(
@@ -59,14 +69,16 @@ fun main(){
         }
 
         val churchGeoJson = format.encodeToString(Churches(type = "FeatureCollection", churches.toTypedArray()))
-        val stationGeoJson = format.encodeToString(StationPoints(type = "FeatureCollection", stations.toTypedArray()))
+        val stationPointGeoJson = format.encodeToString(StationPoints(type = "FeatureCollection", stationPoints.toTypedArray()))
+        val stationPolygonGeoJson = format.encodeToString(StationPolygons(type = "FeatureCollection", stationPolygons.toTypedArray()))
         val routeGeoJson = format.encodeToString(Routes(type = "FeatureCollection", routes.toTypedArray()))
 
         val segment = "$minDistance-$maxDistance"
 
         writeJson("$segment-route", routeGeoJson)
         writeJson("$segment-church", churchGeoJson)
-        writeJson("$segment-station-with-church", stationGeoJson)
+        writeJson("$segment-station-point-with-church", stationPointGeoJson)
+        writeJson("$segment-station-polygon-with-church", stationPolygonGeoJson)
     }
 
     session.close()
