@@ -5,8 +5,6 @@ import java.io.FileOutputStream
 import java.io.IOException
 import java.nio.file.Path
 import java.nio.file.Paths
-import java.util.Properties
-import kotlin.math.*
 
 // cpsd: church planting strategy database
 fun main() {
@@ -98,41 +96,10 @@ fun distance(station: org.neo4j.driver.types.Node, church: org.neo4j.driver.type
     val lng1 = station.get("lng").asDouble()
     val lat2 = church.get("lat").asDouble()
     val lng2 = church.get("lng").asDouble()
-    val distance = distance(lat1 = lat1, lat2 = lat2, lon1 = lng1, lon2 = lng2, el1 = 1.0, el2 = 1.0)
+    val distance = distanceJava(lat1 = lat1, lat2 = lat2, lon1 = lng1, lon2 = lng2, el1 = 1.0, el2 = 1.0)
 
     //if(distance < 10 * 1000)
     //println("distance from station ${station.get("name")} to church ${church.get("name")} is ${(distance / 1000).toInt()} km")
 
     return distance
-}
-
-/**
- * Calculate distance between two points in latitude and longitude taking
- * into account height difference. If you are not interested in height
- * difference pass 0.0. Uses Haversine method as its base.
- *
- * lat1, lon1 Start point lat2, lon2 End point el1 Start altitude in meters
- * el2 End altitude in meters
- * @returns Distance in Meters
- */
-fun distance(
-    lat1: Double, lat2: Double, lon1: Double,
-    lon2: Double, el1: Double, el2: Double
-): Double {
-    val R = 6371 // Radius of the earth
-    val latDistance = Math.toRadians(lat2 - lat1)
-    val lonDistance = Math.toRadians(lon2 - lon1)
-    val a = (sin(latDistance / 2) * sin(latDistance / 2)
-            + (cos(Math.toRadians(lat1)) * cos(Math.toRadians(lat2))
-            * sin(lonDistance / 2) * sin(lonDistance / 2)))
-    val c = 2 * atan2(sqrt(a), sqrt(1 - a))
-    var distance = R * c * 1000 // convert to meters
-    val height = el1 - el2
-    distance = distance.pow(2.0) + height.pow(2.0)
-    return sqrt(distance)
-}
-
-// ref: https://stackoverflow.com/questions/13861616/drawing-a-square-around-a-lat-long-point
-fun squareCoordinate(lat: Double, lon: Double){
-    //TODO to be implemented
 }
