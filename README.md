@@ -17,6 +17,70 @@ That was the moment I felt God called me to be the first one to do [that](https:
 Now at the starting point, cpsd is limited to for the usage in mission strategy in Japan in English. 
 First dataset is location of churches and train stations with passenger count and distance.
 
+## Technical Architecture
+cpsd is a combination of [Kotlin](https://kotlinlang.org/) functions meant to be executed in [integrated development environment](https://en.wikipedia.org/wiki/Integrated_development_environment) (IDE) with running local [Neo4j](https://neo4j.com/) instance at localhost.
+
+## Setup and Run
+1. Download Neo4j Desktop and create a database with your choce of password.
+2. Prepare ```churches.csv``` with header ```url,catholic,lat,lng,address,name```.
+3. Prepare ```stations.csv``` with header ```id,lat,lng,name,company,line,passengers2017```.
+4. In Neo4j Desktop, Your Project-> Click "⋯" Dropdown->Open folder->Import copy and paste ```churches.csv``` and ```stations.csv``` in ```Import``` directory.
+5. Open Neo4j Browser and run Query 1-4 in [Cypher file](src/main/resources/church-station.cql) to import csv into Neo4j.
+6. Import this repo into your IDE and run ```main()``` in [Main.kt](src/main/kotlin/org/gnit/cpsd/Main.kt) this will generate ```routes.csv``` in [resources](src/main/resources)
+7. Copy and paste ```routes.csv``` in ```Import``` directory and run Query 5 in Neo4j Browser. 
+8. In your IDE, run ```main()``` in [StationWithChurch.kt](src/main/kotlin/org/gnit/cpsd/StationWithChurch.kt) to generate GeoJson files of stations with churches.
+9. In your IDE, run ```main()``` in [StationWithoutChurch.kt](src/main/kotlin/org/gnit/cpsd/StationWithoutChurch.kt) to generate GeoJson files of stations without churches.
+
+## Resulted files
+GeoJson files are separated by GeoJson ```FeatureCollection```, Churches and Stations are ```Point```, Stations are also ```Polygon```, Route from Station to Church is ```LineString```. Files are also separated into 6 distance segments from 0 to 500 meters to 2500 to 3000 meters. Following are the expected files to be generated:
+
+```
+0-500-church.json
+0-500-route.json
+0-500-station-point-with-church.json
+0-500-station-point-without-church.json
+0-500-station-polygon-with-church.json
+0-500-station-polygon-without-church.json
+
+500-1000-church.json
+500-1000-route.json
+500-1000-station-point-with-church.json
+500-1000-station-point-without-church.json
+500-1000-station-polygon-with-church.json
+500-1000-station-polygon-without-church.json
+
+1000-1500-church.json
+1000-1500-route.json
+1000-1500-station-point-with-church.json
+1000-1500-station-point-without-church.json
+1000-1500-station-polygon-with-church.json
+1000-1500-station-polygon-without-church.json
+
+1500-2000-church.json
+1500-2000-route.json
+1500-2000-station-point-with-church.json
+1500-2000-station-point-without-church.json
+1500-2000-station-polygon-with-church.json
+1500-2000-station-polygon-without-church.json
+
+2000-2500-church.json
+2000-2500-route.json
+2000-2500-station-point-with-church.json
+2000-2500-station-point-without-church.json
+2000-2500-station-polygon-with-church.json
+2000-2500-station-polygon-without-church.json
+
+2500-3000-church.json
+2500-3000-route.json
+2500-3000-station-point-with-church.json
+2500-3000-station-point-without-church.json
+2500-3000-station-polygon-with-church.json
+2500-3000-station-polygon-without-church.json
+```
+
+## Visualization
+You can import those GeoJson files into [GIS](https://en.wikipedia.org/wiki/Geographic_information_system) software or services like [MapBox Studio](https://www.mapbox.com/mapbox-studio). Analyze them to improve your Church planting strategy! 
+
 ## Future
 Hoping to apply for other countries, accomodate other type of data and languages.
 
