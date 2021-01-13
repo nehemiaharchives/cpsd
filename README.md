@@ -33,50 +33,52 @@ cpsd is a combination of [Kotlin](https://kotlinlang.org/) functions meant to be
 10. In your IDE, run ```main()``` in [StationWithoutChurch.kt](src/main/kotlin/org/gnit/cpsd/StationWithoutChurch.kt) to generate GeoJson files of stations without churches.
 
 ## Resulted files
-GeoJson files are separated by GeoJson ```FeatureCollection```, Churches and Stations are ```Point```, Stations are also ```Polygon```, Route from Station to Church is ```LineString```. Files are also separated into 6 distance segments from 0 to 500 meters to 2500 to 3000 meters. Following are the expected files to be generated:
+GeoJson files are separated by GeoJson ```FeatureCollection```, Churches and Stations are ```Point```, Stations are also ```Polygon```, Route from Station to Church is ```LineString```. 
+Files are also separated into 6 distance segments from 0 to 500, 1000, 1500, 2000, 2500 or 3000 meters. 
+Following are the expected files to be generated:
 
 ```
-0-500-church.json
-0-500-route.json
-0-500-station-point-with-church.json
-0-500-station-point-without-church.json
-0-500-station-polygon-with-church.json
-0-500-station-polygon-without-church.json
+500-church.json
+500-route.json
+500-station-point-with-church.json
+500-station-point-without-church.json
+500-station-polygon-with-church.json
+500-station-polygon-without-church.json
 
-500-1000-church.json
-500-1000-route.json
-500-1000-station-point-with-church.json
-500-1000-station-point-without-church.json
-500-1000-station-polygon-with-church.json
-500-1000-station-polygon-without-church.json
+1000-church.json
+1000-route.json
+1000-station-point-with-church.json
+1000-station-point-without-church.json
+1000-station-polygon-with-church.json
+1000-station-polygon-without-church.json
 
-1000-1500-church.json
-1000-1500-route.json
-1000-1500-station-point-with-church.json
-1000-1500-station-point-without-church.json
-1000-1500-station-polygon-with-church.json
-1000-1500-station-polygon-without-church.json
+1500-church.json
+1500-route.json
+1500-station-point-with-church.json
+1500-station-point-without-church.json
+1500-station-polygon-with-church.json
+1500-station-polygon-without-church.json
 
-1500-2000-church.json
-1500-2000-route.json
-1500-2000-station-point-with-church.json
-1500-2000-station-point-without-church.json
-1500-2000-station-polygon-with-church.json
-1500-2000-station-polygon-without-church.json
+2000-church.json
+2000-route.json
+2000-station-point-with-church.json
+2000-station-point-without-church.json
+2000-station-polygon-with-church.json
+2000-station-polygon-without-church.json
 
-2000-2500-church.json
-2000-2500-route.json
-2000-2500-station-point-with-church.json
-2000-2500-station-point-without-church.json
-2000-2500-station-polygon-with-church.json
-2000-2500-station-polygon-without-church.json
+2500-church.json
+2500-route.json
+2500-station-point-with-church.json
+2500-station-point-without-church.json
+2500-station-polygon-with-church.json
+2500-station-polygon-without-church.json
 
-2500-3000-church.json
-2500-3000-route.json
-2500-3000-station-point-with-church.json
-2500-3000-station-point-without-church.json
-2500-3000-station-polygon-with-church.json
-2500-3000-station-polygon-without-church.json
+3000-church.json
+3000-route.json
+3000-station-point-with-church.json
+3000-station-point-without-church.json
+3000-station-polygon-with-church.json
+3000-station-polygon-without-church.json
 ```
 Data for stations and Churches in Japan are located at [data/japan](data/japan) directory in this repo.
 

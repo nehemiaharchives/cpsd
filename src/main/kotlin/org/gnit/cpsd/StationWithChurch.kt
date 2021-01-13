@@ -9,8 +9,6 @@ fun main(){
 
     distanceArray.forEach { maxDistance ->
 
-        val minDistance = maxDistance - 500
-
         val stationPoints = mutableListOf<StationPoint>()
         val stationPolygons = mutableListOf<StationPolygon>()
         val churches = mutableListOf<Church>()
@@ -18,7 +16,7 @@ fun main(){
 
         val records = session.run("""
             MATCH (s:Station)-[r:ROUTE]->(c:Church)
-            WHERE $minDistance < r.distance AND r.distance < $maxDistance AND s.passengers > 1000
+            WHERE 0 < r.distance AND r.distance < $maxDistance AND s.passengers > 1000
             RETURN s.lng, s.lat, s.company, s.line, s.name, s.passengers, r.distance, c.lng, c.lat, c.name, c.address, c.catholic;
         """.trimIndent())
 
@@ -73,7 +71,7 @@ fun main(){
         val stationPolygonGeoJson = format.encodeToString(StationPolygons(type = "FeatureCollection", stationPolygons.toTypedArray()))
         val routeGeoJson = format.encodeToString(Routes(type = "FeatureCollection", routes.toTypedArray()))
 
-        val segment = "$minDistance-$maxDistance"
+        val segment = "$maxDistance"
 
         writeJson("$segment-route", routeGeoJson)
         writeJson("$segment-church", churchGeoJson)

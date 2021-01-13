@@ -10,7 +10,7 @@ fun main() {
 
     distanceArray.forEach { maxDistance ->
 
-        val minDistance = maxDistance - 500
+        val minDistance = 0
 
         val stationPoints = mutableListOf<StationPoint>()
         val stationPolygons = mutableListOf<StationPolygon>()
@@ -70,15 +70,15 @@ fun main() {
         val stationPolygonGeoJson = format.encodeToString(StationPolygons(type = "FeatureCollection", stationPolygons.toTypedArray()))
 
         //something like:
-        //segment 0    - 500  has 4307 stations, 1722 with church, 2585 without church
-        //segment 500  - 1000 has 4307 stations, 2535 with church, 1772 without church
-        //segment 1000 - 1500 has 4307 stations, 2691 with church, 1616 without church
-        //segment 1500 - 2000 has 4307 stations, 2795 with church, 1512 without church
-        //segment 2000 - 2500 has 4307 stations, 2966 with church, 1341 without church
-        //segment 2500 - 3000 has 4307 stations, 3001 with church, 1306 without church
+        //segment 0 - 500 has 4307 stations, 1722 with church, 2585 without church
+        //segment 0 - 1000 has 4307 stations, 2991 with church, 1316 without church
+        //segment 0 - 1500 has 4307 stations, 3482 with church, 825 without church
+        //segment 0 - 2000 has 4307 stations, 3726 with church, 581 without church
+        //segment 0 - 2500 has 4307 stations, 3868 with church, 439 without church
+        //segment 0 - 3000 has 4307 stations, 3971 with church, 336 without church
         println("segment $minDistance - $maxDistance has $total stations, $withChurch with church, $withoutChurch without church")
-        writeJson("$minDistance-$maxDistance-station-point-without-church", stationPointGeoJson)
-        writeJson("$minDistance-$maxDistance-station-polygon-without-church", stationPolygonGeoJson)
+        writeJson("$maxDistance-station-point-without-church", stationPointGeoJson)
+        writeJson("$maxDistance-station-polygon-without-church", stationPolygonGeoJson)
     }
 
     session.close()
