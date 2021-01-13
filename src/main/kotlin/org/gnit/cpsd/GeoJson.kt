@@ -68,12 +68,12 @@ class Church(val type: String, val geometry: PointGeometry, val properties: Chur
 class Churches(val type: String, val features: Array<Church>)
 
 fun main() {
-    //printSingleLineString()
-    //printMultiPoint()
-    //printRoutes()
-    //printStationPoints()
+    printSingleLineString()
+    printMultiPoint()
+    printRoutes()
+    printStationPoints()
     printStationPolygons()
-    //printChurches()
+    printChurches()
 }
 
 fun printChurches() {

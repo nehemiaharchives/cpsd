@@ -17,7 +17,7 @@ fun main() {
 
     val churches = session.run("MATCH (c:Church) RETURN c;").list()
 
-    // DuplicateOption.values().forEach { findDuplicates(churches, it) }
+    DuplicateOption.values().forEach { findDuplicates(churches, it) }
 
     val totalRoutes = stations.size * churches.size
 
@@ -96,10 +96,6 @@ fun distance(station: org.neo4j.driver.types.Node, church: org.neo4j.driver.type
     val lng1 = station.get("lng").asDouble()
     val lat2 = church.get("lat").asDouble()
     val lng2 = church.get("lng").asDouble()
-    val distance = distanceJava(lat1 = lat1, lat2 = lat2, lon1 = lng1, lon2 = lng2, el1 = 1.0, el2 = 1.0)
 
-    //if(distance < 10 * 1000)
-    //println("distance from station ${station.get("name")} to church ${church.get("name")} is ${(distance / 1000).toInt()} km")
-
-    return distance
+    return distanceOf(lat1 = lat1, lat2 = lat2, lng1 = lng1, lng2 = lng2, el1 = 1.0, el2 = 1.0)
 }
