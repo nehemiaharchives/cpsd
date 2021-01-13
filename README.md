@@ -26,10 +26,11 @@ cpsd is a combination of [Kotlin](https://kotlinlang.org/) functions meant to be
 3. Prepare ```stations.csv``` with header ```id,lat,lng,name,company,line,passengers2017```.
 4. In Neo4j Desktop, Your Project-> Click "⋯" Dropdown->Open folder->Import copy and paste ```churches.csv``` and ```stations.csv``` in ```Import``` directory.
 5. Open Neo4j Browser and run Query 1-4 in [Cypher file](src/main/resources/church-station.cql) to import csv into Neo4j.
-6. Import this repo into your IDE and run ```main()``` in [Main.kt](src/main/kotlin/org/gnit/cpsd/Main.kt) this will generate ```routes.csv``` in [resources](src/main/resources)
-7. Copy and paste ```routes.csv``` in ```Import``` directory and run Query 5 in Neo4j Browser. 
-8. In your IDE, run ```main()``` in [StationWithChurch.kt](src/main/kotlin/org/gnit/cpsd/StationWithChurch.kt) to generate GeoJson files of stations with churches.
-9. In your IDE, run ```main()``` in [StationWithoutChurch.kt](src/main/kotlin/org/gnit/cpsd/StationWithoutChurch.kt) to generate GeoJson files of stations without churches.
+6. Import this repo into your IDE and create ```db.properties``` with 2 lines: ```username = neo4j``` and ```password = NEO4J_PASSWORD_YOU_CREATED_IN_STEP_1``` in [resources](src/main/resources)
+7. Run ```main()``` in [Main.kt](src/main/kotlin/org/gnit/cpsd/Main.kt) this will generate ```routes.csv``` in [resources](src/main/resources)
+8. Copy and paste ```routes.csv``` in ```Import``` directory and run Query 5 in Neo4j Browser. 
+9. In your IDE, run ```main()``` in [StationWithChurch.kt](src/main/kotlin/org/gnit/cpsd/StationWithChurch.kt) to generate GeoJson files of stations with churches.
+10. In your IDE, run ```main()``` in [StationWithoutChurch.kt](src/main/kotlin/org/gnit/cpsd/StationWithoutChurch.kt) to generate GeoJson files of stations without churches.
 
 ## Resulted files
 GeoJson files are separated by GeoJson ```FeatureCollection```, Churches and Stations are ```Point```, Stations are also ```Polygon```, Route from Station to Church is ```LineString```. Files are also separated into 6 distance segments from 0 to 500 meters to 2500 to 3000 meters. Following are the expected files to be generated:
