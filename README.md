@@ -11,7 +11,7 @@ Primary interest was to leverage tech for world mission strategy all the way fro
 After serving as a minister of [G&IT](https://gnit.org/) (Gospel & Information Techcnology) in United States, I moved back to Japan to work as editor in chief of Christian Today Japan.
 Intersection of Christianity, Journalism and Information Technology has been my field. I was always interested in the advancement of [Data Journalism](https://datajournalism.com/).
 Now that I spent 1 year in the world of online Christian Journalim and [FaithTech](https://faithtech.com/), came to know almost nobody practice Data Journalism in our field. 
-That was the moment I felt God called me to be the first one to do that. First topic I chose was meant for something useful for World Mission Strategy.
+That was the moment I felt God called me to be the first one to do [that](https://raw.githubusercontent.com/nehemiaharchives/cpsd/master/Christian_Data_Journalism.svg). First topic I chose was meant for something useful for World Mission Strategy.
 
 ## Current Project
 Now at the starting point, cpsd is limited to for the usage in mission strategy in Japan in English. 
