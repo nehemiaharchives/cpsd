@@ -78,6 +78,7 @@ GeoJson files are separated by GeoJson ```FeatureCollection```, Churches and Sta
 2500-3000-station-polygon-with-church.json
 2500-3000-station-polygon-without-church.json
 ```
+Data for stations and Churches in Japan are located at [data/japan](data/japan) directory in this repo.
 
 ## Visualization
 You can import those GeoJson files into [GIS](https://en.wikipedia.org/wiki/Geographic_information_system) software or services like [MapBox Studio](https://www.mapbox.com/mapbox-studio). Analyze them to improve your Church planting strategy! 
