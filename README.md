@@ -1,13 +1,13 @@
 # cpsd
-cpsd is a database to develop church planting strategy. 
-It is originally created for mission organizations around the world to plant churches in Japan - the couontry with world's [second largest](https://joshuaproject.net/unreached/1?s=Population&o=desc) unreached people group.
+cpsd is a database to develop Church planting strategy. 
+It is originally created for mission organizations around the world to plant Churches in Japan - the couontry with world's [second largest](https://joshuaproject.net/unreached/1?s=Population&o=desc) unreached people group.
 
 ## Background
 I converted from atheist physics fanboy to evangelical Christian when I was a student of [ICU](https://www.icu.ac.jp/en/) (International Christian University). 
 Changed my major from physics to computer sciencce as I felt CS is pragmatically more usuful for world evangelism. 
 At that time I also started an internship at [Christian Today Japan](https://www.christiantoday.co.jp/english.htm) as Full Stack Developer and reporter. 
 I moved from Japan to US to earn Master of Arts in Information Technology from [OIT](https://oit.olivetuniversity.edu/) (Olivet Institute of Technology) while majoring Missiology and Software Engineering together. 
-Primary interest was to leverage tech for world mission strategy all the way from micro strategy like locating church absent cities to macro strategy like global interindustrial logistics.
+Primary interest was to leverage tech for world mission strategy all the way from micro strategy like locating Church absent cities to macro strategy like global interindustrial logistics.
 After serving as a minister of [G&IT](https://gnit.org/) (Gospel & Information Techcnology) in United States, I moved back to Japan to work as editor in chief of Christian Today Japan.
 Intersection of Christianity, Journalism and Information Technology has been my field. I was always interested in the advancement of [Data Journalism](https://datajournalism.com/).
 Now that I spent 1 year in the world of online Christian Journalim and [FaithTech](https://faithtech.com/), came to know almost nobody practice Data Journalism in our field. 
@@ -15,7 +15,7 @@ That was the moment I felt God called me to be the first one to do [that](https:
 
 ## Current Project
 Now at the starting point, cpsd is limited to for the usage in mission strategy in Japan in English. 
-First dataset is location of churches and train stations with passenger count and distance.
+First dataset is location of Churches and train stations with passenger count and distance.
 
 ## Technical Architecture
 cpsd is a combination of [Kotlin](https://kotlinlang.org/) functions meant to be executed in [integrated development environment](https://en.wikipedia.org/wiki/Integrated_development_environment) (IDE) with running local [Neo4j](https://neo4j.com/) instance at localhost.
@@ -29,8 +29,9 @@ cpsd is a combination of [Kotlin](https://kotlinlang.org/) functions meant to be
 6. Import this repo into your IDE and create ```db.properties``` with 2 lines: ```username = neo4j``` and ```password = NEO4J_PASSWORD_YOU_CREATED_IN_STEP_1``` in [resources](src/main/resources)
 7. Run ```main()``` in [Main.kt](src/main/kotlin/org/gnit/cpsd/Main.kt) this will generate ```routes.csv``` in [resources](src/main/resources)
 8. Copy and paste ```routes.csv``` in ```Import``` directory and run Query 5 in Neo4j Browser. 
-9. In your IDE, run ```main()``` in [StationWithChurch.kt](src/main/kotlin/org/gnit/cpsd/StationWithChurch.kt) to generate GeoJson files of stations with churches.
-10. In your IDE, run ```main()``` in [StationWithoutChurch.kt](src/main/kotlin/org/gnit/cpsd/StationWithoutChurch.kt) to generate GeoJson files of stations without churches.
+9. In your IDE, run ```main()``` in [StationWithChurch.kt](src/main/kotlin/org/gnit/cpsd/StationWithChurch.kt) to generate GeoJson files of stations with Churches.
+10. In your IDE, run ```main()``` in [StationWithoutChurch.kt](src/main/kotlin/org/gnit/cpsd/StationWithoutChurch.kt) to generate GeoJson files of stations without Churches.
+11. In your IDE, run ```main()``` in [Churches.kt](src/main/kotlin/org/gnit/cpsd/Churches.kt) to generate GeoJson files of all Churches.
 
 ## Resulted files
 GeoJson files are separated by GeoJson ```FeatureCollection```, Churches and Stations are ```Point```, Stations are also ```Polygon```, Route from Station to Church is ```LineString```. 
