@@ -17,10 +17,11 @@ fun main(){
         val records = session.run("""
             MATCH (s:Station)-[r:ROUTE]->(c:Church)
             WHERE 0 < r.distance AND r.distance < $maxDistance AND s.passengers > 1000
-            RETURN s.lng, s.lat, s.company, s.line, s.name, s.passengers, r.distance, c.lng, c.lat, c.name, c.address, c.catholic;
+            RETURN s.id, s.lng, s.lat, s.company, s.line, s.name, s.passengers, r.distance, c.id, c.lng, c.lat, c.name, c.address, c.catholic;
         """.trimIndent())
 
         records.list().forEach { r ->
+            val stationId = r.get("s.id").asString()
             val stationLng = r.get("s.lng").asDouble()
             val stationLat = r.get("s.lat").asDouble()
             val stationCompany = r.get("s.company").asString()
@@ -28,13 +29,14 @@ fun main(){
             val stationName = r.get("s.name").asString()
             val stationPassengers = r.get("s.passengers").asInt()
             val distance = r.get("r.distance").asDouble()
+            val churchId = r.get("c.id").asString()
             val churchLng = r.get("c.lng").asDouble()
             val churchLat = r.get("c.lat").asDouble()
             val churchName = r.get("c.name").asString()
             val churchAddress = r.get("c.address").asString()
             val isCatholic = r.get("c.catholic").asBoolean()
 
-            val stationProperty = StationProperty(company = stationCompany, line = stationLine, name = stationName, passengers = stationPassengers)
+            val stationProperty = StationProperty(stationId = stationId, company = stationCompany, line = stationLine, name = stationName, passengers = stationPassengers)
 
             val stationPoint = StationPoint(
                 type = "Feature",
@@ -61,14 +63,14 @@ fun main(){
             val church = Church(
                 type = "Feature",
                 geometry = PointGeometry(type = "Point", coordinates = arrayOf(churchLng, churchLat)),
-                properties = ChurchProperty(name = churchName, address = churchAddress, catholic = isCatholic)
+                properties = ChurchProperty(churchId = churchId, name = churchName, address = churchAddress, catholic = isCatholic)
             )
             churches.add(church)
         }
 
-        val churchGeoJson = format.encodeToString(Churches(type = "FeatureCollection", churches.toTypedArray()))
-        val stationPointGeoJson = format.encodeToString(StationPoints(type = "FeatureCollection", stationPoints.toTypedArray()))
-        val stationPolygonGeoJson = format.encodeToString(StationPolygons(type = "FeatureCollection", stationPolygons.toTypedArray()))
+        val churchGeoJson = format.encodeToString(Churches(type = "FeatureCollection", churches.distinctBy { it.properties.churchId } .toTypedArray()))
+        val stationPointGeoJson = format.encodeToString(StationPoints(type = "FeatureCollection", stationPoints.distinctBy { it.properties.stationId } .toTypedArray()))
+        val stationPolygonGeoJson = format.encodeToString(StationPolygons(type = "FeatureCollection", stationPolygons.distinctBy { it.properties.stationId } .toTypedArray()))
         val routeGeoJson = format.encodeToString(Routes(type = "FeatureCollection", routes.toTypedArray()))
 
         val segment = "$maxDistance"

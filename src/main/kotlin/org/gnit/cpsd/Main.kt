@@ -25,6 +25,9 @@ fun main() {
     var recordCount: Int = 1
 
     val path: Path = Paths.get("src/main/resources/routes.csv")
+    FileOutputStream(path.toFile(), true).bufferedWriter().use { writer ->
+        writer.appendLine("stationId,churchId,distance")
+    }
 
     try {
 

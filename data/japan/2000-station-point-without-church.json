@@ -11,6 +11,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3",
                 "company": "ゆりかもめ",
                 "line": "東京臨海新交通臨海線",
                 "name": "お台場海浜公園",
@@ -27,6 +28,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4",
                 "company": "ゆりかもめ",
                 "line": "東京臨海新交通臨海線",
                 "name": "船の科学館",
@@ -43,6 +45,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5",
                 "company": "ゆりかもめ",
                 "line": "東京臨海新交通臨海線",
                 "name": "テレコムセンター",
@@ -59,6 +62,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7",
                 "company": "ゆりかもめ",
                 "line": "東京臨海新交通臨海線",
                 "name": "台場",
@@ -75,6 +79,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8",
                 "company": "ゆりかもめ",
                 "line": "東京臨海新交通臨海線",
                 "name": "有明",
@@ -91,6 +96,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv9",
                 "company": "ゆりかもめ",
                 "line": "東京臨海新交通臨海線",
                 "name": "国際展示場正門",
@@ -107,6 +113,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv12",
                 "company": "ゆりかもめ",
                 "line": "東京臨海新交通臨海線",
                 "name": "芝浦ふ頭",
@@ -123,6 +130,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv14",
                 "company": "ゆりかもめ",
                 "line": "東京臨海新交通臨海線",
                 "name": "青海",
@@ -139,26 +147,11 @@
                 ]
             },
             "properties": {
+                "stationId": "cv17",
                 "company": "ゆりかもめ",
                 "line": "東京臨海新交通臨海線",
                 "name": "有明テニスの森",
                 "passengers": 3942
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.62343,
-                    34.68036
-                ]
-            },
-            "properties": {
-                "company": "近畿日本鉄道",
-                "line": "けいはんな線",
-                "name": "吉田",
-                "passengers": 15150
             }
         },
         {
@@ -171,6 +164,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv22",
                 "company": "近畿日本鉄道",
                 "line": "けいはんな線",
                 "name": "荒本",
@@ -187,6 +181,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv28",
                 "company": "神戸新交通",
                 "line": "ポートアイランド線",
                 "name": "中埠頭",
@@ -203,6 +198,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv29",
                 "company": "神戸新交通",
                 "line": "ポートアイランド線",
                 "name": "市民広場",
@@ -219,6 +215,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv32",
                 "company": "神戸新交通",
                 "line": "ポートアイランド線",
                 "name": "北埠頭",
@@ -235,6 +232,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv33",
                 "company": "神戸新交通",
                 "line": "ポートアイランド線",
                 "name": "南公園",
@@ -251,6 +249,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv34",
                 "company": "神戸新交通",
                 "line": "ポートアイランド線",
                 "name": "みなとじま",
@@ -267,6 +266,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv36",
                 "company": "神戸新交通",
                 "line": "ポートアイランド線",
                 "name": "医療センター",
@@ -283,6 +283,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv37",
                 "company": "神戸新交通",
                 "line": "ポートアイランド線",
                 "name": "京コンピュータ前",
@@ -299,6 +300,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv38",
                 "company": "神戸新交通",
                 "line": "ポートアイランド線",
                 "name": "神戸空港",
@@ -315,6 +317,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv63",
                 "company": "アイジーアールいわて銀河鉄道",
                 "line": "いわて銀河鉄道線",
                 "name": "滝沢",
@@ -331,6 +334,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv67",
                 "company": "アイジーアールいわて銀河鉄道",
                 "line": "いわて銀河鉄道線",
                 "name": "好摩",
@@ -347,6 +351,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv159",
                 "company": "スカイレールサービス",
                 "line": "広島短距離交通瀬野線",
                 "name": "みどり中央",
@@ -363,6 +368,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv160",
                 "company": "スカイレールサービス",
                 "line": "広島短距離交通瀬野線",
                 "name": "みどり口",
@@ -379,6 +385,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv193",
                 "company": "阿武隈急行",
                 "line": "阿武隈急行線",
                 "name": "保原",
@@ -395,6 +402,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv203",
                 "company": "阿武隈急行",
                 "line": "阿武隈急行線",
                 "name": "槻木",
@@ -411,6 +419,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv220",
                 "company": "愛知環状鉄道",
                 "line": "愛知環状鉄道線",
                 "name": "八草",
@@ -427,6 +436,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv221",
                 "company": "愛知環状鉄道",
                 "line": "愛知環状鉄道線",
                 "name": "末野原",
@@ -443,6 +453,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv224",
                 "company": "愛知環状鉄道",
                 "line": "愛知環状鉄道線",
                 "name": "北野桝塚",
@@ -459,6 +470,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv226",
                 "company": "愛知環状鉄道",
                 "line": "愛知環状鉄道線",
                 "name": "三河豊田",
@@ -475,6 +487,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv238",
                 "company": "愛知高速交通",
                 "line": "東部丘陵線",
                 "name": "公園西",
@@ -491,6 +504,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv239",
                 "company": "愛知高速交通",
                 "line": "東部丘陵線",
                 "name": "愛・地球博記念公園",
@@ -507,6 +521,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv240",
                 "company": "愛知高速交通",
                 "line": "東部丘陵線",
                 "name": "芸大通",
@@ -523,6 +538,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv243",
                 "company": "愛知高速交通",
                 "line": "東部丘陵線",
                 "name": "八草",
@@ -539,6 +555,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv258",
                 "company": "伊豆急行",
                 "line": "伊豆急行線",
                 "name": "伊豆熱川",
@@ -555,6 +572,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv261",
                 "company": "伊豆急行",
                 "line": "伊豆急行線",
                 "name": "河津",
@@ -571,6 +589,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv269",
                 "company": "伊豆急行",
                 "line": "伊豆急行線",
                 "name": "伊豆稲取",
@@ -587,6 +606,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv277",
                 "company": "伊豆箱根鉄道",
                 "line": "駿豆線",
                 "name": "大仁",
@@ -603,6 +623,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv285",
                 "company": "伊豆箱根鉄道",
                 "line": "駿豆線",
                 "name": "田京",
@@ -619,6 +640,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv289",
                 "company": "伊豆箱根鉄道",
                 "line": "大雄山線",
                 "name": "和田河原",
@@ -635,6 +657,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv292",
                 "company": "伊豆箱根鉄道",
                 "line": "大雄山線",
                 "name": "大雄山",
@@ -651,6 +674,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv299",
                 "company": "伊豆箱根鉄道",
                 "line": "大雄山線",
                 "name": "富士フイルム前",
@@ -667,6 +691,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv337",
                 "company": "伊予鉄道",
                 "line": "高浜線",
                 "name": "高浜",
@@ -683,6 +708,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv371",
                 "company": "井原鉄道",
                 "line": "井原線",
                 "name": "清音",
@@ -699,6 +725,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv389",
                 "company": "一畑電車",
                 "line": "大社線",
                 "name": "出雲大社前",
@@ -715,6 +742,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv405",
                 "company": "一畑電車",
                 "line": "北松江線",
                 "name": "雲州平田",
@@ -731,6 +759,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv413",
                 "company": "叡山電鉄",
                 "line": "鞍馬線",
                 "name": "市原",
@@ -747,6 +776,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv418",
                 "company": "叡山電鉄",
                 "line": "鞍馬線",
                 "name": "鞍馬",
@@ -763,6 +793,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv419",
                 "company": "叡山電鉄",
                 "line": "鞍馬線",
                 "name": "二軒茶屋",
@@ -779,6 +810,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv421",
                 "company": "叡山電鉄",
                 "line": "鞍馬線",
                 "name": "貴船口",
@@ -795,6 +827,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv443",
                 "company": "遠州鉄道",
                 "line": "鉄道線",
                 "name": "遠州小林",
@@ -811,6 +844,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv447",
                 "company": "遠州鉄道",
                 "line": "鉄道線",
                 "name": "西鹿島",
@@ -827,6 +861,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv488",
                 "company": "横浜シーサイドライン",
                 "line": "金沢シーサイドライン",
                 "name": "産業振興センター",
@@ -843,6 +878,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv490",
                 "company": "横浜シーサイドライン",
                 "line": "金沢シーサイドライン",
                 "name": "幸浦",
@@ -859,6 +895,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv495",
                 "company": "横浜シーサイドライン",
                 "line": "金沢シーサイドライン",
                 "name": "並木中央",
@@ -875,6 +912,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv499",
                 "company": "横浜シーサイドライン",
                 "line": "金沢シーサイドライン",
                 "name": "福浦",
@@ -891,6 +929,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv500",
                 "company": "横浜シーサイドライン",
                 "line": "金沢シーサイドライン",
                 "name": "市大医学部",
@@ -907,6 +946,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv524",
                 "company": "沖縄都市モノレール",
                 "line": "沖縄都市モノレール線",
                 "name": "那覇空港",
@@ -923,6 +963,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv557",
                 "company": "岳南電車",
                 "line": "岳南線",
                 "name": "吉原",
@@ -939,6 +980,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv573",
                 "company": "関西電力",
                 "line": "関西電力",
                 "name": "黒部ダム",
@@ -955,6 +997,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv574",
                 "company": "関西電力",
                 "line": "関西電力",
                 "name": "扇沢",
@@ -971,6 +1014,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv600",
                 "company": "関東鉄道",
                 "line": "竜ヶ崎線",
                 "name": "竜ヶ崎",
@@ -987,6 +1031,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv601",
                 "company": "関東鉄道",
                 "line": "竜ヶ崎線",
                 "name": "佐貫",
@@ -1003,6 +1048,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv666",
                 "company": "京王電鉄",
                 "line": "高尾線",
                 "name": "高尾山口",
@@ -1019,6 +1065,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv701",
                 "company": "京阪電気鉄道",
                 "line": "京阪本線",
                 "name": "淀",
@@ -1035,6 +1082,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv732",
                 "company": "京阪電気鉄道",
                 "line": "京阪本線",
                 "name": "京橋",
@@ -1051,6 +1099,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv742",
                 "company": "京阪電気鉄道",
                 "line": "交野線",
                 "name": "河内森",
@@ -1067,6 +1116,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv745",
                 "company": "京阪電気鉄道",
                 "line": "交野線",
                 "name": "私市",
@@ -1083,6 +1133,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv763",
                 "company": "京阪電気鉄道",
                 "line": "石山坂本線",
                 "name": "坂本比叡山口",
@@ -1099,6 +1150,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv785",
                 "company": "京成電鉄",
                 "line": "千原線",
                 "name": "ちはら台",
@@ -1115,6 +1167,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv786",
                 "company": "京成電鉄",
                 "line": "千原線",
                 "name": "学園前",
@@ -1131,6 +1184,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv787",
                 "company": "京成電鉄",
                 "line": "千原線",
                 "name": "おゆみ野",
@@ -1147,6 +1201,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv799",
                 "company": "京成電鉄",
                 "line": "東成田線",
                 "name": "東成田",
@@ -1163,6 +1218,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv800",
                 "company": "京成電鉄",
                 "line": "本線",
                 "name": "成田空港",
@@ -1179,6 +1235,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv801",
                 "company": "京成電鉄",
                 "line": "本線",
                 "name": "空港第2ビル",
@@ -1195,6 +1252,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv888",
                 "company": "京浜急行電鉄",
                 "line": "空港線",
                 "name": "羽田空港国内線ターミナル",
@@ -1211,6 +1269,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1002",
                 "company": "近畿日本鉄道",
                 "line": "橿原線",
                 "name": "結崎",
@@ -1227,6 +1286,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1008",
                 "company": "近畿日本鉄道",
                 "line": "吉野線",
                 "name": "福神",
@@ -1243,6 +1303,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1009",
                 "company": "近畿日本鉄道",
                 "line": "吉野線",
                 "name": "壺阪山",
@@ -1259,6 +1320,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1026",
                 "company": "近畿日本鉄道",
                 "line": "京都線",
                 "name": "狛田",
@@ -1275,6 +1337,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1046",
                 "company": "近畿日本鉄道",
                 "line": "御所線",
                 "name": "近鉄新庄",
@@ -1291,6 +1354,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1052",
                 "company": "近畿日本鉄道",
                 "line": "山田線",
                 "name": "明野",
@@ -1307,6 +1371,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1054",
                 "company": "近畿日本鉄道",
                 "line": "山田線",
                 "name": "斎宮",
@@ -1323,6 +1388,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1056",
                 "company": "近畿日本鉄道",
                 "line": "山田線",
                 "name": "明星",
@@ -1339,6 +1405,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1059",
                 "company": "近畿日本鉄道",
                 "line": "山田線",
                 "name": "櫛田",
@@ -1355,6 +1422,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1072",
                 "company": "近畿日本鉄道",
                 "line": "志摩線",
                 "name": "賢島",
@@ -1371,6 +1439,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1081",
                 "company": "近畿日本鉄道",
                 "line": "信貴線",
                 "name": "信貴山口",
@@ -1387,6 +1456,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1089",
                 "company": "近畿日本鉄道",
                 "line": "生駒線",
                 "name": "南生駒",
@@ -1403,6 +1473,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1090",
                 "company": "近畿日本鉄道",
                 "line": "生駒線",
                 "name": "一分",
@@ -1419,6 +1490,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1097",
                 "company": "近畿日本鉄道",
                 "line": "生駒線",
                 "name": "東山",
@@ -1435,6 +1507,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1099",
                 "company": "近畿日本鉄道",
                 "line": "生駒線",
                 "name": "萩の台",
@@ -1451,6 +1524,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1108",
                 "company": "近畿日本鉄道",
                 "line": "大阪線",
                 "name": "青山町",
@@ -1467,6 +1541,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1112",
                 "company": "近畿日本鉄道",
                 "line": "大阪線",
                 "name": "榊原温泉口",
@@ -1483,6 +1558,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1123",
                 "company": "近畿日本鉄道",
                 "line": "大阪線",
                 "name": "室生口大野",
@@ -1499,6 +1575,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1147",
                 "company": "近畿日本鉄道",
                 "line": "大阪線",
                 "name": "真菅",
@@ -1515,6 +1592,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1152",
                 "company": "近畿日本鉄道",
                 "line": "長野線",
                 "name": "喜志",
@@ -1531,6 +1609,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1153",
                 "company": "近畿日本鉄道",
                 "line": "長野線",
                 "name": "滝谷不動",
@@ -1547,6 +1626,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1160",
                 "company": "近畿日本鉄道",
                 "line": "鳥羽線",
                 "name": "鳥羽",
@@ -1563,6 +1643,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1162",
                 "company": "近畿日本鉄道",
                 "line": "鳥羽線",
                 "name": "五十鈴川",
@@ -1579,6 +1660,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1167",
                 "company": "近畿日本鉄道",
                 "line": "天理線",
                 "name": "天理",
@@ -1595,6 +1677,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1172",
                 "company": "近畿日本鉄道",
                 "line": "田原本線",
                 "name": "箸尾",
@@ -1611,6 +1694,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1178",
                 "company": "近畿日本鉄道",
                 "line": "湯の山線",
                 "name": "中菰野",
@@ -1627,6 +1711,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1180",
                 "company": "近畿日本鉄道",
                 "line": "湯の山線",
                 "name": "伊勢川島",
@@ -1643,6 +1728,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1181",
                 "company": "近畿日本鉄道",
                 "line": "湯の山線",
                 "name": "菰野",
@@ -1659,6 +1745,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1192",
                 "company": "近畿日本鉄道",
                 "line": "奈良線",
                 "name": "河内花園",
@@ -1675,6 +1762,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1216",
                 "company": "近畿日本鉄道",
                 "line": "南大阪線",
                 "name": "当麻寺",
@@ -1691,6 +1779,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1221",
                 "company": "近畿日本鉄道",
                 "line": "南大阪線",
                 "name": "上ノ太子",
@@ -1707,6 +1796,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1227",
                 "company": "近畿日本鉄道",
                 "line": "南大阪線",
                 "name": "磐城",
@@ -1723,6 +1813,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1256",
                 "company": "近畿日本鉄道",
                 "line": "名古屋線",
                 "name": "伊勢朝日",
@@ -1739,6 +1830,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1257",
                 "company": "近畿日本鉄道",
                 "line": "名古屋線",
                 "name": "近鉄長島",
@@ -1755,6 +1847,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1269",
                 "company": "近畿日本鉄道",
                 "line": "名古屋線",
                 "name": "近鉄弥富",
@@ -1771,6 +1864,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1272",
                 "company": "近畿日本鉄道",
                 "line": "名古屋線",
                 "name": "白塚",
@@ -1787,6 +1881,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1274",
                 "company": "近畿日本鉄道",
                 "line": "名古屋線",
                 "name": "長太ノ浦",
@@ -1803,6 +1898,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1281",
                 "company": "近畿日本鉄道",
                 "line": "名古屋線",
                 "name": "楠",
@@ -1819,6 +1915,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1282",
                 "company": "近畿日本鉄道",
                 "line": "名古屋線",
                 "name": "白子",
@@ -1835,6 +1932,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1283",
                 "company": "近畿日本鉄道",
                 "line": "名古屋線",
                 "name": "塩浜",
@@ -1851,6 +1949,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1286",
                 "company": "近畿日本鉄道",
                 "line": "名古屋線",
                 "name": "伊勢若松",
@@ -1867,6 +1966,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1289",
                 "company": "近畿日本鉄道",
                 "line": "名古屋線",
                 "name": "豊津上野",
@@ -1883,6 +1983,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1290",
                 "company": "近畿日本鉄道",
                 "line": "名古屋線",
                 "name": "北楠",
@@ -1899,6 +2000,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1291",
                 "company": "近畿日本鉄道",
                 "line": "名古屋線",
                 "name": "千代崎",
@@ -1915,6 +2017,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1293",
                 "company": "近畿日本鉄道",
                 "line": "名古屋線",
                 "name": "伊勢中川",
@@ -1931,6 +2034,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv1998",
                 "company": "広島高速交通",
                 "line": "広島新交通1号線",
                 "name": "伴中央",
@@ -1947,6 +2051,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2011",
                 "company": "広島高速交通",
                 "line": "広島新交通1号線",
                 "name": "大原",
@@ -1963,6 +2068,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2046",
                 "company": "広島電鉄",
                 "line": "宮島線",
                 "name": "広電阿品",
@@ -1979,6 +2085,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2053",
                 "company": "広島電鉄",
                 "line": "宮島線",
                 "name": "井口",
@@ -1995,6 +2102,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2054",
                 "company": "広島電鉄",
                 "line": "宮島線",
                 "name": "広電宮島口",
@@ -2011,6 +2119,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2066",
                 "company": "広島電鉄",
                 "line": "宮島線",
                 "name": "商工センター入口",
@@ -2027,6 +2136,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2138",
                 "company": "江ノ島電鉄",
                 "line": "江ノ島電鉄線",
                 "name": "稲村ヶ崎",
@@ -2043,6 +2153,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2168",
                 "company": "高松琴平電気鉄道",
                 "line": "志度線",
                 "name": "琴電志度",
@@ -2059,6 +2170,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2170",
                 "company": "高松琴平電気鉄道",
                 "line": "志度線",
                 "name": "潟元",
@@ -2075,6 +2187,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2183",
                 "company": "高松琴平電気鉄道",
                 "line": "長尾線",
                 "name": "学園通り",
@@ -2091,6 +2204,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2189",
                 "company": "高松琴平電気鉄道",
                 "line": "長尾線",
                 "name": "水田",
@@ -2107,6 +2221,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2196",
                 "company": "高尾登山電鉄",
                 "line": "高尾鋼索線",
                 "name": "高尾山",
@@ -2123,6 +2238,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2197",
                 "company": "高尾登山電鉄",
                 "line": "高尾鋼索線",
                 "name": "清滝",
@@ -2139,6 +2255,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2198",
                 "company": "黒部峡谷鉄道",
                 "line": "本線",
                 "name": "欅平",
@@ -2155,6 +2272,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2200",
                 "company": "黒部峡谷鉄道",
                 "line": "本線",
                 "name": "宇奈月",
@@ -2171,6 +2289,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2283",
                 "company": "阪急電鉄",
                 "line": "宝塚線",
                 "name": "曽根",
@@ -2187,6 +2306,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2284",
                 "company": "阪急電鉄",
                 "line": "宝塚線",
                 "name": "庄内",
@@ -2203,6 +2323,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2289",
                 "company": "阪急電鉄",
                 "line": "宝塚線",
                 "name": "服部天神",
@@ -2219,6 +2340,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2410",
                 "company": "埼玉新都市交通",
                 "line": "伊奈線",
                 "name": "内宿",
@@ -2235,6 +2357,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2418",
                 "company": "埼玉新都市交通",
                 "line": "伊奈線",
                 "name": "伊奈中央",
@@ -2251,6 +2374,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2421",
                 "company": "埼玉新都市交通",
                 "line": "伊奈線",
                 "name": "羽貫",
@@ -2267,6 +2391,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2503",
                 "company": "三岐鉄道",
                 "line": "三岐線",
                 "name": "暁学園前",
@@ -2283,6 +2408,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2524",
                 "company": "三岐鉄道",
                 "line": "北勢線",
                 "name": "楚原",
@@ -2299,6 +2425,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2567",
                 "company": "山万",
                 "line": "ユーカリが丘線",
                 "name": "中学校",
@@ -2315,6 +2442,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2573",
                 "company": "山陽電気鉄道",
                 "line": "本線",
                 "name": "別府",
@@ -2331,6 +2459,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2586",
                 "company": "山陽電気鉄道",
                 "line": "本線",
                 "name": "白浜の宮",
@@ -2347,6 +2476,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2592",
                 "company": "山陽電気鉄道",
                 "line": "本線",
                 "name": "八家",
@@ -2363,6 +2493,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2628",
                 "company": "四国旅客鉄道",
                 "line": "高徳線",
                 "name": "讃岐津田",
@@ -2379,6 +2510,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2635",
                 "company": "四国旅客鉄道",
                 "line": "高徳線",
                 "name": "志度",
@@ -2395,6 +2527,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2639",
                 "company": "四国旅客鉄道",
                 "line": "高徳線",
                 "name": "屋島",
@@ -2411,6 +2544,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2691",
                 "company": "四国旅客鉄道",
                 "line": "土讃線",
                 "name": "後免",
@@ -2427,6 +2561,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2697",
                 "company": "四国旅客鉄道",
                 "line": "土讃線",
                 "name": "窪川",
@@ -2443,6 +2578,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2719",
                 "company": "四国旅客鉄道",
                 "line": "徳島線",
                 "name": "府中",
@@ -2459,6 +2595,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2739",
                 "company": "四国旅客鉄道",
                 "line": "内子線",
                 "name": "内子",
@@ -2475,6 +2612,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2783",
                 "company": "四国旅客鉄道",
                 "line": "予讃線",
                 "name": "香西",
@@ -2491,6 +2629,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2786",
                 "company": "四国旅客鉄道",
                 "line": "予讃線",
                 "name": "端岡",
@@ -2507,6 +2646,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2787",
                 "company": "四国旅客鉄道",
                 "line": "予讃線",
                 "name": "鬼無",
@@ -2523,6 +2663,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2793",
                 "company": "四国旅客鉄道",
                 "line": "予讃線",
                 "name": "津島ノ宮",
@@ -2539,6 +2680,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2794",
                 "company": "四国旅客鉄道",
                 "line": "予讃線",
                 "name": "詫間",
@@ -2555,6 +2697,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2800",
                 "company": "四国旅客鉄道",
                 "line": "予讃線",
                 "name": "高瀬",
@@ -2571,6 +2714,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2944",
                 "company": "鹿島臨海鉄道",
                 "line": "大洗鹿島線",
                 "name": "新鉾田",
@@ -2587,6 +2731,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2948",
                 "company": "芝山鉄道",
                 "line": "芝山鉄道線",
                 "name": "芝山千代田",
@@ -2603,6 +2748,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2961",
                 "company": "首都圏新都市鉄道",
                 "line": "常磐新線",
                 "name": "万博記念公園",
@@ -2619,6 +2765,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv2972",
                 "company": "首都圏新都市鉄道",
                 "line": "常磐新線",
                 "name": "八潮",
@@ -2635,6 +2782,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3164",
                 "company": "アルピコ交通",
                 "line": "上高地線",
                 "name": "北新・松本大学前",
@@ -2651,6 +2799,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3256",
                 "company": "新京成電鉄",
                 "line": "新京成線",
                 "name": "三咲",
@@ -2667,6 +2816,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3302",
                 "company": "神戸市",
                 "line": "西神延伸線",
                 "name": "西神南",
@@ -2683,6 +2833,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3313",
                 "company": "神戸新交通",
                 "line": "六甲アイランド線",
                 "name": "アイランドセンター",
@@ -2699,6 +2850,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3314",
                 "company": "神戸新交通",
                 "line": "六甲アイランド線",
                 "name": "アイランド北口",
@@ -2715,6 +2867,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3317",
                 "company": "神戸新交通",
                 "line": "六甲アイランド線",
                 "name": "マリンパーク",
@@ -2731,6 +2884,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3328",
                 "company": "神戸電鉄",
                 "line": "粟生線",
                 "name": "木津",
@@ -2747,6 +2901,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3340",
                 "company": "神戸電鉄",
                 "line": "公園都市線",
                 "name": "南ウッディタウン",
@@ -2763,6 +2918,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3341",
                 "company": "神戸電鉄",
                 "line": "公園都市線",
                 "name": "ウッディタウン中央",
@@ -2779,6 +2935,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3359",
                 "company": "神戸電鉄",
                 "line": "有馬線",
                 "name": "有馬温泉",
@@ -2795,6 +2952,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3374",
                 "company": "水間鉄道",
                 "line": "水間線",
                 "name": "水間観音",
@@ -2811,6 +2969,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3400",
                 "company": "西日本鉄道",
                 "line": "甘木線",
                 "name": "北野",
@@ -2827,6 +2986,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3403",
                 "company": "西日本鉄道",
                 "line": "貝塚線",
                 "name": "西鉄新宮",
@@ -2843,6 +3003,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3419",
                 "company": "西日本鉄道",
                 "line": "天神大牟田線",
                 "name": "三国が丘",
@@ -2859,6 +3020,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3428",
                 "company": "西日本鉄道",
                 "line": "天神大牟田線",
                 "name": "筑紫",
@@ -2875,6 +3037,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3429",
                 "company": "西日本鉄道",
                 "line": "天神大牟田線",
                 "name": "下大利",
@@ -2891,6 +3054,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3432",
                 "company": "西日本鉄道",
                 "line": "天神大牟田線",
                 "name": "八丁牟田",
@@ -2907,6 +3071,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3440",
                 "company": "西日本鉄道",
                 "line": "天神大牟田線",
                 "name": "三沢",
@@ -2923,6 +3088,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3442",
                 "company": "西日本鉄道",
                 "line": "天神大牟田線",
                 "name": "津古",
@@ -2939,6 +3105,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3447",
                 "company": "西日本鉄道",
                 "line": "天神大牟田線",
                 "name": "大溝",
@@ -2955,6 +3122,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3452",
                 "company": "西日本鉄道",
                 "line": "天神大牟田線",
                 "name": "桜台",
@@ -2971,6 +3139,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3455",
                 "company": "西日本鉄道",
                 "line": "天神大牟田線",
                 "name": "倉永",
@@ -2987,6 +3156,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3479",
                 "company": "西日本旅客鉄道",
                 "line": "因美線",
                 "name": "津ノ井",
@@ -3003,6 +3173,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3481",
                 "company": "西日本旅客鉄道",
                 "line": "因美線",
                 "name": "智頭",
@@ -3019,6 +3190,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3513",
                 "company": "西日本旅客鉄道",
                 "line": "宇野線",
                 "name": "早島",
@@ -3035,6 +3207,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3556",
                 "company": "西日本旅客鉄道",
                 "line": "加古川線",
                 "name": "厄神",
@@ -3051,6 +3224,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3578",
                 "company": "西日本旅客鉄道",
                 "line": "関西空港線",
                 "name": "関西空港",
@@ -3067,6 +3241,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3591",
                 "company": "西日本旅客鉄道",
                 "line": "関西線",
                 "name": "平城山",
@@ -3083,6 +3258,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3592",
                 "company": "西日本旅客鉄道",
                 "line": "関西線",
                 "name": "加茂",
@@ -3099,6 +3275,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3595",
                 "company": "西日本旅客鉄道",
                 "line": "関西線",
                 "name": "木津",
@@ -3115,6 +3292,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3608",
                 "company": "西日本旅客鉄道",
                 "line": "関西線",
                 "name": "法隆寺",
@@ -3131,6 +3309,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3658",
                 "company": "西日本旅客鉄道",
                 "line": "紀勢線",
                 "name": "藤並",
@@ -3147,6 +3326,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3660",
                 "company": "西日本旅客鉄道",
                 "line": "紀勢線",
                 "name": "南部",
@@ -3163,6 +3343,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3663",
                 "company": "西日本旅客鉄道",
                 "line": "紀勢線",
                 "name": "白浜",
@@ -3179,6 +3360,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3679",
                 "company": "西日本旅客鉄道",
                 "line": "紀勢線",
                 "name": "紀伊宮原",
@@ -3195,6 +3377,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3682",
                 "company": "西日本旅客鉄道",
                 "line": "紀勢線",
                 "name": "加茂郷",
@@ -3211,6 +3394,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3683",
                 "company": "西日本旅客鉄道",
                 "line": "紀勢線",
                 "name": "箕島",
@@ -3227,6 +3411,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3688",
                 "company": "西日本旅客鉄道",
                 "line": "吉備線",
                 "name": "吉備津",
@@ -3243,6 +3428,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3689",
                 "company": "西日本旅客鉄道",
                 "line": "吉備線",
                 "name": "備中高松",
@@ -3259,6 +3445,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3690",
                 "company": "西日本旅客鉄道",
                 "line": "吉備線",
                 "name": "足守",
@@ -3275,6 +3462,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3693",
                 "company": "西日本旅客鉄道",
                 "line": "吉備線",
                 "name": "服部",
@@ -3291,6 +3479,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3757",
                 "company": "西日本旅客鉄道",
                 "line": "湖西線",
                 "name": "近江舞子",
@@ -3307,6 +3496,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3758",
                 "company": "西日本旅客鉄道",
                 "line": "湖西線",
                 "name": "志賀",
@@ -3323,6 +3513,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3759",
                 "company": "西日本旅客鉄道",
                 "line": "湖西線",
                 "name": "蓬莱",
@@ -3339,6 +3530,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3761",
                 "company": "西日本旅客鉄道",
                 "line": "湖西線",
                 "name": "比良",
@@ -3355,6 +3547,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3766",
                 "company": "西日本旅客鉄道",
                 "line": "湖西線",
                 "name": "比叡山坂本",
@@ -3371,6 +3564,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3768",
                 "company": "西日本旅客鉄道",
                 "line": "湖西線",
                 "name": "和邇",
@@ -3387,6 +3581,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3785",
                 "company": "西日本旅客鉄道",
                 "line": "呉線",
                 "name": "安浦",
@@ -3403,6 +3598,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3791",
                 "company": "西日本旅客鉄道",
                 "line": "呉線",
                 "name": "矢野",
@@ -3419,6 +3615,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3794",
                 "company": "西日本旅客鉄道",
                 "line": "呉線",
                 "name": "坂",
@@ -3435,6 +3632,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3797",
                 "company": "西日本旅客鉄道",
                 "line": "呉線",
                 "name": "安芸川尻",
@@ -3451,6 +3649,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3800",
                 "company": "西日本旅客鉄道",
                 "line": "呉線",
                 "name": "呉ポートピア",
@@ -3467,6 +3666,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3801",
                 "company": "西日本旅客鉄道",
                 "line": "呉線",
                 "name": "天応",
@@ -3483,6 +3683,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3802",
                 "company": "西日本旅客鉄道",
                 "line": "呉線",
                 "name": "仁方",
@@ -3499,6 +3700,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3806",
                 "company": "西日本旅客鉄道",
                 "line": "高山線",
                 "name": "速星",
@@ -3515,6 +3717,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3811",
                 "company": "西日本旅客鉄道",
                 "line": "高山線",
                 "name": "越中八尾",
@@ -3531,6 +3734,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3834",
                 "company": "西日本旅客鉄道",
                 "line": "阪和線",
                 "name": "紀伊",
@@ -3547,6 +3751,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3840",
                 "company": "西日本旅客鉄道",
                 "line": "阪和線",
                 "name": "和泉鳥取",
@@ -3563,6 +3768,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3859",
                 "company": "西日本旅客鉄道",
                 "line": "桜井線",
                 "name": "天理",
@@ -3579,6 +3785,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3860",
                 "company": "西日本旅客鉄道",
                 "line": "桜井線",
                 "name": "櫟本",
@@ -3595,6 +3802,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3861",
                 "company": "西日本旅客鉄道",
                 "line": "桜井線",
                 "name": "長柄",
@@ -3611,6 +3819,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3919",
                 "company": "西日本旅客鉄道",
                 "line": "山陰線",
                 "name": "吉富",
@@ -3627,6 +3836,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3925",
                 "company": "西日本旅客鉄道",
                 "line": "山陰線",
                 "name": "八木",
@@ -3643,6 +3853,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3934",
                 "company": "西日本旅客鉄道",
                 "line": "山陰線",
                 "name": "石原",
@@ -3659,6 +3870,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3941",
                 "company": "西日本旅客鉄道",
                 "line": "山陰線",
                 "name": "千代川",
@@ -3675,6 +3887,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3952",
                 "company": "西日本旅客鉄道",
                 "line": "山陰線",
                 "name": "末恒",
@@ -3691,6 +3904,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3986",
                 "company": "西日本旅客鉄道",
                 "line": "山陰線",
                 "name": "宍道",
@@ -3707,6 +3921,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv3990",
                 "company": "西日本旅客鉄道",
                 "line": "山陰線",
                 "name": "揖屋",
@@ -3723,6 +3938,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4097",
                 "company": "西日本旅客鉄道",
                 "line": "山陽新幹線",
                 "name": "新尾道",
@@ -3739,6 +3955,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4101",
                 "company": "西日本旅客鉄道",
                 "line": "山陽新幹線",
                 "name": "東広島",
@@ -3755,6 +3972,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4104",
                 "company": "西日本旅客鉄道",
                 "line": "山陽新幹線",
                 "name": "新岩国",
@@ -3771,6 +3989,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4114",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "ひめじ別所",
@@ -3787,6 +4006,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4118",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "網干",
@@ -3803,6 +4023,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4124",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "御着",
@@ -3819,6 +4040,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4143",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "熊山",
@@ -3835,6 +4057,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4144",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "万富",
@@ -3851,6 +4074,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4146",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "上道",
@@ -3867,6 +4091,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4149",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "中庄",
@@ -3883,6 +4108,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4152",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "北長瀬",
@@ -3899,6 +4125,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4157",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "金光",
@@ -3915,6 +4142,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4160",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "里庄",
@@ -3931,6 +4159,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4162",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "東尾道",
@@ -3947,6 +4176,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4163",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "備後赤坂",
@@ -3963,6 +4193,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4169",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "白市",
@@ -3979,6 +4210,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4170",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "河内",
@@ -3995,6 +4227,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4173",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "本郷",
@@ -4011,6 +4244,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4181",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "玖波",
@@ -4027,6 +4261,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4183",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "前空",
@@ -4043,6 +4278,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4187",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "中野東",
@@ -4059,6 +4295,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4188",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "阿品",
@@ -4075,6 +4312,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4192",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "瀬野",
@@ -4091,6 +4329,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4193",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "宮島口",
@@ -4107,6 +4346,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4194",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "新井口",
@@ -4123,6 +4363,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4196",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "安芸中野",
@@ -4139,6 +4380,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4201",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "由宇",
@@ -4155,6 +4397,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4204",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "福川",
@@ -4171,6 +4414,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4205",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "大畠",
@@ -4187,6 +4431,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4211",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "通津",
@@ -4203,6 +4448,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4214",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "田布施",
@@ -4219,6 +4465,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4222",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "大道",
@@ -4235,6 +4482,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4226",
                 "company": "西日本旅客鉄道",
                 "line": "山陽線",
                 "name": "長府",
@@ -4251,6 +4499,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4235",
                 "company": "西日本旅客鉄道",
                 "line": "七尾線",
                 "name": "能登部",
@@ -4267,6 +4516,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4236",
                 "company": "西日本旅客鉄道",
                 "line": "七尾線",
                 "name": "和倉温泉",
@@ -4283,6 +4533,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4252",
                 "company": "西日本旅客鉄道",
                 "line": "七尾線",
                 "name": "高松",
@@ -4299,6 +4550,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4293",
                 "company": "西日本旅客鉄道",
                 "line": "城端線",
                 "name": "戸出",
@@ -4315,6 +4567,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4297",
                 "company": "西日本旅客鉄道",
                 "line": "城端線",
                 "name": "福野",
@@ -4331,6 +4584,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4303",
                 "company": "西日本旅客鉄道",
                 "line": "赤穂線",
                 "name": "西片上",
@@ -4347,6 +4601,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4317",
                 "company": "西日本旅客鉄道",
                 "line": "赤穂線",
                 "name": "長船",
@@ -4363,6 +4618,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4318",
                 "company": "西日本旅客鉄道",
                 "line": "赤穂線",
                 "name": "邑久",
@@ -4379,6 +4635,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4332",
                 "company": "西日本旅客鉄道",
                 "line": "草津線",
                 "name": "寺庄",
@@ -4395,6 +4652,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4364",
                 "company": "西日本旅客鉄道",
                 "line": "津山線",
                 "name": "金川",
@@ -4411,6 +4669,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4379",
                 "company": "西日本旅客鉄道",
                 "line": "東海道線",
                 "name": "米原",
@@ -4427,6 +4686,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4383",
                 "company": "西日本旅客鉄道",
                 "line": "東海道線",
                 "name": "河瀬",
@@ -4443,6 +4703,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4384",
                 "company": "西日本旅客鉄道",
                 "line": "東海道線",
                 "name": "稲枝",
@@ -4459,6 +4720,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4397",
                 "company": "西日本旅客鉄道",
                 "line": "東海道線",
                 "name": "篠原",
@@ -4475,6 +4737,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4407",
                 "company": "西日本旅客鉄道",
                 "line": "東海道線",
                 "name": "千里丘",
@@ -4491,6 +4754,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4441",
                 "company": "西日本旅客鉄道",
                 "line": "奈良線",
                 "name": "棚倉",
@@ -4507,6 +4771,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4452",
                 "company": "西日本旅客鉄道",
                 "line": "播但線",
                 "name": "新野",
@@ -4523,6 +4788,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4455",
                 "company": "西日本旅客鉄道",
                 "line": "播但線",
                 "name": "甘地",
@@ -4539,6 +4805,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4460",
                 "company": "西日本旅客鉄道",
                 "line": "播但線",
                 "name": "溝口",
@@ -4555,6 +4822,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4463",
                 "company": "西日本旅客鉄道",
                 "line": "播但線",
                 "name": "香呂",
@@ -4571,6 +4839,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4477",
                 "company": "西日本旅客鉄道",
                 "line": "伯備線",
                 "name": "清音",
@@ -4587,6 +4856,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4526",
                 "company": "西日本旅客鉄道",
                 "line": "姫新線",
                 "name": "佐用",
@@ -4603,6 +4873,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4532",
                 "company": "西日本旅客鉄道",
                 "line": "姫新線",
                 "name": "津山",
@@ -4619,6 +4890,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4547",
                 "company": "西日本旅客鉄道",
                 "line": "氷見線",
                 "name": "氷見",
@@ -4635,6 +4907,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4567",
                 "company": "西日本旅客鉄道",
                 "line": "福塩線",
                 "name": "道上",
@@ -4651,6 +4924,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4575",
                 "company": "西日本旅客鉄道",
                 "line": "福塩線",
                 "name": "駅家",
@@ -4667,6 +4941,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4580",
                 "company": "西日本旅客鉄道",
                 "line": "福塩線",
                 "name": "万能倉",
@@ -4683,6 +4958,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4586",
                 "company": "西日本旅客鉄道",
                 "line": "福塩線",
                 "name": "上戸手",
@@ -4699,6 +4975,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4608",
                 "company": "西日本旅客鉄道",
                 "line": "福知山線",
                 "name": "武田尾",
@@ -4715,6 +4992,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4612",
                 "company": "西日本旅客鉄道",
                 "line": "福知山線",
                 "name": "広野",
@@ -4731,6 +5009,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4614",
                 "company": "西日本旅客鉄道",
                 "line": "福知山線",
                 "name": "道場",
@@ -4747,6 +5026,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4616",
                 "company": "西日本旅客鉄道",
                 "line": "福知山線",
                 "name": "相野",
@@ -4763,6 +5043,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4622",
                 "company": "西日本旅客鉄道",
                 "line": "片町線",
                 "name": "星田",
@@ -4779,6 +5060,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4632",
                 "company": "西日本旅客鉄道",
                 "line": "片町線",
                 "name": "河内磐船",
@@ -4795,6 +5077,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4655",
                 "company": "あいの風とやま鉄道",
                 "line": "あいの風とやま鉄道線",
                 "name": "泊",
@@ -4811,6 +5094,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4660",
                 "company": "あいの風とやま鉄道",
                 "line": "あいの風とやま鉄道線",
                 "name": "東富山",
@@ -4827,6 +5111,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4666",
                 "company": "あいの風とやま鉄道",
                 "line": "あいの風とやま鉄道線",
                 "name": "西高岡",
@@ -4843,6 +5128,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4672",
                 "company": "西日本旅客鉄道",
                 "line": "北陸線",
                 "name": "美川",
@@ -4859,6 +5145,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4673",
                 "company": "西日本旅客鉄道",
                 "line": "北陸線",
                 "name": "能美根上",
@@ -4875,6 +5162,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4675",
                 "company": "西日本旅客鉄道",
                 "line": "北陸線",
                 "name": "動橋",
@@ -4891,6 +5179,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4683",
                 "company": "西日本旅客鉄道",
                 "line": "北陸線",
                 "name": "加賀温泉",
@@ -4907,6 +5196,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4685",
                 "company": "西日本旅客鉄道",
                 "line": "北陸線",
                 "name": "明峰",
@@ -4923,6 +5213,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4686",
                 "company": "西日本旅客鉄道",
                 "line": "北陸線",
                 "name": "加賀笠間",
@@ -4939,6 +5230,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4700",
                 "company": "西日本旅客鉄道",
                 "line": "北陸線",
                 "name": "虎姫",
@@ -4955,6 +5247,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4701",
                 "company": "西日本旅客鉄道",
                 "line": "北陸線",
                 "name": "田村",
@@ -4971,6 +5264,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4711",
                 "company": "西日本旅客鉄道",
                 "line": "北陸線",
                 "name": "坂田",
@@ -4987,6 +5281,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4714",
                 "company": "西日本旅客鉄道",
                 "line": "北陸線",
                 "name": "森田",
@@ -5003,6 +5298,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4715",
                 "company": "西日本旅客鉄道",
                 "line": "北陸線",
                 "name": "高月",
@@ -5019,6 +5315,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4719",
                 "company": "西日本旅客鉄道",
                 "line": "北陸線",
                 "name": "丸岡",
@@ -5035,6 +5332,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4720",
                 "company": "西日本旅客鉄道",
                 "line": "北陸線",
                 "name": "河毛",
@@ -5051,6 +5349,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4752",
                 "company": "西日本旅客鉄道",
                 "line": "和歌山線",
                 "name": "紀伊山田",
@@ -5067,6 +5366,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4755",
                 "company": "西日本旅客鉄道",
                 "line": "和歌山線",
                 "name": "高野口",
@@ -5083,6 +5383,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4778",
                 "company": "西日本旅客鉄道",
                 "line": "和歌山線",
                 "name": "打田",
@@ -5099,6 +5400,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4809",
                 "company": "西武鉄道",
                 "line": "新宿線",
                 "name": "南大塚",
@@ -5115,6 +5417,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv4940",
                 "company": "千葉都市モノレール",
                 "line": "2号線",
                 "name": "動物公園",
@@ -5131,6 +5434,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5027",
                 "company": "大井川鐵道",
                 "line": "大井川本線",
                 "name": "千頭",
@@ -5147,6 +5451,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5035",
                 "company": "大阪高速鉄道",
                 "line": "大阪モノレール線",
                 "name": "南摂津",
@@ -5163,6 +5468,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5038",
                 "company": "大阪高速鉄道",
                 "line": "大阪モノレール線",
                 "name": "摂津",
@@ -5179,6 +5485,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5088",
                 "company": "大阪市",
                 "line": "2号線(谷町線)",
                 "name": "八尾南",
@@ -5195,6 +5502,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5089",
                 "company": "大阪市",
                 "line": "2号線(谷町線)",
                 "name": "長原",
@@ -5211,6 +5519,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5114",
                 "company": "大阪市",
                 "line": "4号線(中央線)",
                 "name": "コスモスクエア",
@@ -5227,6 +5536,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5141",
                 "company": "大阪市",
                 "line": "7号線(長堀鶴見緑地線)",
                 "name": "門真南",
@@ -5243,6 +5553,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5142",
                 "company": "大阪市",
                 "line": "7号線(長堀鶴見緑地線)",
                 "name": "鶴見緑地",
@@ -5259,6 +5570,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5146",
                 "company": "大阪市",
                 "line": "7号線(長堀鶴見緑地線)",
                 "name": "今福鶴見",
@@ -5275,6 +5587,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5147",
                 "company": "大阪市",
                 "line": "7号線(長堀鶴見緑地線)",
                 "name": "京橋",
@@ -5291,6 +5604,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5158",
                 "company": "大阪市",
                 "line": "南港ポートタウン線",
                 "name": "トレードセンター前",
@@ -5307,6 +5621,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5159",
                 "company": "大阪市",
                 "line": "南港ポートタウン線",
                 "name": "南港東",
@@ -5323,6 +5638,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5160",
                 "company": "大阪市",
                 "line": "南港ポートタウン線",
                 "name": "ポートタウン東",
@@ -5339,6 +5655,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5161",
                 "company": "大阪市",
                 "line": "南港ポートタウン線",
                 "name": "中ふ頭",
@@ -5355,6 +5672,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5164",
                 "company": "大阪市",
                 "line": "南港ポートタウン線",
                 "name": "フェリーターミナル",
@@ -5371,6 +5689,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5165",
                 "company": "大阪市",
                 "line": "南港ポートタウン線",
                 "name": "南港口",
@@ -5387,6 +5706,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5166",
                 "company": "大阪市",
                 "line": "南港ポートタウン線",
                 "name": "ポートタウン西",
@@ -5403,6 +5723,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5195",
                 "company": "丹後海陸交通",
                 "line": "天橋立鋼索鉄道",
                 "name": "府中",
@@ -5419,6 +5740,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5196",
                 "company": "丹後海陸交通",
                 "line": "天橋立鋼索鉄道",
                 "name": "傘松",
@@ -5435,6 +5757,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5211",
                 "company": "筑波観光鉄道",
                 "line": "筑波山鋼索鉄道線",
                 "name": "宮脇",
@@ -5451,6 +5774,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5212",
                 "company": "筑波観光鉄道",
                 "line": "筑波山鋼索鉄道線",
                 "name": "筑波山頂",
@@ -5467,6 +5791,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5239",
                 "company": "秩父鉄道",
                 "line": "秩父本線",
                 "name": "皆野",
@@ -5483,6 +5808,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5246",
                 "company": "秩父鉄道",
                 "line": "秩父本線",
                 "name": "大野原",
@@ -5499,6 +5825,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5248",
                 "company": "秩父鉄道",
                 "line": "秩父本線",
                 "name": "小前田",
@@ -5515,6 +5842,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5262",
                 "company": "秩父鉄道",
                 "line": "秩父本線",
                 "name": "長瀞",
@@ -5531,6 +5859,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5339",
                 "company": "長野電鉄",
                 "line": "長野線",
                 "name": "湯田中",
@@ -5547,6 +5876,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv5437",
                 "company": "土佐くろしお鉄道",
                 "line": "阿佐線",
                 "name": "のいち",
@@ -5563,6 +5893,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6021",
                 "company": "東京モノレール",
                 "line": "東京モノレール羽田線",
                 "name": "羽田空港第1ビル",
@@ -5579,6 +5910,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6024",
                 "company": "東京モノレール",
                 "line": "東京モノレール羽田線",
                 "name": "羽田空港第2ビル",
@@ -5595,6 +5927,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6026",
                 "company": "東京モノレール",
                 "line": "東京モノレール羽田線",
                 "name": "昭和島",
@@ -5611,6 +5944,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6027",
                 "company": "東京モノレール",
                 "line": "東京モノレール羽田線",
                 "name": "新整備場",
@@ -5627,6 +5961,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6448",
                 "company": "東京臨海高速鉄道",
                 "line": "りんかい線",
                 "name": "東京テレポート",
@@ -5643,6 +5978,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6453",
                 "company": "東京臨海高速鉄道",
                 "line": "りんかい線",
                 "name": "国際展示場",
@@ -5659,6 +5995,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6514",
                 "company": "東日本旅客鉄道",
                 "line": "羽越線",
                 "name": "水原",
@@ -5675,6 +6012,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6528",
                 "company": "東日本旅客鉄道",
                 "line": "羽越線",
                 "name": "坂町",
@@ -5691,6 +6029,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6532",
                 "company": "東日本旅客鉄道",
                 "line": "越後線",
                 "name": "分水",
@@ -5707,6 +6046,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6545",
                 "company": "東日本旅客鉄道",
                 "line": "越後線",
                 "name": "越後曽根",
@@ -5723,6 +6063,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6565",
                 "company": "東日本旅客鉄道",
                 "line": "奥羽線",
                 "name": "東能代",
@@ -5739,6 +6080,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6612",
                 "company": "東日本旅客鉄道",
                 "line": "奥羽線",
                 "name": "高畠",
@@ -5755,6 +6097,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6628",
                 "company": "東日本旅客鉄道",
                 "line": "奥羽線",
                 "name": "大石田",
@@ -5771,6 +6114,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6705",
                 "company": "東日本旅客鉄道",
                 "line": "花輪線",
                 "name": "好摩",
@@ -5787,6 +6131,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6727",
                 "company": "東日本旅客鉄道",
                 "line": "外房線",
                 "name": "八積",
@@ -5803,6 +6148,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6729",
                 "company": "東日本旅客鉄道",
                 "line": "外房線",
                 "name": "本納",
@@ -5819,6 +6165,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6732",
                 "company": "東日本旅客鉄道",
                 "line": "外房線",
                 "name": "鎌取",
@@ -5835,6 +6182,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6745",
                 "company": "東日本旅客鉄道",
                 "line": "外房線",
                 "name": "勝浦",
@@ -5851,6 +6199,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6757",
                 "company": "東日本旅客鉄道",
                 "line": "釜石線",
                 "name": "新花巻",
@@ -5867,6 +6216,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6817",
                 "company": "東日本旅客鉄道",
                 "line": "京葉線",
                 "name": "海浜幕張",
@@ -5883,6 +6233,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6820",
                 "company": "東日本旅客鉄道",
                 "line": "京葉線",
                 "name": "舞浜",
@@ -5899,6 +6250,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6824",
                 "company": "東日本旅客鉄道",
                 "line": "京葉線",
                 "name": "葛西臨海公園",
@@ -5915,6 +6267,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6829",
                 "company": "東日本旅客鉄道",
                 "line": "五日市線",
                 "name": "武蔵引田",
@@ -5931,6 +6284,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6892",
                 "company": "東日本旅客鉄道",
                 "line": "吾妻線",
                 "name": "長野原草津口",
@@ -5947,6 +6301,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6904",
                 "company": "東日本旅客鉄道",
                 "line": "高崎線",
                 "name": "岡部",
@@ -5963,6 +6318,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6913",
                 "company": "東日本旅客鉄道",
                 "line": "高崎線",
                 "name": "吹上",
@@ -5979,6 +6335,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6914",
                 "company": "東日本旅客鉄道",
                 "line": "高崎線",
                 "name": "北鴻巣",
@@ -5995,6 +6352,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6915",
                 "company": "東日本旅客鉄道",
                 "line": "高崎線",
                 "name": "行田",
@@ -6011,6 +6369,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv6937",
                 "company": "東日本旅客鉄道",
                 "line": "左沢線",
                 "name": "羽前山辺",
@@ -6027,6 +6386,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7001",
                 "company": "東日本旅客鉄道",
                 "line": "篠ノ井線",
                 "name": "明科",
@@ -6043,6 +6403,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7007",
                 "company": "東日本旅客鉄道",
                 "line": "篠ノ井線",
                 "name": "田沢",
@@ -6059,6 +6420,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7045",
                 "company": "東日本旅客鉄道",
                 "line": "上越新幹線",
                 "name": "上毛高原",
@@ -6075,6 +6437,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7054",
                 "company": "東日本旅客鉄道",
                 "line": "上越線",
                 "name": "ガーラ湯沢",
@@ -6091,6 +6454,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7056",
                 "company": "東日本旅客鉄道",
                 "line": "上越線",
                 "name": "塩沢",
@@ -6107,6 +6471,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7063",
                 "company": "東日本旅客鉄道",
                 "line": "上越線",
                 "name": "小千谷",
@@ -6123,6 +6488,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7069",
                 "company": "東日本旅客鉄道",
                 "line": "上越線",
                 "name": "越後湯沢",
@@ -6139,6 +6505,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7076",
                 "company": "東日本旅客鉄道",
                 "line": "上越線",
                 "name": "後閑",
@@ -6155,6 +6522,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7080",
                 "company": "東日本旅客鉄道",
                 "line": "上越線",
                 "name": "群馬総社",
@@ -6171,6 +6539,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7092",
                 "company": "東日本旅客鉄道",
                 "line": "常磐線",
                 "name": "浜吉田",
@@ -6187,6 +6556,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7093",
                 "company": "東日本旅客鉄道",
                 "line": "常磐線",
                 "name": "相馬",
@@ -6203,6 +6573,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7127",
                 "company": "東日本旅客鉄道",
                 "line": "常磐線",
                 "name": "南中郷",
@@ -6219,6 +6590,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7129",
                 "company": "東日本旅客鉄道",
                 "line": "常磐線",
                 "name": "岩間",
@@ -6235,6 +6607,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7134",
                 "company": "東日本旅客鉄道",
                 "line": "常磐線",
                 "name": "十王",
@@ -6251,6 +6624,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7136",
                 "company": "東日本旅客鉄道",
                 "line": "常磐線",
                 "name": "佐和",
@@ -6267,6 +6641,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7137",
                 "company": "東日本旅客鉄道",
                 "line": "常磐線",
                 "name": "内原",
@@ -6283,6 +6658,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7138",
                 "company": "東日本旅客鉄道",
                 "line": "常磐線",
                 "name": "大津港",
@@ -6299,6 +6675,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7144",
                 "company": "東日本旅客鉄道",
                 "line": "常磐線",
                 "name": "佐貫",
@@ -6315,6 +6692,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7149",
                 "company": "東日本旅客鉄道",
                 "line": "常磐線",
                 "name": "高浜",
@@ -6331,6 +6709,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7152",
                 "company": "東日本旅客鉄道",
                 "line": "常磐線",
                 "name": "神立",
@@ -6347,6 +6726,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7175",
                 "company": "東日本旅客鉄道",
                 "line": "信越線",
                 "name": "矢代田",
@@ -6363,6 +6743,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7177",
                 "company": "えちごトキめき鉄道",
                 "line": "妙高はねうまライン",
                 "name": "上越妙高",
@@ -6379,6 +6760,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7178",
                 "company": "東日本旅客鉄道",
                 "line": "信越線",
                 "name": "羽生田",
@@ -6395,6 +6777,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7203",
                 "company": "東日本旅客鉄道",
                 "line": "信越線",
                 "name": "来迎寺",
@@ -6411,6 +6794,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7212",
                 "company": "東日本旅客鉄道",
                 "line": "信越線",
                 "name": "荻川",
@@ -6427,6 +6811,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7214",
                 "company": "東日本旅客鉄道",
                 "line": "信越線",
                 "name": "柿崎",
@@ -6443,6 +6828,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7219",
                 "company": "東日本旅客鉄道",
                 "line": "信越線",
                 "name": "犀潟",
@@ -6459,6 +6845,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7237",
                 "company": "東日本旅客鉄道",
                 "line": "信越線",
                 "name": "川中島",
@@ -6475,6 +6862,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7239",
                 "company": "しなの鉄道",
                 "line": "北しなの線",
                 "name": "牟礼",
@@ -6491,6 +6879,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7240",
                 "company": "しなの鉄道",
                 "line": "北しなの線",
                 "name": "豊野",
@@ -6507,6 +6896,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7269",
                 "company": "東日本旅客鉄道",
                 "line": "水郡線",
                 "name": "上菅谷",
@@ -6523,6 +6913,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7276",
                 "company": "東日本旅客鉄道",
                 "line": "水郡線",
                 "name": "常陸大宮",
@@ -6539,6 +6930,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7288",
                 "company": "東日本旅客鉄道",
                 "line": "水戸線",
                 "name": "新治",
@@ -6555,6 +6947,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7293",
                 "company": "東日本旅客鉄道",
                 "line": "水戸線",
                 "name": "羽黒",
@@ -6571,6 +6964,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7307",
                 "company": "東日本旅客鉄道",
                 "line": "成田線",
                 "name": "滑河",
@@ -6587,6 +6981,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7311",
                 "company": "東日本旅客鉄道",
                 "line": "成田線",
                 "name": "空港第2ビル",
@@ -6603,6 +6998,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7312",
                 "company": "東日本旅客鉄道",
                 "line": "成田線",
                 "name": "小林",
@@ -6619,6 +7015,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7318",
                 "company": "東日本旅客鉄道",
                 "line": "成田線",
                 "name": "成田空港",
@@ -6635,6 +7032,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7335",
                 "company": "東日本旅客鉄道",
                 "line": "青梅線",
                 "name": "小作",
@@ -6651,6 +7049,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7338",
                 "company": "東日本旅客鉄道",
                 "line": "青梅線",
                 "name": "奥多摩",
@@ -6667,6 +7066,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7395",
                 "company": "東日本旅客鉄道",
                 "line": "仙石線",
                 "name": "中野栄",
@@ -6683,6 +7083,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7418",
                 "company": "東日本旅客鉄道",
                 "line": "仙石線",
                 "name": "陸前高砂",
@@ -6699,6 +7100,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7422",
                 "company": "東日本旅客鉄道",
                 "line": "川越線",
                 "name": "南古谷",
@@ -6715,6 +7117,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7426",
                 "company": "東日本旅客鉄道",
                 "line": "川越線",
                 "name": "武蔵高萩",
@@ -6731,6 +7134,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7450",
                 "company": "東日本旅客鉄道",
                 "line": "総武線",
                 "name": "物井",
@@ -6747,6 +7151,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7451",
                 "company": "東日本旅客鉄道",
                 "line": "総武線",
                 "name": "成東",
@@ -6763,6 +7168,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7452",
                 "company": "東日本旅客鉄道",
                 "line": "総武線",
                 "name": "飯岡",
@@ -6779,6 +7185,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7462",
                 "company": "東日本旅客鉄道",
                 "line": "総武線",
                 "name": "日向",
@@ -6795,6 +7202,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7474",
                 "company": "東日本旅客鉄道",
                 "line": "総武線",
                 "name": "松岸",
@@ -6811,6 +7219,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7475",
                 "company": "東日本旅客鉄道",
                 "line": "総武線",
                 "name": "八街",
@@ -6827,6 +7236,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7478",
                 "company": "東日本旅客鉄道",
                 "line": "総武線",
                 "name": "干潟",
@@ -6843,6 +7253,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7497",
                 "company": "東日本旅客鉄道",
                 "line": "大糸線",
                 "name": "一日市場",
@@ -6859,6 +7270,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7517",
                 "company": "東日本旅客鉄道",
                 "line": "大糸線",
                 "name": "信濃松川",
@@ -6875,6 +7287,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7605",
                 "company": "東日本旅客鉄道",
                 "line": "男鹿線",
                 "name": "船越",
@@ -6891,6 +7304,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7651",
                 "company": "東日本旅客鉄道",
                 "line": "中央線",
                 "name": "日野春",
@@ -6907,6 +7321,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7659",
                 "company": "東日本旅客鉄道",
                 "line": "中央線",
                 "name": "藤野",
@@ -6923,6 +7338,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7666",
                 "company": "東日本旅客鉄道",
                 "line": "中央線",
                 "name": "四方津",
@@ -6939,6 +7355,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7674",
                 "company": "東日本旅客鉄道",
                 "line": "中央線",
                 "name": "相模湖",
@@ -6955,6 +7372,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7677",
                 "company": "東日本旅客鉄道",
                 "line": "中央線",
                 "name": "猿橋",
@@ -6971,6 +7389,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7719",
                 "company": "東日本旅客鉄道",
                 "line": "田沢湖線",
                 "name": "雫石",
@@ -6987,6 +7406,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7728",
                 "company": "東日本旅客鉄道",
                 "line": "田沢湖線",
                 "name": "角館",
@@ -7003,6 +7423,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7773",
                 "company": "東日本旅客鉄道",
                 "line": "東海道線",
                 "name": "鴨宮",
@@ -7019,6 +7440,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7784",
                 "company": "東日本旅客鉄道",
                 "line": "東北新幹線",
                 "name": "八戸",
@@ -7035,6 +7457,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7787",
                 "company": "東日本旅客鉄道",
                 "line": "東北新幹線",
                 "name": "水沢江刺",
@@ -7051,6 +7474,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7791",
                 "company": "東日本旅客鉄道",
                 "line": "東北新幹線",
                 "name": "くりこま高原",
@@ -7067,6 +7491,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7814",
                 "company": "青い森鉄道",
                 "line": "青い森鉄道線",
                 "name": "矢田前",
@@ -7083,6 +7508,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7817",
                 "company": "青い森鉄道",
                 "line": "青い森鉄道線",
                 "name": "野内",
@@ -7099,6 +7525,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7822",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "岩手飯岡",
@@ -7115,6 +7542,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7829",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "前沢",
@@ -7131,6 +7559,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7830",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "花巻空港",
@@ -7147,6 +7576,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7833",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "金ヶ崎",
@@ -7163,6 +7593,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7836",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "古館",
@@ -7179,6 +7610,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7837",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "石鳥谷",
@@ -7195,6 +7627,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7840",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "村崎野",
@@ -7211,6 +7644,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7849",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "小牛田",
@@ -7227,6 +7661,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7862",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "松山町",
@@ -7243,6 +7678,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7863",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "瀬峰",
@@ -7259,6 +7695,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7870",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "槻木",
@@ -7275,6 +7712,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7875",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "船岡",
@@ -7291,6 +7729,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7877",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "藤田",
@@ -7307,6 +7746,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7890",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "松川",
@@ -7323,6 +7763,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7893",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "金谷川",
@@ -7339,6 +7780,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7900",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "安達",
@@ -7355,6 +7797,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7901",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "安積永盛",
@@ -7371,6 +7814,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7907",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "本宮",
@@ -7387,6 +7831,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7912",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "石橋",
@@ -7403,6 +7848,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7915",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "片岡",
@@ -7419,6 +7865,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7920",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "野崎",
@@ -7435,6 +7882,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7922",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "小金井",
@@ -7451,6 +7899,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7948",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "新白岡",
@@ -7467,6 +7916,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7952",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "蓮田",
@@ -7483,6 +7933,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7955",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "久喜",
@@ -7499,6 +7950,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7956",
                 "company": "東日本旅客鉄道",
                 "line": "東北線",
                 "name": "白岡",
@@ -7515,6 +7967,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7986",
                 "company": "東日本旅客鉄道",
                 "line": "内房線",
                 "name": "上総湊",
@@ -7531,6 +7984,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7987",
                 "company": "東日本旅客鉄道",
                 "line": "内房線",
                 "name": "大貫",
@@ -7547,6 +8001,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv7993",
                 "company": "東日本旅客鉄道",
                 "line": "内房線",
                 "name": "浜野",
@@ -7563,6 +8018,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8039",
                 "company": "東日本旅客鉄道",
                 "line": "日光線",
                 "name": "下野大沢",
@@ -7579,6 +8035,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8042",
                 "company": "東日本旅客鉄道",
                 "line": "白新線",
                 "name": "大形",
@@ -7595,6 +8052,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8043",
                 "company": "東日本旅客鉄道",
                 "line": "白新線",
                 "name": "佐々木",
@@ -7611,6 +8069,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8044",
                 "company": "東日本旅客鉄道",
                 "line": "白新線",
                 "name": "東新潟",
@@ -7627,6 +8086,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8048",
                 "company": "東日本旅客鉄道",
                 "line": "白新線",
                 "name": "早通",
@@ -7643,6 +8103,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8049",
                 "company": "東日本旅客鉄道",
                 "line": "白新線",
                 "name": "新崎",
@@ -7659,6 +8120,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8075",
                 "company": "東日本旅客鉄道",
                 "line": "八戸線",
                 "name": "八戸",
@@ -7675,6 +8137,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8086",
                 "company": "東日本旅客鉄道",
                 "line": "八高線",
                 "name": "金子",
@@ -7691,6 +8154,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8089",
                 "company": "東日本旅客鉄道",
                 "line": "八高線",
                 "name": "毛呂",
@@ -7707,6 +8171,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8096",
                 "company": "東日本旅客鉄道",
                 "line": "八高線",
                 "name": "越生",
@@ -7723,6 +8188,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8120",
                 "company": "東日本旅客鉄道",
                 "line": "飯山線",
                 "name": "豊野",
@@ -7739,6 +8205,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8261",
                 "company": "東日本旅客鉄道",
                 "line": "弥彦線",
                 "name": "吉田",
@@ -7755,6 +8222,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8311",
                 "company": "東日本旅客鉄道",
                 "line": "両毛線",
                 "name": "岩宿",
@@ -7771,6 +8239,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8320",
                 "company": "東日本旅客鉄道",
                 "line": "両毛線",
                 "name": "国定",
@@ -7787,6 +8256,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8326",
                 "company": "東武鉄道",
                 "line": "伊勢崎線",
                 "name": "境町",
@@ -7803,6 +8273,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8330",
                 "company": "東武鉄道",
                 "line": "伊勢崎線",
                 "name": "川俣",
@@ -7819,6 +8290,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8372",
                 "company": "東武鉄道",
                 "line": "伊勢崎線",
                 "name": "久喜",
@@ -7835,6 +8307,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8373",
                 "company": "東武鉄道",
                 "line": "伊勢崎線",
                 "name": "花崎",
@@ -7851,6 +8324,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8374",
                 "company": "東武鉄道",
                 "line": "伊勢崎線",
                 "name": "鷲宮",
@@ -7867,6 +8341,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8375",
                 "company": "東武鉄道",
                 "line": "伊勢崎線",
                 "name": "南羽生",
@@ -7883,6 +8358,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8377",
                 "company": "東武鉄道",
                 "line": "宇都宮線",
                 "name": "野州平川",
@@ -7899,6 +8375,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8382",
                 "company": "東武鉄道",
                 "line": "宇都宮線",
                 "name": "安塚",
@@ -7915,6 +8392,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8384",
                 "company": "東武鉄道",
                 "line": "宇都宮線",
                 "name": "壬生",
@@ -7931,6 +8409,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8387",
                 "company": "東武鉄道",
                 "line": "越生線",
                 "name": "西大家",
@@ -7947,6 +8426,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8389",
                 "company": "東武鉄道",
                 "line": "越生線",
                 "name": "武州唐沢",
@@ -7963,6 +8443,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8390",
                 "company": "東武鉄道",
                 "line": "越生線",
                 "name": "越生",
@@ -7979,6 +8460,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8391",
                 "company": "東武鉄道",
                 "line": "越生線",
                 "name": "東毛呂",
@@ -7995,6 +8477,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8393",
                 "company": "東武鉄道",
                 "line": "越生線",
                 "name": "武州長瀬",
@@ -8011,6 +8494,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8394",
                 "company": "東武鉄道",
                 "line": "越生線",
                 "name": "一本松",
@@ -8027,6 +8511,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8399",
                 "company": "東武鉄道",
                 "line": "鬼怒川線",
                 "name": "鬼怒川温泉",
@@ -8043,6 +8528,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8423",
                 "company": "東武鉄道",
                 "line": "佐野線",
                 "name": "吉水",
@@ -8059,6 +8545,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8432",
                 "company": "東武鉄道",
                 "line": "小泉線",
                 "name": "本中野",
@@ -8075,6 +8562,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8450",
                 "company": "東武鉄道",
                 "line": "東上本線",
                 "name": "森林公園",
@@ -8091,6 +8579,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8456",
                 "company": "東武鉄道",
                 "line": "東上本線",
                 "name": "北坂戸",
@@ -8107,6 +8596,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8461",
                 "company": "東武鉄道",
                 "line": "東上本線",
                 "name": "高坂",
@@ -8123,6 +8613,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8464",
                 "company": "東武鉄道",
                 "line": "東上本線",
                 "name": "武蔵嵐山",
@@ -8139,6 +8630,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8467",
                 "company": "東武鉄道",
                 "line": "東上本線",
                 "name": "男衾",
@@ -8155,6 +8647,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8472",
                 "company": "東武鉄道",
                 "line": "東上本線",
                 "name": "つきのわ",
@@ -8171,6 +8664,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8474",
                 "company": "東武鉄道",
                 "line": "東上本線",
                 "name": "坂戸",
@@ -8187,6 +8681,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8488",
                 "company": "東武鉄道",
                 "line": "日光線",
                 "name": "藤岡",
@@ -8203,6 +8698,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8493",
                 "company": "東武鉄道",
                 "line": "日光線",
                 "name": "板倉東洋大前",
@@ -8219,6 +8715,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8495",
                 "company": "東武鉄道",
                 "line": "日光線",
                 "name": "柳生",
@@ -8235,6 +8732,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8496",
                 "company": "東武鉄道",
                 "line": "日光線",
                 "name": "静和",
@@ -8251,6 +8749,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8499",
                 "company": "東武鉄道",
                 "line": "日光線",
                 "name": "南栗橋",
@@ -8267,6 +8766,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8503",
                 "company": "東武鉄道",
                 "line": "野田線",
                 "name": "馬込沢",
@@ -8283,6 +8783,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8506",
                 "company": "東武鉄道",
                 "line": "野田線",
                 "name": "逆井",
@@ -8299,6 +8800,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8507",
                 "company": "東武鉄道",
                 "line": "野田線",
                 "name": "六実",
@@ -8315,6 +8817,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8508",
                 "company": "東武鉄道",
                 "line": "野田線",
                 "name": "高柳",
@@ -8331,6 +8834,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8514",
                 "company": "東武鉄道",
                 "line": "野田線",
                 "name": "豊四季",
@@ -8347,6 +8851,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8516",
                 "company": "東武鉄道",
                 "line": "野田線",
                 "name": "梅郷",
@@ -8363,6 +8868,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8520",
                 "company": "東武鉄道",
                 "line": "野田線",
                 "name": "藤の牛島",
@@ -8379,6 +8885,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8565",
                 "company": "南海電気鉄道",
                 "line": "空港線",
                 "name": "関西空港",
@@ -8395,6 +8902,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8567",
                 "company": "南海電気鉄道",
                 "line": "鋼索線",
                 "name": "高野山",
@@ -8411,6 +8919,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8580",
                 "company": "南海電気鉄道",
                 "line": "高野線",
                 "name": "林間田園都市",
@@ -8427,6 +8936,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8665",
                 "company": "能勢電鉄",
                 "line": "日生線",
                 "name": "日生中央",
@@ -8443,6 +8953,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8670",
                 "company": "能勢電鉄",
                 "line": "妙見線",
                 "name": "光風台",
@@ -8459,6 +8970,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8680",
                 "company": "能勢電鉄",
                 "line": "妙見線",
                 "name": "ときわ台",
@@ -8475,6 +8987,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8712",
                 "company": "箱根登山鉄道",
                 "line": "鋼索線",
                 "name": "強羅",
@@ -8491,6 +9004,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8715",
                 "company": "箱根登山鉄道",
                 "line": "鋼索線",
                 "name": "早雲山",
@@ -8507,6 +9021,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8718",
                 "company": "箱根登山鉄道",
                 "line": "鉄道線",
                 "name": "箱根湯本",
@@ -8523,6 +9038,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8723",
                 "company": "箱根登山鉄道",
                 "line": "鉄道線",
                 "name": "入生田",
@@ -8539,6 +9055,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8727",
                 "company": "箱根登山鉄道",
                 "line": "鉄道線",
                 "name": "風祭",
@@ -8555,6 +9072,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8821",
                 "company": "富山地方鉄道",
                 "line": "本線",
                 "name": "上市",
@@ -8571,6 +9089,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8852",
                 "company": "富士急行",
                 "line": "河口湖線",
                 "name": "河口湖",
@@ -8587,6 +9106,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8869",
                 "company": "舞浜リゾートライン",
                 "line": "ディズニーリゾートライン",
                 "name": "東京ディズニーシー･ステーション",
@@ -8603,6 +9123,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8870",
                 "company": "舞浜リゾートライン",
                 "line": "ディズニーリゾートライン",
                 "name": "リゾートゲートウェイ･ステーション",
@@ -8619,6 +9140,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8871",
                 "company": "舞浜リゾートライン",
                 "line": "ディズニーリゾートライン",
                 "name": "東京ディズニーランド･ステーション",
@@ -8635,6 +9157,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8872",
                 "company": "舞浜リゾートライン",
                 "line": "ディズニーリゾートライン",
                 "name": "ベイサイド･ステーション",
@@ -8651,6 +9174,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv8991",
                 "company": "豊橋鉄道",
                 "line": "渥美線",
                 "name": "大清水",
@@ -8667,6 +9191,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv9170",
                 "company": "北海道旅客鉄道",
                 "line": "室蘭線",
                 "name": "白老",
@@ -8683,6 +9208,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv9319",
                 "company": "北海道旅客鉄道",
                 "line": "千歳線",
                 "name": "新千歳空港",
@@ -8699,6 +9225,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv9320",
                 "company": "北海道旅客鉄道",
                 "line": "千歳線",
                 "name": "南千歳",
@@ -8715,6 +9242,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv9370",
                 "company": "北海道旅客鉄道",
                 "line": "函館線",
                 "name": "銭函",
@@ -8731,6 +9259,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv9548",
                 "company": "北神急行電鉄",
                 "line": "北神線",
                 "name": "谷上",
@@ -8747,6 +9276,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv9551",
                 "company": "北総鉄道",
                 "line": "北総線",
                 "name": "秋山",
@@ -8763,6 +9293,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv9552",
                 "company": "北総鉄道",
                 "line": "北総線",
                 "name": "大町",
@@ -8779,6 +9310,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv9553",
                 "company": "北総鉄道",
                 "line": "北総線",
                 "name": "小室",
@@ -8795,6 +9327,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv9554",
                 "company": "北総鉄道",
                 "line": "北総線",
                 "name": "印旛日本医大",
@@ -8811,6 +9344,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv9570",
                 "company": "北陸鉄道",
                 "line": "石川線",
                 "name": "鶴来",
@@ -8827,6 +9361,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv9623",
                 "company": "名古屋ガイドウェイバス",
                 "line": "ガイドウェイバス志段味線",
                 "name": "川宮",
@@ -8843,6 +9378,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv9648",
                 "company": "名古屋市",
                 "line": "1号線東山線",
                 "name": "高畑",
@@ -8859,6 +9395,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv9656",
                 "company": "名古屋市",
                 "line": "2号線名港線",
                 "name": "築地口",
@@ -8875,6 +9412,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv9657",
                 "company": "名古屋市",
                 "line": "2号線名港線",
                 "name": "港区役所",
@@ -8891,6 +9429,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10022",
                 "company": "名古屋臨海高速鉄道",
                 "line": "西名古屋港線",
                 "name": "荒子",
@@ -8907,6 +9446,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10023",
                 "company": "名古屋臨海高速鉄道",
                 "line": "西名古屋港線",
                 "name": "中島",
@@ -8923,6 +9463,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10024",
                 "company": "名古屋臨海高速鉄道",
                 "line": "西名古屋港線",
                 "name": "名古屋競馬場前",
@@ -8939,6 +9480,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10025",
                 "company": "名古屋臨海高速鉄道",
                 "line": "西名古屋港線",
                 "name": "南荒子",
@@ -8955,6 +9497,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10028",
                 "company": "名古屋臨海高速鉄道",
                 "line": "西名古屋港線",
                 "name": "荒子川公園",
@@ -8971,6 +9514,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10029",
                 "company": "名古屋臨海高速鉄道",
                 "line": "西名古屋港線",
                 "name": "金城ふ頭",
@@ -8987,6 +9531,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10048",
                 "company": "野岩鉄道",
                 "line": "会津鬼怒川線",
                 "name": "新藤原",
@@ -9003,6 +9548,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10063",
                 "company": "立山黒部貫光",
                 "line": "鋼索線",
                 "name": "黒部平",
@@ -9019,6 +9565,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10064",
                 "company": "立山黒部貫光",
                 "line": "鋼索線",
                 "name": "立山",
@@ -9035,6 +9582,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10065",
                 "company": "立山黒部貫光",
                 "line": "鋼索線",
                 "name": "黒部湖",
@@ -9051,6 +9599,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10066",
                 "company": "立山黒部貫光",
                 "line": "鋼索線",
                 "name": "美女平",
@@ -9067,6 +9616,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10067",
                 "company": "立山黒部貫光",
                 "line": "無軌条電車線",
                 "name": "室堂",
@@ -9083,6 +9633,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10068",
                 "company": "立山黒部貫光",
                 "line": "無軌条電車線",
                 "name": "大観峰",
@@ -9099,6 +9650,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10076",
                 "company": "和歌山電鐵",
                 "line": "貴志川線",
                 "name": "岡崎前",
@@ -9115,6 +9667,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10098",
                 "company": "仙台空港鉄道",
                 "line": "仙台空港線",
                 "name": "仙台空港",
@@ -9131,6 +9684,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10147",
                 "company": "東京都",
                 "line": "日暮里・舎人線",
                 "name": "見沼代親水公園",
@@ -9147,6 +9701,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10208",
                 "company": "阪急電鉄",
                 "line": "京都線",
                 "name": "摂津市",
@@ -9163,6 +9718,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10220",
                 "company": "東日本旅客鉄道",
                 "line": "東北新幹線",
                 "name": "七戸十和田",
@@ -9179,6 +9735,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10258",
                 "company": "伊賀鉄道",
                 "line": "伊賀線",
                 "name": "伊賀神戸",
@@ -9195,6 +9752,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10274",
                 "company": "京浜急行電鉄",
                 "line": "空港線",
                 "name": "羽田空港国際線ターミナル",
@@ -9211,6 +9769,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10275",
                 "company": "東京モノレール",
                 "line": "東京モノレール羽田線",
                 "name": "羽田空港国際線ビル",
@@ -9227,6 +9786,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10282",
                 "company": "近畿日本鉄道",
                 "line": "大阪線",
                 "name": "伊賀神戸",
@@ -9243,6 +9803,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10297",
                 "company": "南海電気鉄道",
                 "line": "南海本線",
                 "name": "和歌山大学前",
@@ -9259,6 +9820,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10306",
                 "company": "高松琴平電気鉄道",
                 "line": "琴平線",
                 "name": "綾川",
@@ -9275,6 +9837,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10321",
                 "company": "東日本旅客鉄道",
                 "line": "北陸新幹線",
                 "name": "上越妙高",
@@ -9291,6 +9854,7 @@
                 ]
             },
             "properties": {
+                "stationId": "cv10401",
                 "company": "北海道旅客鉄道",
                 "line": "北海道新幹線",
                 "name": "新函館北斗",

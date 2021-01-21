@@ -5,11 +5,12 @@ import kotlinx.serialization.encodeToString
 fun main(){
     val driver = getDriver()
     val session = driver.session()
-    val records = session.run("MATCH (c:Church) RETURN c.lng, c.lat, c.name, c.address, c.catholic;").list()
+    val records = session.run("MATCH (c:Church) RETURN c.id, c.lng, c.lat, c.name, c.address, c.catholic;").list()
 
     val churches = mutableListOf<Church>()
 
     records.forEach { r ->
+        val churchId = r.get("c.id").asString()
         val churchLng = r.get("c.lng").asDouble()
         val churchLat = r.get("c.lat").asDouble()
         val churchName = r.get("c.name").asString()
@@ -19,7 +20,7 @@ fun main(){
         val church = Church(
             type = "Feature",
             geometry = PointGeometry(type = "Point", coordinates = arrayOf(churchLng, churchLat)),
-            properties = ChurchProperty(name = churchName, address = churchAddress, catholic = isCatholic)
+            properties = ChurchProperty(churchId = churchId, name = churchName, address = churchAddress, catholic = isCatholic)
         )
         churches.add(church)
     }

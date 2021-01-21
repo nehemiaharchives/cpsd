@@ -37,6 +37,7 @@ fun main() {
         stationsRecord.forEach { r ->
             val n = r.get("s").asNode()
 
+            val stationId = n.get("id").asString()
             val stationLng = n.get("lng").asDouble()
             val stationLat = n.get("lat").asDouble()
             val stationCompany = n.get("company").asString()
@@ -45,6 +46,7 @@ fun main() {
             val stationPassengers = n.get(("passengers")).asInt()
 
             val stationProperty = StationProperty(
+                stationId = stationId,
                 company = stationCompany,
                 line = stationLine,
                 name = stationName,
@@ -70,11 +72,11 @@ fun main() {
         val stationPolygonGeoJson = format.encodeToString(StationPolygons(type = "FeatureCollection", stationPolygons.toTypedArray()))
 
         //something like:
-        //segment 0 - 500 has 4307 stations, 1722 with church, 2585 without church
+        //segment 0 - 500 has 4307 stations, 1725 with church, 2582 without church
         //segment 0 - 1000 has 4307 stations, 2991 with church, 1316 without church
-        //segment 0 - 1500 has 4307 stations, 3482 with church, 825 without church
-        //segment 0 - 2000 has 4307 stations, 3726 with church, 581 without church
-        //segment 0 - 2500 has 4307 stations, 3868 with church, 439 without church
+        //segment 0 - 1500 has 4307 stations, 3484 with church, 823 without church
+        //segment 0 - 2000 has 4307 stations, 3727 with church, 580 without church
+        //segment 0 - 2500 has 4307 stations, 3869 with church, 438 without church
         //segment 0 - 3000 has 4307 stations, 3971 with church, 336 without church
         println("segment $minDistance - $maxDistance has $total stations, $withChurch with church, $withoutChurch without church")
         writeJson("$maxDistance-station-point-without-church", stationPointGeoJson)

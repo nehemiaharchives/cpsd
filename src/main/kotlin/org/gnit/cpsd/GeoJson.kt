@@ -36,7 +36,7 @@ class Routes(val type: String, val features: Array<Route>)
 
 // Station Points
 @Serializable
-class StationProperty(val company: String, val line: String, val name: String, val passengers: Int)
+class StationProperty(val stationId: String, val company: String, val line: String, val name: String, val passengers: Int)
 
 @Serializable
 class PointGeometry(val type: String, val coordinates: Array<Double>)
@@ -59,7 +59,7 @@ class StationPolygons(val type: String, val features: Array<StationPolygon>)
 
 // Churches
 @Serializable
-class ChurchProperty(val name: String, val address: String, val catholic: Boolean)
+class ChurchProperty(val churchId: String, val name: String, val address: String, val catholic: Boolean)
 
 @Serializable
 class Church(val type: String, val geometry: PointGeometry, val properties: ChurchProperty)
@@ -80,13 +80,13 @@ fun printChurches() {
     val c1 = Church(
         type = "Feature",
         geometry = PointGeometry(type = "Point", coordinates = arrayOf(139.6973877, 35.6504898)),
-        properties = ChurchProperty(name = "東京バプテスト教会", address = "〒150-0035 東京都渋谷区鉢山町９−２", catholic = false)
+        properties = ChurchProperty(churchId = "tbc", name = "東京バプテスト教会", address = "〒150-0035 東京都渋谷区鉢山町９−２", catholic = false)
     )
 
     val c2 = Church(
         type = "Feature",
         geometry = PointGeometry(type = "Point", coordinates = arrayOf(139.695138, 35.652867)),
-        properties = ChurchProperty(name = "カトリック渋谷教会", address = "〒150-0036 東京都渋谷区南平台町１８−１３", catholic = true)
+        properties = ChurchProperty(churchId = "csc", name = "カトリック渋谷教会", address = "〒150-0036 東京都渋谷区南平台町１８−１３", catholic = true)
     )
 
     val churches = Churches(type = "FeatureCollection", features = arrayOf(c1, c2))
@@ -94,8 +94,8 @@ fun printChurches() {
     println(format.encodeToString(churches))
 }
 
-val sp1 = StationProperty(company = "東京急行電鉄", line = "東横線", name = "代官山", passengers = 32148)
-val sp2 = StationProperty(company = "東京地下鉄", line = "3号線銀座線", name = "渋谷", passengers = 224784)
+val sp1 = StationProperty(stationId = "s1", company = "東京急行電鉄", line = "東横線", name = "代官山", passengers = 32148)
+val sp2 = StationProperty(stationId = "s2", company = "東京地下鉄", line = "3号線銀座線", name = "渋谷", passengers = 224784)
 
 fun printStationPoints() {
 
