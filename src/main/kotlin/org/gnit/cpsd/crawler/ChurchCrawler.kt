@@ -5,17 +5,19 @@ import org.jsoup.Jsoup
 
 data class Church(
     val churchName: String,
-    val postalCode: String,
-    val address: String,
-    val phoneNumber: String,
+    val postalCode: String?,
+    val address: String?,
+    val phoneNumber: String?,
     //val faxNumber: String,
+    val url: String?,
     val pastorName: String?,
     val presbytery: String?,
     val denomination: String
 )
 
-fun main(){
-    crawlJCC().forEach { println(it) }
+fun main() {
+    //crawlJCC().forEach { println(it) }
+    crawlUCCJ().forEach { println(it) }
 }
 
 //Japan Christian Church 日本キリスト教会
@@ -38,11 +40,11 @@ fun crawlJCC(): List<Church> {
         } else {
             var pastorName: String? = null
             val td5 = tds[5].text().toFullWidth()
-            if(td5.contains("（")){
+            if (td5.contains("（")) {
                 pastorName = td5.split("（")[0]
-            }else if(td5.trim().isEmpty()){
+            } else if (td5.trim().isEmpty()) {
                 pastorName = null
-            }else{
+            } else {
                 pastorName = td5
             }
 
@@ -52,6 +54,7 @@ fun crawlJCC(): List<Church> {
                 address = tds[2].text().toFullWidth(),
                 phoneNumber = tds[3].text().toHalfWidth(),
                 //faxNumber = tds[4].text(),
+                url = null,
                 pastorName = pastorName,
                 presbytery = presbytery,
                 denomination = "日本キリスト教会"
@@ -61,6 +64,30 @@ fun crawlJCC(): List<Church> {
     }
 
     return churches
+}
+
+//United Church of Christ in Japan 日本基督教団
+fun crawlUCCJ(): List<Church> {
+    val document = Jsoup.connect("http://www.uccjshintokai.org/map/?pref=all").get()
+
+    return document.select(".category_1 .address-list .vcard") .map { tr ->
+        val name = tr.selectFirst("td.name").text().toFullWidth()
+        val hpTd = tr.selectFirst("td.hp")
+        val url: String? = if (hpTd.childrenSize() > 0) hpTd.selectFirst("a").attr("href") else null
+        val addressTd = tr.selectFirst("td.address")
+        val address: String? = if (addressTd.childrenSize() >= 2) addressTd.selectFirst("span.address").text().toFullWidth() else null
+
+        Church(
+            churchName = name,
+            postalCode = null,
+            address = address,
+            phoneNumber = null,
+            url = url,
+            pastorName = null,
+            presbytery = null,
+            denomination = "日本基督教団"
+        )
+    }.filterNot { church -> church.churchName == "セムナン教会日本語礼拝" }
 }
 
 fun String.toHalfWidth() = Transliterator.getInstance("Fullwidth-Halfwidth").transliterate(this)
