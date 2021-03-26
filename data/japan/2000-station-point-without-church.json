@@ -108,23 +108,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    139.75786,
-                    35.64249
-                ]
-            },
-            "properties": {
-                "stationId": "cv12",
-                "company": "ゆりかもめ",
-                "line": "東京臨海新交通臨海線",
-                "name": "芝浦ふ頭",
-                "passengers": 5308
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     139.78072,
                     35.62447
                 ]
@@ -152,142 +135,6 @@
                 "line": "東京臨海新交通臨海線",
                 "name": "有明テニスの森",
                 "passengers": 3942
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.60452,
-                    34.67863
-                ]
-            },
-            "properties": {
-                "stationId": "cv22",
-                "company": "近畿日本鉄道",
-                "line": "けいはんな線",
-                "name": "荒本",
-                "passengers": 14945
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.217,
-                    34.66956
-                ]
-            },
-            "properties": {
-                "stationId": "cv28",
-                "company": "神戸新交通",
-                "line": "ポートアイランド線",
-                "name": "中埠頭",
-                "passengers": 2961
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.21262,
-                    34.6646
-                ]
-            },
-            "properties": {
-                "stationId": "cv29",
-                "company": "神戸新交通",
-                "line": "ポートアイランド線",
-                "name": "市民広場",
-                "passengers": 14880
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.21434,
-                    34.67384
-                ]
-            },
-            "properties": {
-                "stationId": "cv32",
-                "company": "神戸新交通",
-                "line": "ポートアイランド線",
-                "name": "北埠頭",
-                "passengers": 1774
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.21738,
-                    34.6648
-                ]
-            },
-            "properties": {
-                "stationId": "cv33",
-                "company": "神戸新交通",
-                "line": "ポートアイランド線",
-                "name": "南公園",
-                "passengers": 4845
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.21018,
-                    34.66876
-                ]
-            },
-            "properties": {
-                "stationId": "cv34",
-                "company": "神戸新交通",
-                "line": "ポートアイランド線",
-                "name": "みなとじま",
-                "passengers": 16660
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.21627,
-                    34.65874
-                ]
-            },
-            "properties": {
-                "stationId": "cv36",
-                "company": "神戸新交通",
-                "line": "ポートアイランド線",
-                "name": "医療センター",
-                "passengers": 14971
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.22124,
-                    34.65468
-                ]
-            },
-            "properties": {
-                "stationId": "cv37",
-                "company": "神戸新交通",
-                "line": "ポートアイランド線",
-                "name": "京コンピュータ前",
-                "passengers": 3911
             }
         },
         {
@@ -465,23 +312,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    137.15089,
-                    35.05579
-                ]
-            },
-            "properties": {
-                "stationId": "cv226",
-                "company": "愛知環状鉄道",
-                "line": "愛知環状鉄道線",
-                "name": "三河豊田",
-                "passengers": 14299
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     137.07668,
                     35.17418
                 ]
@@ -594,23 +424,6 @@
                 "line": "伊豆急行線",
                 "name": "伊豆稲取",
                 "passengers": 1668
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    138.93748,
-                    34.99392
-                ]
-            },
-            "properties": {
-                "stationId": "cv277",
-                "company": "伊豆箱根鉄道",
-                "line": "駿豆線",
-                "name": "大仁",
-                "passengers": 2533
             }
         },
         {
@@ -788,23 +601,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    135.7657,
-                    35.07834
-                ]
-            },
-            "properties": {
-                "stationId": "cv419",
-                "company": "叡山電鉄",
-                "line": "鞍馬線",
-                "name": "二軒茶屋",
-                "passengers": 1699
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     135.76336,
                     35.10564
                 ]
@@ -832,23 +628,6 @@
                 "line": "鉄道線",
                 "name": "遠州小林",
                 "passengers": 2658
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    137.80794,
-                    34.84641
-                ]
-            },
-            "properties": {
-                "stationId": "cv447",
-                "company": "遠州鉄道",
-                "line": "鉄道線",
-                "name": "西鹿島",
-                "passengers": 2980
             }
         },
         {
@@ -1009,23 +788,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    140.17852,
-                    35.90868
-                ]
-            },
-            "properties": {
-                "stationId": "cv600",
-                "company": "関東鉄道",
-                "line": "竜ヶ崎線",
-                "name": "竜ヶ崎",
-                "passengers": 2568
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     140.13819,
                     35.92906
                 ]
@@ -1077,57 +839,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    135.53143,
-                    34.69686
-                ]
-            },
-            "properties": {
-                "stationId": "cv732",
-                "company": "京阪電気鉄道",
-                "line": "京阪本線",
-                "name": "京橋",
-                "passengers": 157302
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.68544,
-                    34.77411
-                ]
-            },
-            "properties": {
-                "stationId": "cv742",
-                "company": "京阪電気鉄道",
-                "line": "交野線",
-                "name": "河内森",
-                "passengers": 8925
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.68665,
-                    34.76796
-                ]
-            },
-            "properties": {
-                "stationId": "cv745",
-                "company": "京阪電気鉄道",
-                "line": "交野線",
-                "name": "私市",
-                "passengers": 2539
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     135.87129,
                     35.07034
                 ]
@@ -1138,57 +849,6 @@
                 "line": "石山坂本線",
                 "name": "坂本比叡山口",
                 "passengers": 2935
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    140.16995,
-                    35.53259
-                ]
-            },
-            "properties": {
-                "stationId": "cv785",
-                "company": "京成電鉄",
-                "line": "千原線",
-                "name": "ちはら台",
-                "passengers": 5825
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    140.15828,
-                    35.55982
-                ]
-            },
-            "properties": {
-                "stationId": "cv786",
-                "company": "京成電鉄",
-                "line": "千原線",
-                "name": "学園前",
-                "passengers": 4976
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    140.16708,
-                    35.54975
-                ]
-            },
-            "properties": {
-                "stationId": "cv787",
-                "company": "京成電鉄",
-                "line": "千原線",
-                "name": "おゆみ野",
-                "passengers": 5031
             }
         },
         {
@@ -1315,23 +975,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    135.78959,
-                    34.78007
-                ]
-            },
-            "properties": {
-                "stationId": "cv1026",
-                "company": "近畿日本鉄道",
-                "line": "京都線",
-                "name": "狛田",
-                "passengers": 2311
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     135.72727,
                     34.48882
                 ]
@@ -1427,23 +1070,6 @@
                 "line": "志摩線",
                 "name": "賢島",
                 "passengers": 1197
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.64279,
-                    34.61975
-                ]
-            },
-            "properties": {
-                "stationId": "cv1081",
-                "company": "近畿日本鉄道",
-                "line": "信貴線",
-                "name": "信貴山口",
-                "passengers": 1402
             }
         },
         {
@@ -1740,23 +1366,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    135.61913,
-                    34.66271
-                ]
-            },
-            "properties": {
-                "stationId": "cv1192",
-                "company": "近畿日本鉄道",
-                "line": "奈良線",
-                "name": "河内花園",
-                "passengers": 11431
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     135.70559,
                     34.51682
                 ]
@@ -1903,23 +1512,6 @@
                 "line": "名古屋線",
                 "name": "楠",
                 "passengers": 1536
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    136.59005,
-                    34.83433
-                ]
-            },
-            "properties": {
-                "stationId": "cv1282",
-                "company": "近畿日本鉄道",
-                "line": "名古屋線",
-                "name": "白子",
-                "passengers": 14764
             }
         },
         {
@@ -2080,23 +1672,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    132.38612,
-                    34.37192
-                ]
-            },
-            "properties": {
-                "stationId": "cv2053",
-                "company": "広島電鉄",
-                "line": "宮島線",
-                "name": "井口",
-                "passengers": 2233
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     132.30417,
                     34.31191
                 ]
@@ -2107,23 +1682,6 @@
                 "line": "宮島線",
                 "name": "広電宮島口",
                 "passengers": 6009
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    132.39236,
-                    34.37568
-                ]
-            },
-            "properties": {
-                "stationId": "cv2066",
-                "company": "広島電鉄",
-                "line": "宮島線",
-                "name": "商工センター入口",
-                "passengers": 7159
             }
         },
         {
@@ -2158,23 +1716,6 @@
                 "line": "志度線",
                 "name": "琴電志度",
                 "passengers": 1114
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    134.09857,
-                    34.34149
-                ]
-            },
-            "properties": {
-                "stationId": "cv2170",
-                "company": "高松琴平電気鉄道",
-                "line": "志度線",
-                "name": "潟元",
-                "passengers": 1897
             }
         },
         {
@@ -2284,57 +1825,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    135.46792,
-                    34.77033
-                ]
-            },
-            "properties": {
-                "stationId": "cv2283",
-                "company": "阪急電鉄",
-                "line": "宝塚線",
-                "name": "曽根",
-                "passengers": 24097
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.47514,
-                    34.75098
-                ]
-            },
-            "properties": {
-                "stationId": "cv2284",
-                "company": "阪急電鉄",
-                "line": "宝塚線",
-                "name": "庄内",
-                "passengers": 28301
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.47517,
-                    34.76217
-                ]
-            },
-            "properties": {
-                "stationId": "cv2289",
-                "company": "阪急電鉄",
-                "line": "宝塚線",
-                "name": "服部天神",
-                "passengers": 23909
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     139.59968,
                     36.01404
                 ]
@@ -2345,40 +1835,6 @@
                 "line": "伊奈線",
                 "name": "内宿",
                 "passengers": 4780
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.61726,
-                    35.99919
-                ]
-            },
-            "properties": {
-                "stationId": "cv2418",
-                "company": "埼玉新都市交通",
-                "line": "伊奈線",
-                "name": "伊奈中央",
-                "passengers": 2079
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.60822,
-                    36.00741
-                ]
-            },
-            "properties": {
-                "stationId": "cv2421",
-                "company": "埼玉新都市交通",
-                "line": "伊奈線",
-                "name": "羽貫",
-                "passengers": 4464
             }
         },
         {
@@ -2413,23 +1869,6 @@
                 "line": "北勢線",
                 "name": "楚原",
                 "passengers": 1143
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    140.14854,
-                    35.74046
-                ]
-            },
-            "properties": {
-                "stationId": "cv2567",
-                "company": "山万",
-                "line": "ユーカリが丘線",
-                "name": "中学校",
-                "passengers": 1138
             }
         },
         {
@@ -2522,57 +1961,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    134.10999,
-                    34.33683
-                ]
-            },
-            "properties": {
-                "stationId": "cv2639",
-                "company": "四国旅客鉄道",
-                "line": "高徳線",
-                "name": "屋島",
-                "passengers": 1250
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    133.64583,
-                    33.57943
-                ]
-            },
-            "properties": {
-                "stationId": "cv2691",
-                "company": "四国旅客鉄道",
-                "line": "土讃線",
-                "name": "後免",
-                "passengers": 3862
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    133.13734,
-                    33.21302
-                ]
-            },
-            "properties": {
-                "stationId": "cv2697",
-                "company": "四国旅客鉄道",
-                "line": "土讃線",
-                "name": "窪川",
-                "passengers": 1072
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     134.48389,
                     34.07438
                 ]
@@ -2607,23 +1995,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    134.00985,
-                    34.34108
-                ]
-            },
-            "properties": {
-                "stationId": "cv2783",
-                "company": "四国旅客鉄道",
-                "line": "予讃線",
-                "name": "香西",
-                "passengers": 1066
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     133.96842,
                     34.30515
                 ]
@@ -2634,23 +2005,6 @@
                 "line": "予讃線",
                 "name": "端岡",
                 "passengers": 2664
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    133.99395,
-                    34.3257
-                ]
-            },
-            "properties": {
-                "stationId": "cv2787",
-                "company": "四国旅客鉄道",
-                "line": "予讃線",
-                "name": "鬼無",
-                "passengers": 1370
             }
         },
         {
@@ -2794,23 +2148,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    140.02845,
-                    35.74964
-                ]
-            },
-            "properties": {
-                "stationId": "cv3256",
-                "company": "新京成電鉄",
-                "line": "新京成線",
-                "name": "三咲",
-                "passengers": 13752
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     135.02996,
                     34.69966
                 ]
@@ -2821,57 +2158,6 @@
                 "line": "西神延伸線",
                 "name": "西神南",
                 "passengers": 26992
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.26935,
-                    34.6888
-                ]
-            },
-            "properties": {
-                "stationId": "cv3313",
-                "company": "神戸新交通",
-                "line": "六甲アイランド線",
-                "name": "アイランドセンター",
-                "passengers": 18279
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.26873,
-                    34.69264
-                ]
-            },
-            "properties": {
-                "stationId": "cv3314",
-                "company": "神戸新交通",
-                "line": "六甲アイランド線",
-                "name": "アイランド北口",
-                "passengers": 8474
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.27015,
-                    34.68388
-                ]
-            },
-            "properties": {
-                "stationId": "cv3317",
-                "company": "神戸新交通",
-                "line": "六甲アイランド線",
-                "name": "マリンパーク",
-                "passengers": 6967
             }
         },
         {
@@ -2981,23 +2267,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    130.43708,
-                    33.71414
-                ]
-            },
-            "properties": {
-                "stationId": "cv3403",
-                "company": "西日本鉄道",
-                "line": "貝塚線",
-                "name": "西鉄新宮",
-                "passengers": 1358
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     130.56329,
                     33.43721
                 ]
@@ -3008,40 +2277,6 @@
                 "line": "天神大牟田線",
                 "name": "三国が丘",
                 "passengers": 5645
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    130.55354,
-                    33.46228
-                ]
-            },
-            "properties": {
-                "stationId": "cv3428",
-                "company": "西日本鉄道",
-                "line": "天神大牟田線",
-                "name": "筑紫",
-                "passengers": 6391
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    130.48881,
-                    33.52285
-                ]
-            },
-            "properties": {
-                "stationId": "cv3429",
-                "company": "西日本鉄道",
-                "line": "天神大牟田線",
-                "name": "下大利",
-                "passengers": 15281
             }
         },
         {
@@ -3117,23 +2352,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    130.5428,
-                    33.47134
-                ]
-            },
-            "properties": {
-                "stationId": "cv3452",
-                "company": "西日本鉄道",
-                "line": "天神大牟田線",
-                "name": "桜台",
-                "passengers": 2080
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     130.46384,
                     33.07154
                 ]
@@ -3144,23 +2362,6 @@
                 "line": "天神大牟田線",
                 "name": "倉永",
                 "passengers": 1296
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    134.24854,
-                    35.46061
-                ]
-            },
-            "properties": {
-                "stationId": "cv3479",
-                "company": "西日本旅客鉄道",
-                "line": "因美線",
-                "name": "津ノ井",
-                "passengers": 1208
             }
         },
         {
@@ -3270,23 +2471,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    135.82465,
-                    34.73433
-                ]
-            },
-            "properties": {
-                "stationId": "cv3595",
-                "company": "西日本旅客鉄道",
-                "line": "関西線",
-                "name": "木津",
-                "passengers": 9350
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     135.73979,
                     34.60206
                 ]
@@ -3314,23 +2498,6 @@
                 "line": "紀勢線",
                 "name": "藤並",
                 "passengers": 2715
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.32395,
-                    33.76794
-                ]
-            },
-            "properties": {
-                "stationId": "cv3660",
-                "company": "西日本旅客鉄道",
-                "line": "紀勢線",
-                "name": "南部",
-                "passengers": 1607
             }
         },
         {
@@ -3399,23 +2566,6 @@
                 "line": "紀勢線",
                 "name": "箕島",
                 "passengers": 3494
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    133.84557,
-                    34.67434
-                ]
-            },
-            "properties": {
-                "stationId": "cv3688",
-                "company": "西日本旅客鉄道",
-                "line": "吉備線",
-                "name": "吉備津",
-                "passengers": 1204
             }
         },
         {
@@ -3559,23 +2709,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    135.92305,
-                    35.16042
-                ]
-            },
-            "properties": {
-                "stationId": "cv3768",
-                "company": "西日本旅客鉄道",
-                "line": "湖西線",
-                "name": "和邇",
-                "passengers": 4846
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     132.74322,
                     34.28414
                 ]
@@ -3593,40 +2726,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    132.53097,
-                    34.35152
-                ]
-            },
-            "properties": {
-                "stationId": "cv3791",
-                "company": "西日本旅客鉄道",
-                "line": "呉線",
-                "name": "矢野",
-                "passengers": 16311
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    132.50981,
-                    34.33812
-                ]
-            },
-            "properties": {
-                "stationId": "cv3794",
-                "company": "西日本旅客鉄道",
-                "line": "呉線",
-                "name": "坂",
-                "passengers": 6746
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     132.69121,
                     34.23111
                 ]
@@ -3637,57 +2736,6 @@
                 "line": "呉線",
                 "name": "安芸川尻",
                 "passengers": 1794
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    132.51346,
-                    34.29121
-                ]
-            },
-            "properties": {
-                "stationId": "cv3800",
-                "company": "西日本旅客鉄道",
-                "line": "呉線",
-                "name": "呉ポートピア",
-                "passengers": 1805
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    132.51959,
-                    34.27986
-                ]
-            },
-            "properties": {
-                "stationId": "cv3801",
-                "company": "西日本旅客鉄道",
-                "line": "呉線",
-                "name": "天応",
-                "passengers": 1333
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    132.65389,
-                    34.22217
-                ]
-            },
-            "properties": {
-                "stationId": "cv3802",
-                "company": "西日本旅客鉄道",
-                "line": "呉線",
-                "name": "仁方",
-                "passengers": 1219
             }
         },
         {
@@ -3926,23 +2974,6 @@
                 "line": "山陰線",
                 "name": "揖屋",
                 "passengers": 1461
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    133.18824,
-                    34.42934
-                ]
-            },
-            "properties": {
-                "stationId": "cv4097",
-                "company": "西日本旅客鉄道",
-                "line": "山陽新幹線",
-                "name": "新尾道",
-                "passengers": 2132
             }
         },
         {
@@ -4273,23 +3304,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    132.57851,
-                    34.40253
-                ]
-            },
-            "properties": {
-                "stationId": "cv4187",
-                "company": "西日本旅客鉄道",
-                "line": "山陽線",
-                "name": "中野東",
-                "passengers": 5333
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     132.31413,
                     34.32283
                 ]
@@ -4334,40 +3348,6 @@
                 "line": "山陽線",
                 "name": "宮島口",
                 "passengers": 9208
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    132.39055,
-                    34.37484
-                ]
-            },
-            "properties": {
-                "stationId": "cv4194",
-                "company": "西日本旅客鉄道",
-                "line": "山陽線",
-                "name": "新井口",
-                "passengers": 16981
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    132.56433,
-                    34.39191
-                ]
-            },
-            "properties": {
-                "stationId": "cv4196",
-                "company": "西日本旅客鉄道",
-                "line": "山陽線",
-                "name": "安芸中野",
-                "passengers": 6017
             }
         },
         {
@@ -4545,40 +3525,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    136.98386,
-                    36.68387
-                ]
-            },
-            "properties": {
-                "stationId": "cv4293",
-                "company": "西日本旅客鉄道",
-                "line": "城端線",
-                "name": "戸出",
-                "passengers": 1802
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    136.92371,
-                    36.58864
-                ]
-            },
-            "properties": {
-                "stationId": "cv4297",
-                "company": "西日本旅客鉄道",
-                "line": "城端線",
-                "name": "福野",
-                "passengers": 1440
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     134.18497,
                     34.74542
                 ]
@@ -4606,23 +3552,6 @@
                 "line": "赤穂線",
                 "name": "長船",
                 "passengers": 2375
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    134.09143,
-                    34.66904
-                ]
-            },
-            "properties": {
-                "stationId": "cv4318",
-                "company": "西日本旅客鉄道",
-                "line": "赤穂線",
-                "name": "邑久",
-                "passengers": 3538
             }
         },
         {
@@ -4732,23 +3661,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    135.55178,
-                    34.79209
-                ]
-            },
-            "properties": {
-                "stationId": "cv4407",
-                "company": "西日本旅客鉄道",
-                "line": "東海道線",
-                "name": "千里丘",
-                "passengers": 40358
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     135.816,
                     34.77427
                 ]
@@ -4817,23 +3729,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    134.73573,
-                    34.91072
-                ]
-            },
-            "properties": {
-                "stationId": "cv4463",
-                "company": "西日本旅客鉄道",
-                "line": "播但線",
-                "name": "香呂",
-                "passengers": 3161
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     133.73337,
                     34.64317
                 ]
@@ -4844,57 +3739,6 @@
                 "line": "伯備線",
                 "name": "清音",
                 "passengers": 3948
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    134.35584,
-                    35.0033
-                ]
-            },
-            "properties": {
-                "stationId": "cv4526",
-                "company": "西日本旅客鉄道",
-                "line": "姫新線",
-                "name": "佐用",
-                "passengers": 1329
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    134.00244,
-                    35.05437
-                ]
-            },
-            "properties": {
-                "stationId": "cv4532",
-                "company": "西日本旅客鉄道",
-                "line": "姫新線",
-                "name": "津山",
-                "passengers": 4101
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    136.99113,
-                    36.84873
-                ]
-            },
-            "properties": {
-                "stationId": "cv4547",
-                "company": "西日本旅客鉄道",
-                "line": "氷見線",
-                "name": "氷見",
-                "passengers": 1638
             }
         },
         {
@@ -5031,40 +3875,6 @@
                 "line": "福知山線",
                 "name": "相野",
                 "passengers": 6967
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.66408,
-                    34.76762
-                ]
-            },
-            "properties": {
-                "stationId": "cv4622",
-                "company": "西日本旅客鉄道",
-                "line": "片町線",
-                "name": "星田",
-                "passengers": 16350
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.68502,
-                    34.77668
-                ]
-            },
-            "properties": {
-                "stationId": "cv4632",
-                "company": "西日本旅客鉄道",
-                "line": "片町線",
-                "name": "河内磐船",
-                "passengers": 22342
             }
         },
         {
@@ -5395,23 +4205,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    139.45465,
-                    35.89004
-                ]
-            },
-            "properties": {
-                "stationId": "cv4809",
-                "company": "西武鉄道",
-                "line": "新宿線",
-                "name": "南大塚",
-                "passengers": 16561
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     140.12587,
                     35.6425
                 ]
@@ -5480,40 +4273,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    135.58198,
-                    34.59734
-                ]
-            },
-            "properties": {
-                "stationId": "cv5088",
-                "company": "大阪市",
-                "line": "2号線(谷町線)",
-                "name": "八尾南",
-                "passengers": 11297
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.57359,
-                    34.60329
-                ]
-            },
-            "properties": {
-                "stationId": "cv5089",
-                "company": "大阪市",
-                "line": "2号線(谷町線)",
-                "name": "長原",
-                "passengers": 10980
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     135.41182,
                     34.64243
                 ]
@@ -5524,74 +4283,6 @@
                 "line": "4号線(中央線)",
                 "name": "コスモスクエア",
                 "passengers": 22576
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.5931,
-                    34.71706
-                ]
-            },
-            "properties": {
-                "stationId": "cv5141",
-                "company": "大阪市",
-                "line": "7号線(長堀鶴見緑地線)",
-                "name": "門真南",
-                "passengers": 11113
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.58137,
-                    34.7113
-                ]
-            },
-            "properties": {
-                "stationId": "cv5142",
-                "company": "大阪市",
-                "line": "7号線(長堀鶴見緑地線)",
-                "name": "鶴見緑地",
-                "passengers": 9951
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.56101,
-                    34.70225
-                ]
-            },
-            "properties": {
-                "stationId": "cv5146",
-                "company": "大阪市",
-                "line": "7号線(長堀鶴見緑地線)",
-                "name": "今福鶴見",
-                "passengers": 23168
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.53052,
-                    34.69756
-                ]
-            },
-            "properties": {
-                "stationId": "cv5147",
-                "company": "大阪市",
-                "line": "7号線(長堀鶴見緑地線)",
-                "name": "京橋",
-                "passengers": 36744
             }
         },
         {
@@ -5779,23 +4470,6 @@
                 "line": "筑波山鋼索鉄道線",
                 "name": "筑波山頂",
                 "passengers": 1200
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.094,
-                    36.06813
-                ]
-            },
-            "properties": {
-                "stationId": "cv5239",
-                "company": "秩父鉄道",
-                "line": "秩父本線",
-                "name": "皆野",
-                "passengers": 1084
             }
         },
         {
@@ -6160,40 +4834,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    140.17825,
-                    35.56307
-                ]
-            },
-            "properties": {
-                "stationId": "cv6732",
-                "company": "東日本旅客鉄道",
-                "line": "外房線",
-                "name": "鎌取",
-                "passengers": 40748
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    140.31283,
-                    35.15309
-                ]
-            },
-            "properties": {
-                "stationId": "cv6745",
-                "company": "東日本旅客鉄道",
-                "line": "外房線",
-                "name": "勝浦",
-                "passengers": 2194
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     141.17387,
                     39.40592
                 ]
@@ -6262,23 +4902,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    139.27072,
-                    35.72962
-                ]
-            },
-            "properties": {
-                "stationId": "cv6829",
-                "company": "東日本旅客鉄道",
-                "line": "五日市線",
-                "name": "武蔵引田",
-                "passengers": 6598
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     138.65046,
                     36.54629
                 ]
@@ -6313,23 +4936,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    139.45533,
-                    36.10217
-                ]
-            },
-            "properties": {
-                "stationId": "cv6913",
-                "company": "東日本旅客鉄道",
-                "line": "高崎線",
-                "name": "吹上",
-                "passengers": 18412
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     139.47607,
                     36.0864
                 ]
@@ -6340,40 +4946,6 @@
                 "line": "高崎線",
                 "name": "北鴻巣",
                 "passengers": 14746
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.43322,
-                    36.11275
-                ]
-            },
-            "properties": {
-                "stationId": "cv6915",
-                "company": "東日本旅客鉄道",
-                "line": "高崎線",
-                "name": "行田",
-                "passengers": 13534
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    140.27142,
-                    38.29543
-                ]
-            },
-            "properties": {
-                "stationId": "cv6937",
-                "company": "東日本旅客鉄道",
-                "line": "左沢線",
-                "name": "羽前山辺",
-                "passengers": 1600
             }
         },
         {
@@ -6544,23 +5116,6 @@
                 "line": "常磐線",
                 "name": "浜吉田",
                 "passengers": 1396
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    140.92549,
-                    37.80321
-                ]
-            },
-            "properties": {
-                "stationId": "cv7093",
-                "company": "東日本旅客鉄道",
-                "line": "常磐線",
-                "name": "相馬",
-                "passengers": 1700
             }
         },
         {
@@ -7027,23 +5582,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    139.30263,
-                    35.77577
-                ]
-            },
-            "properties": {
-                "stationId": "cv7335",
-                "company": "東日本旅客鉄道",
-                "line": "青梅線",
-                "name": "小作",
-                "passengers": 34134
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     139.09674,
                     35.80968
                 ]
@@ -7112,23 +5650,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    139.37028,
-                    35.90158
-                ]
-            },
-            "properties": {
-                "stationId": "cv7426",
-                "company": "東日本旅客鉄道",
-                "line": "川越線",
-                "name": "武蔵高萩",
-                "passengers": 6558
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     140.20076,
                     35.68626
                 ]
@@ -7190,40 +5711,6 @@
                 "line": "総武線",
                 "name": "日向",
                 "passengers": 2066
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    140.79597,
-                    35.73905
-                ]
-            },
-            "properties": {
-                "stationId": "cv7474",
-                "company": "東日本旅客鉄道",
-                "line": "総武線",
-                "name": "松岸",
-                "passengers": 1004
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    140.31834,
-                    35.66272
-                ]
-            },
-            "properties": {
-                "stationId": "cv7475",
-                "company": "東日本旅客鉄道",
-                "line": "総武線",
-                "name": "八街",
-                "passengers": 11920
             }
         },
         {
@@ -7411,23 +5898,6 @@
                 "line": "田沢湖線",
                 "name": "角館",
                 "passengers": 1224
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.17833,
-                    35.27543
-                ]
-            },
-            "properties": {
-                "stationId": "cv7773",
-                "company": "東日本旅客鉄道",
-                "line": "東海道線",
-                "name": "鴨宮",
-                "passengers": 25316
             }
         },
         {
@@ -7809,23 +6279,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    140.39935,
-                    37.5127
-                ]
-            },
-            "properties": {
-                "stationId": "cv7907",
-                "company": "東日本旅客鉄道",
-                "line": "東北線",
-                "name": "本宮",
-                "passengers": 3614
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     139.86628,
                     36.43505
                 ]
@@ -7860,23 +6313,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    139.95883,
-                    36.84477
-                ]
-            },
-            "properties": {
-                "stationId": "cv7920",
-                "company": "東日本旅客鉄道",
-                "line": "東北線",
-                "name": "野崎",
-                "passengers": 2398
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     139.84146,
                     36.37307
                 ]
@@ -7887,91 +6323,6 @@
                 "line": "東北線",
                 "name": "小金井",
                 "passengers": 8056
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.67168,
-                    36.03683
-                ]
-            },
-            "properties": {
-                "stationId": "cv7948",
-                "company": "東日本旅客鉄道",
-                "line": "東北線",
-                "name": "新白岡",
-                "passengers": 13706
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.65367,
-                    35.98241
-                ]
-            },
-            "properties": {
-                "stationId": "cv7952",
-                "company": "東日本旅客鉄道",
-                "line": "東北線",
-                "name": "蓮田",
-                "passengers": 42096
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.6767,
-                    36.06452
-                ]
-            },
-            "properties": {
-                "stationId": "cv7955",
-                "company": "東日本旅客鉄道",
-                "line": "東北線",
-                "name": "久喜",
-                "passengers": 71664
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.6668,
-                    36.01633
-                ]
-            },
-            "properties": {
-                "stationId": "cv7956",
-                "company": "東日本旅客鉄道",
-                "line": "東北線",
-                "name": "白岡",
-                "passengers": 25820
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.87075,
-                    35.22095
-                ]
-            },
-            "properties": {
-                "stationId": "cv7986",
-                "company": "東日本旅客鉄道",
-                "line": "内房線",
-                "name": "上総湊",
-                "passengers": 1576
             }
         },
         {
@@ -8149,40 +6500,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    139.30957,
-                    35.9402
-                ]
-            },
-            "properties": {
-                "stationId": "cv8089",
-                "company": "東日本旅客鉄道",
-                "line": "八高線",
-                "name": "毛呂",
-                "passengers": 1438
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.29942,
-                    35.96224
-                ]
-            },
-            "properties": {
-                "stationId": "cv8096",
-                "company": "東日本旅客鉄道",
-                "line": "八高線",
-                "name": "越生",
-                "passengers": 1538
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     138.27451,
                     36.71059
                 ]
@@ -8251,23 +6568,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    139.25797,
-                    36.27688
-                ]
-            },
-            "properties": {
-                "stationId": "cv8326",
-                "company": "東武鉄道",
-                "line": "伊勢崎線",
-                "name": "境町",
-                "passengers": 1543
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     139.52648,
                     36.20823
                 ]
@@ -8278,23 +6578,6 @@
                 "line": "伊勢崎線",
                 "name": "川俣",
                 "passengers": 2782
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.67735,
-                    36.06503
-                ]
-            },
-            "properties": {
-                "stationId": "cv8372",
-                "company": "東武鉄道",
-                "line": "伊勢崎線",
-                "name": "久喜",
-                "passengers": 52454
             }
         },
         {
@@ -8421,74 +6704,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    139.30963,
-                    35.95186
-                ]
-            },
-            "properties": {
-                "stationId": "cv8389",
-                "company": "東武鉄道",
-                "line": "越生線",
-                "name": "武州唐沢",
-                "passengers": 3056
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.29948,
-                    35.9633
-                ]
-            },
-            "properties": {
-                "stationId": "cv8390",
-                "company": "東武鉄道",
-                "line": "越生線",
-                "name": "越生",
-                "passengers": 3939
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.31575,
-                    35.94682
-                ]
-            },
-            "properties": {
-                "stationId": "cv8391",
-                "company": "東武鉄道",
-                "line": "越生線",
-                "name": "東毛呂",
-                "passengers": 5675
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.32671,
-                    35.94187
-                ]
-            },
-            "properties": {
-                "stationId": "cv8393",
-                "company": "東武鉄道",
-                "line": "越生線",
-                "name": "武州長瀬",
-                "passengers": 4496
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     139.37046,
                     35.94048
                 ]
@@ -8533,57 +6748,6 @@
                 "line": "佐野線",
                 "name": "吉水",
                 "passengers": 1104
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.47001,
-                    36.25845
-                ]
-            },
-            "properties": {
-                "stationId": "cv8432",
-                "company": "東武鉄道",
-                "line": "小泉線",
-                "name": "本中野",
-                "passengers": 1036
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.37636,
-                    36.04496
-                ]
-            },
-            "properties": {
-                "stationId": "cv8450",
-                "company": "東武鉄道",
-                "line": "東上本線",
-                "name": "森林公園",
-                "passengers": 14499
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.39739,
-                    35.97264
-                ]
-            },
-            "properties": {
-                "stationId": "cv8456",
-                "company": "東武鉄道",
-                "line": "東上本線",
-                "name": "北坂戸",
-                "passengers": 20196
             }
         },
         {
@@ -8652,23 +6816,6 @@
                 "line": "東上本線",
                 "name": "つきのわ",
                 "passengers": 4980
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.39523,
-                    35.95729
-                ]
-            },
-            "properties": {
-                "stationId": "cv8474",
-                "company": "東武鉄道",
-                "line": "東上本線",
-                "name": "坂戸",
-                "passengers": 28748
             }
         },
         {
@@ -8761,23 +6908,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    139.99218,
-                    35.74132
-                ]
-            },
-            "properties": {
-                "stationId": "cv8503",
-                "company": "東武鉄道",
-                "line": "野田線",
-                "name": "馬込沢",
-                "passengers": 26786
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     139.98412,
                     35.82291
                 ]
@@ -8795,57 +6925,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    139.99924,
-                    35.79421
-                ]
-            },
-            "properties": {
-                "stationId": "cv8507",
-                "company": "東武鉄道",
-                "line": "野田線",
-                "name": "六実",
-                "passengers": 15409
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.99898,
-                    35.80864
-                ]
-            },
-            "properties": {
-                "stationId": "cv8508",
-                "company": "東武鉄道",
-                "line": "野田線",
-                "name": "高柳",
-                "passengers": 14124
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.93988,
-                    35.86629
-                ]
-            },
-            "properties": {
-                "stationId": "cv8514",
-                "company": "東武鉄道",
-                "line": "野田線",
-                "name": "豊四季",
-                "passengers": 15131
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     139.89154,
                     35.93113
                 ]
@@ -8856,23 +6935,6 @@
                 "line": "野田線",
                 "name": "梅郷",
                 "passengers": 17269
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    139.77856,
-                    35.98037
-                ]
-            },
-            "properties": {
-                "stationId": "cv8520",
-                "company": "東武鉄道",
-                "line": "野田線",
-                "name": "藤の牛島",
-                "passengers": 7262
             }
         },
         {
@@ -9060,23 +7122,6 @@
                 "line": "鉄道線",
                 "name": "風祭",
                 "passengers": 1730
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    137.3575,
-                    36.70446
-                ]
-            },
-            "properties": {
-                "stationId": "cv8821",
-                "company": "富山地方鉄道",
-                "line": "本線",
-                "name": "上市",
-                "passengers": 1876
             }
         },
         {
@@ -9305,23 +7350,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    140.07517,
-                    35.78694
-                ]
-            },
-            "properties": {
-                "stationId": "cv9553",
-                "company": "北総鉄道",
-                "line": "北総線",
-                "name": "小室",
-                "passengers": 3900
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     140.203038,
                     35.787721
                 ]
@@ -9349,159 +7377,6 @@
                 "line": "石川線",
                 "name": "鶴来",
                 "passengers": 1102
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    136.96179,
-                    35.21
-                ]
-            },
-            "properties": {
-                "stationId": "cv9623",
-                "company": "名古屋ガイドウェイバス",
-                "line": "ガイドウェイバス志段味線",
-                "name": "川宮",
-                "passengers": 1240
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    136.85362,
-                    35.13791
-                ]
-            },
-            "properties": {
-                "stationId": "cv9648",
-                "company": "名古屋市",
-                "line": "1号線東山線",
-                "name": "高畑",
-                "passengers": 21962
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    136.88314,
-                    35.09962
-                ]
-            },
-            "properties": {
-                "stationId": "cv9656",
-                "company": "名古屋市",
-                "line": "2号線名港線",
-                "name": "築地口",
-                "passengers": 9457
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    136.88465,
-                    35.10623
-                ]
-            },
-            "properties": {
-                "stationId": "cv9657",
-                "company": "名古屋市",
-                "line": "2号線名港線",
-                "name": "港区役所",
-                "passengers": 7249
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    136.86189,
-                    35.14062
-                ]
-            },
-            "properties": {
-                "stationId": "cv10022",
-                "company": "名古屋臨海高速鉄道",
-                "line": "西名古屋港線",
-                "name": "荒子",
-                "passengers": 4600
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    136.86139,
-                    35.12466
-                ]
-            },
-            "properties": {
-                "stationId": "cv10023",
-                "company": "名古屋臨海高速鉄道",
-                "line": "西名古屋港線",
-                "name": "中島",
-                "passengers": 5600
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    136.8627,
-                    35.11413
-                ]
-            },
-            "properties": {
-                "stationId": "cv10024",
-                "company": "名古屋臨海高速鉄道",
-                "line": "西名古屋港線",
-                "name": "名古屋競馬場前",
-                "passengers": 6700
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    136.86191,
-                    35.13111
-                ]
-            },
-            "properties": {
-                "stationId": "cv10025",
-                "company": "名古屋臨海高速鉄道",
-                "line": "西名古屋港線",
-                "name": "南荒子",
-                "passengers": 2900
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    136.86139,
-                    35.10508
-                ]
-            },
-            "properties": {
-                "stationId": "cv10028",
-                "company": "名古屋臨海高速鉄道",
-                "line": "西名古屋港線",
-                "name": "荒子川公園",
-                "passengers": 6300
             }
         },
         {
@@ -9689,23 +7564,6 @@
                 "line": "日暮里・舎人線",
                 "name": "見沼代親水公園",
                 "passengers": 13013
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.55323,
-                    34.78575
-                ]
-            },
-            "properties": {
-                "stationId": "cv10208",
-                "company": "阪急電鉄",
-                "line": "京都線",
-                "name": "摂津市",
-                "passengers": 11506
             }
         },
         {
