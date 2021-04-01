@@ -1,15 +1,7 @@
 package org.gnit.cpsd.crawler
 
 import com.ibm.icu.text.Transliterator
-import okhttp3.CacheControl
-import okhttp3.Request
 import org.jsoup.Jsoup
-import org.jsoup.select.Elements
-import java.nio.charset.Charset
-import java.nio.charset.IllegalCharsetNameException
-import java.util.*
-import java.util.concurrent.TimeUnit
-import java.util.regex.Pattern
 
 
 data class Church(
@@ -27,10 +19,8 @@ data class Church(
 fun main() {
     //crawlJCC().forEach { println(it) }
     //crawlUCCJ().forEach { println(it) }
-    crawlJBC()/*.forEach { println(it) }*/
-
+    crawlJBC().forEach { println(it) }
 }
-
 
 
 //Japan Christian Church 日本キリスト教会
@@ -107,11 +97,6 @@ fun crawlUCCJ(): List<Church> {
 
 //Japan Baptist Convention 日本バプテスト連盟
 fun crawlJBC(): List<Church> {
-    val noneChurchCategory = listOf("事業体", "連盟機関／諸委員会", "団体", "学校")
-    // https://www.bapren.jp/?page_id=216
-    //val document = Jsoup.parse(File("C:/Users/joel/Desktop/jbc.html"), "UTF-8")
-
-    //val document = Jsoup.connect("https://www.bapren.jp/?page_id=216").get()
     val document = Jsoup.parse(fetchCacheIfNotUrl("https://www.bapren.jp/?page_id=216"))
     val trs = document.select(".post-type-church")
 
@@ -125,42 +110,51 @@ fun crawlJBC(): List<Church> {
                 "チャペル"
             ) || name.contains("集会所")
         ) {
-
             val url = tds[1].getElementsByTag("a").first().attr("href")
-            val churchDocument = Jsoup.parse(fetchCacheIfNotUrl(url))
-
-            //TODO work on case https://www.bapren.jp/?church=%e8%b1%8a%e7%94%b0%e4%bc%9d%e9%81%93%e6%89%80
-
-            val postalCodeAndAddress =
-                churchDocument.select("article dl dt:contains(住所) + dd").first().text().split("&nbsp")
-
-            if(postalCodeAndAddress.size < 2) throw RuntimeException("No address in content: $postalCodeAndAddress")
-
-            val postalCode = postalCodeAndAddress[0].trim()
-            val address = postalCodeAndAddress[1]
-
-            val phoneNumber = churchDocument.select("article dl dt:contains(電話) + dd").first().text()
-
-            val pastorName = churchDocument.select("article dl dt:contains(スタッフ) + dd").first().text()
-
-            val localConvention = tds[2].text()
-
-            val church = Church(
-                churchName = name,
-                postalCode = postalCode,
-                address = address,
-                phoneNumber = phoneNumber,
-                url = url,
-                pastorName = pastorName,
-                subDivision = localConvention,
-                denomination = "日本バプテスト連盟"
-            )
+            val church = fetchJBCChurch(url)
             churches.add(church)
-            //println(church.toString())
-            Thread.sleep((Math.random() * 1000).toLong())
         }
     }
     return churches
+}
+
+fun fetchJBCChurch(url: String): Church {
+
+    val churchDocument = Jsoup.parse(fetchCacheIfNotUrl(url))
+
+    val name = churchDocument.selectFirst("article header h1").text()
+
+    val postalCodeAndAddress =
+        churchDocument.select("article dl dt:contains(住所) + dd").first().text().split("&nbsp")
+
+    val postalCode = if (postalCodeAndAddress.size == 2) {
+        postalCodeAndAddress[0].trim()
+    } else {
+        null
+    }
+
+    val address = if (postalCodeAndAddress.size == 2) {
+        postalCodeAndAddress[1]
+    } else {
+        null
+    }
+
+    val phoneNumber = churchDocument.select("article dl dt:contains(電話) + dd").first().text()
+
+    val pastorName = churchDocument.select("article dl dt:contains(スタッフ) + dd").first().text()
+
+    val localConvention = churchDocument.select("article dl dt:contains(連合) + dd").first().text()
+
+    return Church(
+        churchName = name,
+        postalCode = postalCode,
+        address = address,
+        phoneNumber = phoneNumber,
+        url = url,
+        pastorName = pastorName,
+        subDivision = localConvention,
+        denomination = "日本バプテスト連盟"
+    )
 }
 
 fun String.toHalfWidth() = Transliterator.getInstance("Fullwidth-Halfwidth").transliterate(this)
