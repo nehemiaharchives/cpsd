@@ -4,6 +4,8 @@ build/*
 gradle/
 src/main/resources/db.properties
 src/main/resources/*.json
+cache/
+!cache/README.md
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Kotlin template
