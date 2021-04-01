@@ -1,5 +1,6 @@
 package org.gnit.cpsd
 
+import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
 import java.nio.file.Path
@@ -21,6 +22,8 @@ fun writeRouteCsv(stationId: String, churchId: String, distance: Double) {
     }
 }
 
+fun jsonExists(name: String) = Paths.get("src/main/resources/$name.json").toFile().exists()
+
 fun writeJson(name: String, json: String) {
 
     val path: Path = Paths.get("src/main/resources/$name.json")
@@ -32,3 +35,5 @@ fun writeJson(name: String, json: String) {
         ex.printStackTrace()
     }
 }
+
+fun loadJson(jsonName: String): String = File("src/main/resources/$jsonName.json").readText()

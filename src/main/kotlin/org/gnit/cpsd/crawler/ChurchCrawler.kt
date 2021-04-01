@@ -1,9 +1,19 @@
 package org.gnit.cpsd.crawler
 
 import com.ibm.icu.text.Transliterator
+import kotlinx.serialization.Serializable
+import kotlinx.serialization.encodeToString
+import kotlinx.serialization.json.Json
+import org.gnit.cpsd.jsonExists
+import org.gnit.cpsd.loadJson
+import org.gnit.cpsd.writeJson
 import org.jsoup.Jsoup
+import java.io.File
+import java.util.*
 
+val format = Json { prettyPrint = true }
 
+@Serializable
 data class Church(
     val churchName: String,
     val postalCode: String?,
@@ -16,12 +26,60 @@ data class Church(
     val denomination: String
 )
 
-fun main() {
-    //crawlJCC().forEach { println(it) }
-    //crawlUCCJ().forEach { println(it) }
-    crawlJBC().forEach { println(it) }
+class LocalName(
+    val name: String,
+    val locale: Locale
+)
+
+fun String.ja() = LocalName(this, Locale.JAPANESE)
+fun String.en() = LocalName(this, Locale.ENGLISH)
+
+fun jaNames(vararg elements: String): List<LocalName> = elements.map { LocalName(it, Locale.JAPANESE) }
+
+data class Denomination(
+    val canonicalName: LocalName,
+    val otherNames: List<LocalName>,
+    val abbreviation: String
+) {
+    fun name() = canonicalName.name
+    fun allNames() = otherNames.map { it.name }.plus(canonicalName).plus(abbreviation)
 }
 
+val denominations = listOf(
+    Denomination("日本キリスト教会".ja(), jaNames("新日基", "新日キ").plus("Church of Christ in Japan".en()), "JCC"),
+    Denomination(
+        "日本基督教団".ja(),
+        jaNames("日本キリスト教団", "日基教団", "日基").plus("United Church of Christ in Japan".en()),
+        "UCCJ"
+    ),
+    Denomination("日本バプテスト連盟".ja(), jaNames("バプ連").plus("Japan Baptist Convention".en()), "JBC")
+)
+
+fun String.parseDenomination(): Denomination? = denominations.firstOrNull { it.allNames().contains(this) }
+
+fun main() {
+    denominations.map { it.abbreviation }.forEach {
+        cache(it)
+    }
+}
+
+fun cache(denominationAbbr: String): String {
+
+    return if (jsonExists(denominationAbbr)) {
+        loadJson(denominationAbbr)
+    } else {
+        val json = format.encodeToString(crawl(denominationAbbr))
+        writeJson(denominationAbbr, json)
+        json
+    }
+}
+
+fun crawl(dnm: String) = when (dnm) {
+    "JCC" -> crawlJCC()
+    "UCCJ" -> crawlUCCJ()
+    "JBC" -> crawlJBC()
+    else -> emptyList()
+}
 
 //Japan Christian Church 日本キリスト教会
 fun crawlJCC(): List<Church> {
@@ -63,7 +121,7 @@ fun crawlJCC(): List<Church> {
                 subDivision = presbytery,
                 denomination = "日本キリスト教会"
             )
-            churches.add(church)
+            if ("教会名" != church.churchName) churches.add(church)
         }
     }
 
