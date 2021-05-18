@@ -36,7 +36,7 @@ fun main() {
                 val station = s.get("s").asNode()
                 val church = c.get("c").asNode()
                 val distance = distance(station, church)
-                if (distance < 10 * 1000) {
+                if (distance < 5 * 1000) { // routes from church to station less than 5 km
                     println(
                         "recording $recordCount routes, " +
                                 "searched $searchCount routes of total routes: $totalRoutes, " +
