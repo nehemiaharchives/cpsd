@@ -21,7 +21,7 @@ First dataset is location of Churches and train stations with passenger count an
 cpsd is a combination of [Kotlin](https://kotlinlang.org/) functions meant to be executed in [integrated development environment](https://en.wikipedia.org/wiki/Integrated_development_environment) (IDE) with running local [Neo4j](https://neo4j.com/) instance at localhost.
 
 ## Setup and Run
-1. Download Neo4j Desktop and create a database with your choce of password.
+1. Download Neo4j Desktop, create a database with your choce of password, and [install APOC](https://neo4j.com/labs/apoc/4.2/installation/).
 2. Prepare ```churches.csv``` with header ```url,catholic,lat,lng,address,name```.
 3. Prepare ```stations.csv``` with header ```id,lat,lng,name,company,line,passengers2017```.
 4. In Neo4j Desktop, Your Project-> Click "⋯" Dropdown->Open folder->Import copy and paste ```churches.csv``` and ```stations.csv``` in ```Import``` directory.
