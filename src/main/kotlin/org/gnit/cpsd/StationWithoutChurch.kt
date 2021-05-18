@@ -62,22 +62,27 @@ fun main() {
 
             val stationPolygon = StationPolygon(
                 type = "Feature",
-                geometry = PolygonGeometry(type = "Polygon", coordinates = arrayOf(squareOf(stationLat, stationLng, 100.0))),
+                geometry = PolygonGeometry(
+                    type = "Polygon",
+                    coordinates = arrayOf(squareOf(stationLat, stationLng, 100.0))
+                ),
                 properties = stationProperty
             )
             stationPolygons.add(stationPolygon)
         }
 
-        val stationPointGeoJson = format.encodeToString(StationPoints(type = "FeatureCollection", stationPoints.toTypedArray()))
-        val stationPolygonGeoJson = format.encodeToString(StationPolygons(type = "FeatureCollection", stationPolygons.toTypedArray()))
+        val stationPointGeoJson =
+            format.encodeToString(StationPoints(type = "FeatureCollection", stationPoints.toTypedArray()))
+        val stationPolygonGeoJson =
+            format.encodeToString(StationPolygons(type = "FeatureCollection", stationPolygons.toTypedArray()))
 
         //something like:
-        //segment 0 - 500 has 4307 stations, 1725 with church, 2582 without church
-        //segment 0 - 1000 has 4307 stations, 2991 with church, 1316 without church
-        //segment 0 - 1500 has 4307 stations, 3484 with church, 823 without church
-        //segment 0 - 2000 has 4307 stations, 3727 with church, 580 without church
-        //segment 0 - 2500 has 4307 stations, 3869 with church, 438 without church
-        //segment 0 - 3000 has 4307 stations, 3971 with church, 336 without church
+        //segment 0 - 500 has 4307 stations, 2074 with church, 2233 without church
+        //segment 0 - 1000 has 4307 stations, 3271 with church, 1036 without church
+        //segment 0 - 1500 has 4307 stations, 3667 with church, 640 without church
+        //segment 0 - 2000 has 4307 stations, 3874 with church, 433 without church
+        //segment 0 - 2500 has 4307 stations, 3986 with church, 321 without church
+        //segment 0 - 3000 has 4307 stations, 4064 with church, 243 without church
         println("segment $minDistance - $maxDistance has $total stations, $withChurch with church, $withoutChurch without church")
         writeJson("$maxDistance-station-point-without-church", stationPointGeoJson)
         writeJson("$maxDistance-station-polygon-without-church", stationPolygonGeoJson)
