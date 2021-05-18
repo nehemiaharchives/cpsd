@@ -6,22 +6,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    140.109046,
-                    35.615299
-                ]
-            },
-            "properties": {
-                "churchId": "6d02ef22ce16526b53aee0b4c7218b12d91e3159",
-                "name": "千葉バイブルバプテスト教会",
-                "address": "〒260-0031 千葉県千葉市中央区新千葉３丁目１−１−２",
-                "catholic": false
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     135.511856,
                     34.701565
                 ]
@@ -14172,8 +14156,8 @@
             },
             "properties": {
                 "churchId": "b6611e86de1f0ebafa8b6a9519dae9ecd31c07ee",
-                "name": "福岡警固教会",
-                "address": "〒810-0023 福岡県福岡市中央区警固２丁目１１−２０ 日本基督教団",
+                "name": "警固教会",
+                "address": "〒810-0023 福岡県福岡市中央区警固２丁目１１−２０ 日本基督教団福岡",
                 "catholic": false
             }
         },
@@ -56726,6 +56710,22 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    140.109046,
+                    35.615299
+                ]
+            },
+            "properties": {
+                "churchId": "6d02ef22ce16526b53aee0b4c7218b12d91e3159",
+                "name": "千葉バイブルバプテスト教会",
+                "address": "〒260-0031 千葉県千葉市中央区新千葉３丁目１−１−２",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     140.119547,
                     35.621427
                 ]
@@ -64758,6 +64758,3014 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
+                    135.5484696,
+                    34.7048004
+                ]
+            },
+            "properties": {
+                "churchId": "c865ff01a18fe6703be4eecc9d74187141bccddf",
+                "name": "Osaka Hope Community",
+                "address": "〒536-0004 大阪府大阪市城東区今福西５丁目１３−３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5066403,
+                    34.4989118
+                ]
+            },
+            "properties": {
+                "churchId": "9bca5046bee3e37da75e3e5e2b74a6dbf76809f7",
+                "name": "泉北ニュータウン教会",
+                "address": "〒590-0105 大阪府堺市南区竹城台２丁２−１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.0420559,
+                    35.6394693
+                ]
+            },
+            "properties": {
+                "churchId": "5e4e6ecc5d29ed7661016a2ef4fa04faf75245c7",
+                "name": "海浜幕張めぐみ教会",
+                "address": "〒261-0013 千葉県千葉市美浜区打瀬３丁目４",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5723241,
+                    34.4488934
+                ]
+            },
+            "properties": {
+                "churchId": "f22ed1aa3265bf839bc7ebd76bc14b5ea6564ffa",
+                "name": "河内長野みぎわ教会",
+                "address": "〒586-0014 大阪府河内長野市長野町６−１４",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7294534,
+                    35.7033392
+                ]
+            },
+            "properties": {
+                "churchId": "d41d61855e1c62a019d0ec3e915c2e19fee37cea",
+                "name": "エパタ教会",
+                "address": "〒162-0805 東京都新宿区矢来町",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.6416922,
+                    34.7184626
+                ]
+            },
+            "properties": {
+                "churchId": "1f2bad35f4c4b5ea2602441469cfa31b4caa0bc9",
+                "name": "大阪グレースチャーチ",
+                "address": "〒574-0015 大阪府大東市野崎２丁目２−６",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.7553709,
+                    35.0180901
+                ]
+            },
+            "properties": {
+                "churchId": "8be53dd8e4739e565444739c33b254eaf93b8a83",
+                "name": "シオン・プレイズ・チャーチ",
+                "address": "〒602-8032 京都府京都市上京区夷川町",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.6743967,
+                    35.7133854
+                ]
+            },
+            "properties": {
+                "churchId": "6c3d5c8b39e419ab38fb312c2e0b0259e347c1c9",
+                "name": "葦のかご教会",
+                "address": "〒164-0002 東京都中野区上高田３丁目２７−１０",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.4700016,
+                    34.7178698
+                ]
+            },
+            "properties": {
+                "churchId": "538c11c54d72a149264366768f3f111eb26e285e",
+                "name": "僕達の賛美教会",
+                "address": "〒532-0026 大阪府大阪市淀川区塚本５丁目５−８",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7036407,
+                    35.6585747
+                ]
+            },
+            "properties": {
+                "churchId": "5f6ad4bf525bfa48ed0dd73b5d8fd6059f4b0947",
+                "name": "恵約宣教教会",
+                "address": "〒150-0002 東京都渋谷区渋谷２丁目２２−１６",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5282378,
+                    34.6569283
+                ]
+            },
+            "properties": {
+                "churchId": "ebc9722b3615015762e9febf8de2f87ca02997d6",
+                "name": "大阪愛の教会",
+                "address": "〒544-0033 大阪府大阪市生野区勝山北１丁目３−１６",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5266674,
+                    34.6584509
+                ]
+            },
+            "properties": {
+                "churchId": "8a10ed7a944404161d9aa9c0d074b98afa5d2164",
+                "name": "The Light of Eternal Agape 大阪シオンの山教会",
+                "address": "桃陽ビル １丁目-１１-１６ 堂ケ芝 天王寺区 大阪市 大阪府 543-0033",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.526528,
+                    34.653656
+                ]
+            },
+            "properties": {
+                "churchId": "b3d34473c920375934dde4ca5b3ec729cc8cd83a",
+                "name": "大阪みぎわチャペル",
+                "address": "〒544-0021 大阪府大阪市生野区勝山南１丁目１−１０",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.6905591,
+                    35.7634413
+                ]
+            },
+            "properties": {
+                "churchId": "622f281016ec6c1b2a14ec705f371ce3996acd4b",
+                "name": "JCSGO Itabashi-ku full Gospel Church",
+                "address": "〒174-0063 東京都板橋区前野町２丁目３−３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.3743598,
+                    34.8200716
+                ]
+            },
+            "properties": {
+                "churchId": "642231a4131c6d8bc7fb7ddb96a51ff13175481e",
+                "name": "ジーザスハウス宝塚",
+                "address": "〒665-0874 兵庫県宝塚市中筋１丁目１１−６−２",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.497924,
+                    34.577981
+                ]
+            },
+            "properties": {
+                "churchId": "438086da81c2851bb7226a04a4ab2866ffc17ffc",
+                "name": "ライトハウスキリスト教会 (堺市)",
+                "address": "〒590-0013 大阪府堺市堺区東雲西町１丁２−７ 出原ビル4階",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.776686,
+                    34.80909
+                ]
+            },
+            "properties": {
+                "churchId": "407b7676b0b9c7a905d27d8272dca316fa314614",
+                "name": "興戸キリスト教会",
+                "address": "〒610-0332 京都府京田辺市興戸下ノ川原７４−７",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.4942654,
+                    34.6550816
+                ]
+            },
+            "properties": {
+                "churchId": "df4e6912a79b8bf23653533b3c28932a8fd707f3",
+                "name": "大阪キリスト教会",
+                "address": "〒556-0014 大阪府大阪市浪速区大国２丁目６",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.4809344,
+                    34.5917571
+                ]
+            },
+            "properties": {
+                "churchId": "51f9682ae3e0237a11d2daae9ee6e57e78afab82",
+                "name": "プロテスダント・キリスト教会",
+                "address": "〒590-0928 大阪府堺市堺区北旅籠町西３丁３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.6733968,
+                    34.7837179
+                ]
+            },
+            "properties": {
+                "churchId": "7ed884fb1d27e7e3bd0575a3e24d2b26b3c0c329",
+                "name": "交野キリスト教会",
+                "address": "〒576-0041 大阪府交野市私部西３丁目１４−２３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.1535804,
+                    34.7492105
+                ]
+            },
+            "properties": {
+                "churchId": "ee2d58ee0e95b7e2929b6b01a6defd8b5cf61fb4",
+                "name": "山の街キリスト教会",
+                "address": "〒651-1221 兵庫県神戸市北区緑町３丁目１０−２６",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.778804,
+                    34.851803
+                ]
+            },
+            "properties": {
+                "churchId": "a19b0e17b44f09c8169578497353505d0b584744",
+                "name": "城陽キリスト栄光教会",
+                "address": "〒610-0121 京都府城陽市寺田東ノ口４４−２８",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.6991114,
+                    34.8846903
+                ]
+            },
+            "properties": {
+                "churchId": "fd3d561a74eda55c0897ebda1178796c721cbdcb",
+                "name": "主イエスキリスト京都教会",
+                "address": "〒614-8005 京都府八幡市八幡西高坊７",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.7763242,
+                    34.838842
+                ]
+            },
+            "properties": {
+                "churchId": "161a0454687a854bed6536b462e6f6cde02c5207",
+                "name": "城陽キリスト恵み教会",
+                "address": "〒610-0111 京都府城陽市富野西垣内３３−１２３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.6747507,
+                    34.8470239
+                ]
+            },
+            "properties": {
+                "churchId": "4007d990075cfaab66542b35bce709a2f556eb29",
+                "name": "日本メノナイトブレザレン教団 枚方キリスト教会",
+                "address": "〒573-1125 大阪府枚方市養父元町４−２８",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7503989,
+                    35.9803152
+                ]
+            },
+            "properties": {
+                "churchId": "ba732ac9ea20d955440524255703d14d2513e56c",
+                "name": "春日部グレイスチャーチ",
+                "address": "〒344-0067 埼玉県春日部市中央１丁目１０−14第2 中山ビル 5階",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.424739,
+                    36.257388
+                ]
+            },
+            "properties": {
+                "churchId": "a679e6acd3f723bd86e439896a374326451dab01",
+                "name": "ユニバーサルキリスト教会群馬支部",
+                "address": "〒370-0514 群馬県邑楽郡大泉町朝日３丁目１７−１４",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.8986859,
+                    35.7862614
+                ]
+            },
+            "properties": {
+                "churchId": "78c09d124c719d8a96a56cd79561df35e56b7de9",
+                "name": "松戸栄光教会",
+                "address": "〒271-0091 千葉県松戸市本町25−５ 松戸本町ビル 5階",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.908145,
+                    35.7345938
+                ]
+            },
+            "properties": {
+                "churchId": "33e85b9dccdf0a9df4b96cdf415622f114400ff6",
+                "name": "The House of Liberty",
+                "address": "〒272-0034 千葉県市川市市川１丁目１７",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.114019,
+                    35.5332442
+                ]
+            },
+            "properties": {
+                "churchId": "8cc015ccd7fa07e615d9d4286271fa72eecb3517",
+                "name": "Jcsgo市原キリスト教会",
+                "address": "〒290-0062 千葉県市原市八幡",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.9209873,
+                    35.8243613
+                ]
+            },
+            "properties": {
+                "churchId": "b51fa88f8c0313be4594124636c9e34810f6eac9",
+                "name": "치바반석교회",
+                "address": "〒270-0017 千葉県松戸市幸谷４６０−５",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.9209829,
+                    35.8243444
+                ]
+            },
+            "properties": {
+                "churchId": "3677c71eb328634b11e54fca811c7b723fdfd975",
+                "name": "千葉ネパーリフェロシップ",
+                "address": "〒270-0017 千葉県松戸市幸谷４６０−５",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.0416887,
+                    35.8655575
+                ]
+            },
+            "properties": {
+                "churchId": "7503b50c09078dca5e45a3020bbe179de668a8cc",
+                "name": "Pentecostal Missionary CHURCH of CHRIST (4th Watch)",
+                "address": "２丁目-３４-６ 東我孫子 我孫子市 千葉県 270-1144",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.8448897,
+                    35.8702767
+                ]
+            },
+            "properties": {
+                "churchId": "2dace54b28321ac02755eb5ad2b59d5de0984dbb",
+                "name": "サンライズクリスチャンセンター 三郷吉川教会",
+                "address": "〒342-0035 埼玉県吉川市高久２丁目１−２０",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.6337018,
+                    35.837539
+                ]
+            },
+            "properties": {
+                "churchId": "75571513d2c3bc3b10f045ab067f3b43447983b3",
+                "name": "Iglesia Ni Cristo - Locale of Saitama",
+                "address": "２丁目-１５-５ 曲本 南区 さいたま市 埼玉県 336-0033",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.4183154,
+                    35.7040812
+                ]
+            },
+            "properties": {
+                "churchId": "d1b65cb7a9e0c8948921fdd199361ea88020233b",
+                "name": "東京華人基督教会",
+                "address": "〒190-0011 東京都立川市高松町３丁目２１−８ ＳＤＡ教団立川ビル",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.5257226,
+                    35.6988446
+                ]
+            },
+            "properties": {
+                "churchId": "bb82d323faccf39229dde5816b598f4c753ec5dc",
+                "name": "国 際 福 音 セ ン タ ー",
+                "address": "国際福音センター ４丁目-２９-１５ 東町 小金井市 東京都 184-0011",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.6324378,
+                    35.719664
+                ]
+            },
+            "properties": {
+                "churchId": "9ab2d96f31db1dff6dd63dc2068948f12eb62e11",
+                "name": "キリスト教待晨集会",
+                "address": "〒165-0035 東京都中野区２２ 東京都中野区白鷺2丁目22−2",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.4324502,
+                    35.5307751
+                ]
+            },
+            "properties": {
+                "churchId": "d721085bdca45e356d67ae06b2dc5974b026cc38",
+                "name": "大野キリスト教会",
+                "address": "〒252-0303 神奈川県相模原市南区相模大野６丁目９",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.670309,
+                    35.283052
+                ]
+            },
+            "properties": {
+                "churchId": "fb10b42f975949c98191a2d648f6cc47b2e6f88a",
+                "name": "Christian Ministries Far East",
+                "address": "〒238-0004 神奈川県横須賀市小川町２",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.674364,
+                    35.278711
+                ]
+            },
+            "properties": {
+                "churchId": "36222d6fd94862d8580381c8b9693504f14da7ff",
+                "name": "フルゴスペル横須賀教会",
+                "address": "〒238-0011 神奈川県横須賀市米が浜通１丁目６",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.6225843,
+                    35.3231686
+                ]
+            },
+            "properties": {
+                "churchId": "db0e77b46ebf40342a95bdad253d08edb4b58f5c",
+                "name": "関東学院大学礼拝堂",
+                "address": "〒236-0037 神奈川県横浜市金沢区六浦東１丁目５０−１ 関東学院教会 （大学チャペル）",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.6168434,
+                    35.3433173
+                ]
+            },
+            "properties": {
+                "churchId": "e6b800a07ac903cce3d9c5f4200cfc0dccdc3324",
+                "name": "金沢文庫キリスト集会所",
+                "address": "〒236-0042 神奈川県横浜市金沢区釜利谷東２丁目４",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.9505553,
+                    35.6144121
+                ]
+            },
+            "properties": {
+                "churchId": "3c2e1de09905e42d8e9498de5f91f647a99c805e",
+                "name": "大月キリストの教会",
+                "address": "〒401-0011 山梨県大月市駒橋１丁目９−１４",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.6711474,
+                    35.5599805
+                ]
+            },
+            "properties": {
+                "churchId": "4f3014bae683e919fdbf9acbc3a76f50b139081f",
+                "name": "Iglesia Ni Cristo (Church of Christ) Kawasaki Locale キリストの教会 川崎ローカル",
+                "address": "６９ 田尻町 中原区 川崎市 神奈川県 211-0014",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.659513,
+                    35.663109
+                ]
+            },
+            "properties": {
+                "churchId": "7faf7ef68b24d1beae3cd283f89ce11daa4b9aab",
+                "name": "日本宣教会 代田教会",
+                "address": "〒156-0042 東京都世田谷区羽根木１丁目１９−２",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.3903043,
+                    33.588849
+                ]
+            },
+            "properties": {
+                "churchId": "1c94b3d8334388bc63c4d4cac9e1b178f920045b",
+                "name": "ジーザスコール福岡 Jesus' call Fukuoka",
+                "address": "１丁目-１０-１６ 赤坂 中央区 福岡市 福岡県 810-0042",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.4214568,
+                    33.6045696
+                ]
+            },
+            "properties": {
+                "churchId": "3a04c6df7b31c74eb1cdaababafd85ef282caeb8",
+                "name": "ジョイ・チャーチ",
+                "address": "〒812-0045 福岡県福岡市博多区東公園４−５ ＮＫＳビル",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    132.3598312,
+                    34.3689841
+                ]
+            },
+            "properties": {
+                "churchId": "62eed451cb7f4480783040576647eff2425098ef",
+                "name": "ＮＩＰＰＯＮハーベスト教会",
+                "address": "〒731-5127 広島県広島市佐伯区五日市３丁目４−２６ サンハイツ吉村",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.4846545,
+                    34.6523049
+                ]
+            },
+            "properties": {
+                "churchId": "2ce360aabbc1f1a249008efe1a0058032e046ef3",
+                "name": "ハレルヤ サンライズ チャペル",
+                "address": "〒557-0061 大阪府大阪市西成区北津守３丁目１−４８",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.533783,
+                    34.663575
+                ]
+            },
+            "properties": {
+                "churchId": "0f47aeb795926faf21df5b7cddf630df025c8955",
+                "name": "大阪ベテル教会",
+                "address": "〒544-0031 大阪府大阪市生野区鶴橋２丁目１６−５",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.700665,
+                    34.924471
+                ]
+            },
+            "properties": {
+                "churchId": "6f64d5bf73a89cdf14ae1b889dbe5e086d62acfc",
+                "name": "チャぺル福音館",
+                "address": "〒617-0833 京都府長岡京市神足１丁目３−２０",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5505301,
+                    34.6406586
+                ]
+            },
+            "properties": {
+                "churchId": "41dab17278d45966b70e525edaebc497f1c3cc87",
+                "name": "大阪福音教会",
+                "address": "〒544-0015 大阪府大阪市生野区巽南３丁目４",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.666123,
+                    34.845573
+                ]
+            },
+            "properties": {
+                "churchId": "88a3299b503044d3de442d2af26a84e859b44a64",
+                "name": "インタナショナル・チャーチ",
+                "address": "〒573-1142 大阪府枚方市牧野下島町１−１３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5283543,
+                    34.6776215
+                ]
+            },
+            "properties": {
+                "churchId": "2a7d25d39424d47db9b77a219119c9546fce21a0",
+                "name": "Theater Church(シアターチャーチ)",
+                "address": "〒540-0004 大阪府大阪市中央区玉造２丁目２２−２１ ＪＬビル 3Ｆ",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.676012,
+                    34.783455
+                ]
+            },
+            "properties": {
+                "churchId": "b80ba1c6d6b73b8e1db868fbce834ca8e78a0118",
+                "name": "ホーリーバイブルチャーチ",
+                "address": "〒576-0041 大阪府交野市私部西２丁目１８−２",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.55085,
+                    34.6709583
+                ]
+            },
+            "properties": {
+                "churchId": "93a433139919bb83f5bcc181cb72f5c5a1238f64",
+                "name": "大阪バイブルチャーチ",
+                "address": "〒537-0012 大阪府大阪市東成区大今里２丁目３４−１０",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    141.3584759,
+                    43.0288382
+                ]
+            },
+            "properties": {
+                "churchId": "c5fd537ba3b8cf674bdf273e30390b2d47b001ab",
+                "name": "札幌の教会 チャーチ･オン･ザ･ロック",
+                "address": "〒062-0921 北海道札幌市豊平区中の島１条６丁目 カトレアハイツ札幌 1F",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.8129037,
+                    34.9444527
+                ]
+            },
+            "properties": {
+                "churchId": "3cc4200b3cce64a1359c26dcf16b27aca6d69f40",
+                "name": "京都グレースバイブルチャーチ 醍醐チャペル",
+                "address": "〒601-1355 京都府京都市伏見区醍醐多近田町２３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.762859,
+                    34.816045
+                ]
+            },
+            "properties": {
+                "churchId": "4a97e5daa4ae547853955fca3e16234a738b8e07",
+                "name": "クライスト・チャーチ 京阪奈",
+                "address": "〒610-0331 京都府京田辺市田辺狐川１１１−１ クライスト・チャーチ京阪奈",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5060735,
+                    34.8220676
+                ]
+            },
+            "properties": {
+                "churchId": "f7b66fdd01868bfd5185de36eaf6690aa6eafe8e",
+                "name": "ゴスペルチャーチ千里",
+                "address": "〒565-0875 大阪府吹田市青山台４丁目３ Ｃ－１１ 号棟１０８号室 ＵＲ千里",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.9442046,
+                    35.0032347
+                ]
+            },
+            "properties": {
+                "churchId": "d016e37a767bd36ae1c6f321d6e8fc3bd9629e75",
+                "name": "クリエイティブライフチャーチ",
+                "address": "〒525-0055 滋賀県草津市野路町１２８２−２",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5253548,
+                    34.6479596
+                ]
+            },
+            "properties": {
+                "churchId": "1cf6a7497b3b8be5d4f82408e257215d3d3857b0",
+                "name": "ブレイクスルーチャーチ",
+                "address": "〒544-0024 大阪府大阪市生野区生野西２丁目１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.6658387,
+                    34.8452867
+                ]
+            },
+            "properties": {
+                "churchId": "a2d2c9aadd58068e77375db58750e551e4319078",
+                "name": "TCC京阪 シティー・チャーチ牧野",
+                "address": "〒573-1142 大阪府枚方市牧野下島町１−７ 東邦ビル3階",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.532733,
+                    34.6637897
+                ]
+            },
+            "properties": {
+                "churchId": "9ac99d14540e200a55f2b7f8513cbe701e110497",
+                "name": "힐링 교회 ヒーリングチャーチ(Healing Church)",
+                "address": "〒544-0031 大阪府大阪市生野区鶴橋２丁目１４−１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.8157208,
+                    34.9736162
+                ]
+            },
+            "properties": {
+                "churchId": "88ce1d493ec45eef3651ce149b8ca1efb7041f1a",
+                "name": "京都グレースバイブルチャーチ なぎ辻チャペル",
+                "address": "〒607-8162 京都府京都市山科区椥辻草海道町１２−７ タケナカビル",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.3532789,
+                    34.7342643
+                ]
+            },
+            "properties": {
+                "churchId": "d6f50cb14dc576a4a0a82e5894e25c956a232ec2",
+                "name": "グレースバイブルチャーチ",
+                "address": "〒663-8244 兵庫県西宮市津門綾羽町１−１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.4229599,
+                    34.4894992
+                ]
+            },
+            "properties": {
+                "churchId": "d461e031c4fb58559ccd1b00a9de1eea49ef7f13",
+                "name": "プレストチャーチ",
+                "address": "〒594-0071 大阪府和泉市府中町８丁目３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.530227,
+                    34.671127
+                ]
+            },
+            "properties": {
+                "churchId": "01a0f20a8480261cfe00f5398710b953f1235225",
+                "name": "リビングジーザス・チャーチ",
+                "address": "〒543-0015 大阪府大阪市天王寺区真田山町１−１２",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7087804,
+                    35.6586212
+                ]
+            },
+            "properties": {
+                "churchId": "c627500c3085668d86a6ac86bab0c8da3668eebd",
+                "name": "ヒルソング・サンデーリンク東京",
+                "address": "〒150-0002 東京都渋谷区渋谷４丁目５−５",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.8187898,
+                    35.7317244
+                ]
+            },
+            "properties": {
+                "churchId": "01441a31e30735de7e5dce2a31bee5b249a4bc17",
+                "name": "RCCG DOMINION SANCTUARY Tokyo",
+                "address": "２丁目-４２-１ 墨田 墨田区 東京都 131-0031",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.4228191,
+                    35.518179
+                ]
+            },
+            "properties": {
+                "churchId": "9b721fe90e09bdf95e0851403dc1ef1004728bc3",
+                "name": "トライアンファント　バイブル　チャーチ",
+                "address": "〒252-0314 神奈川県相模原市南区南台４丁目１６",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.702183,
+                    35.234854
+                ]
+            },
+            "properties": {
+                "churchId": "ba7dc6a4190adb00ebf6ab490bac40e564d11055",
+                "name": "インマヌエルチャーチ",
+                "address": "〒239-0805 神奈川県横須賀市舟倉１丁目３２−１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.952876,
+                    34.978816
+                ]
+            },
+            "properties": {
+                "churchId": "d9cc8df4bd7376ce1b6999e768b7255d92e4a1e3",
+                "name": "ホープインターナショナルフェロシップ",
+                "address": "〒410-2407 静岡県伊豆市柏久保６１６−１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.6607009,
+                    35.5773987
+                ]
+            },
+            "properties": {
+                "churchId": "f2a7abe1d346dea87550e143a3639a187931e804",
+                "name": "武蔵小杉 ジーザスチャーチ",
+                "address": "〒211-0004 神奈川県川崎市中原区新丸子東２丁目 ピノコ",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7131973,
+                    35.7324776
+                ]
+            },
+            "properties": {
+                "churchId": "3999ef05ab0ba8cb21261707e8e4108f3c4ab2ff",
+                "name": "東京ライフチャーチ Tokyo Life Church",
+                "address": "２８山京ビル １丁目-４２-１４ 東池袋 豊島区 東京都 170-0013",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.8356642,
+                    35.6973196
+                ]
+            },
+            "properties": {
+                "churchId": "0b83412bbad631a388a4ff978b2d89b091eb02be",
+                "name": "ペンチコスタル ミッショナリー チャーチ オブ クライスト ４Ｗａｔｃｈ",
+                "address": "〒136-0071 東京都江東区１１ 亀戸７丁目６７−２ コーシャハイム亀戸七丁目",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7120801,
+                    35.7143263
+                ]
+            },
+            "properties": {
+                "churchId": "7eaffe8677900b2fd0d635ed05cbed3d2a93fb53",
+                "name": "アガペ・チャーチ",
+                "address": "〒169-0051 東京都新宿区西早稲田３丁目３１−１１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.6306535,
+                    35.4521733
+                ]
+            },
+            "properties": {
+                "churchId": "e6dc289f10fbde4094be73f7e7f6e30ab6850684",
+                "name": "シェアリング・チャーチ・本牧",
+                "address": "〒231-0062 神奈川県横浜市中区桜木町１丁目１−１−７",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.344595,
+                    34.734713
+                ]
+            },
+            "properties": {
+                "churchId": "de672996ac5dba21724b50b23c58fcc2364e53d3",
+                "name": "ニューコミュニティ西宮チャペル",
+                "address": "〒662-0913 兵庫県西宮市染殿町２−６ 基督兄弟団西宮教会",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.17054,
+                    34.6649865
+                ]
+            },
+            "properties": {
+                "churchId": "966d2b83148009c7f6a390bc231834dcaf126257",
+                "name": "神戸愛隣教会",
+                "address": "〒652-0896 兵庫県神戸市兵庫区須佐野通１丁目１−７",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.186218,
+                    34.687353
+                ]
+            },
+            "properties": {
+                "churchId": "4d6f32583f4dddab393ece495adf8623f6ed3e11",
+                "name": "ザ・ミッション・ツー・シーフェラーズ神戸",
+                "address": "〒650-0022 兵庫県神戸市中央区元町通３丁目１−１６",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.1079345,
+                    34.641255
+                ]
+            },
+            "properties": {
+                "churchId": "8d41f3f8a01dd971f294d20a54c64d8f7db735f0",
+                "name": "神戸イエス之御霊教会",
+                "address": "〒654-0055 兵庫県神戸市須磨区須磨浦通６丁目４−４",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.1178295,
+                    34.6495917
+                ]
+            },
+            "properties": {
+                "churchId": "279997048971fe61422f9e299d1f4ef21f82b99c",
+                "name": "神戸神愛教会",
+                "address": "〒654-0065 兵庫県神戸市須磨区離宮前町１丁目６−２９",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.359965,
+                    34.770849
+                ]
+            },
+            "properties": {
+                "churchId": "0d84647df6e6e0af46640174af4da74b7efa18e4",
+                "name": "ゴスペルライフ甲東チャペル",
+                "address": "〒662-0812 兵庫県西宮市甲東園２丁目１１−２２ フラット甲東１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    127.702212,
+                    26.227936
+                ]
+            },
+            "properties": {
+                "churchId": "9be10b47193c5f73a58bfb3629c4406430a0da77",
+                "name": "沖縄チャペル",
+                "address": "〒902-0061 沖縄県那覇市古島１丁目６−５",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    134.041221,
+                    34.3509072
+                ]
+            },
+            "properties": {
+                "churchId": "dcd761c0baa4fca66ac9c735219b966a36e1a900",
+                "name": "浜ノ町シオン教会",
+                "address": "〒760-0011 香川県高松市浜ノ町６０−７８",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.69645,
+                    34.802853
+                ]
+            },
+            "properties": {
+                "churchId": "81bfc37db6ab6435fe62de5065724ae1ce0bf0e0",
+                "name": "大阪ナヌム長老教会",
+                "address": "〒573-0125 大阪府枚方市津田駅前１丁目４−３３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5112307,
+                    34.6297672
+                ]
+            },
+            "properties": {
+                "churchId": "da5e7cbcd68b86266c7877eb04c36e344cca21f1",
+                "name": "ドリームバプテスト教会/DREAM BAPTIST CHURCH",
+                "address": "〒545-0023 大阪府大阪市阿倍野区王子町３丁目４−４",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.8307752,
+                    35.6903257
+                ]
+            },
+            "properties": {
+                "churchId": "b6b58f2c2ff95e9583d1c423467d3becb1467f83",
+                "name": "大島新生教会",
+                "address": "〒136-0072 東京都江東区大島３丁目３０",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.8700473,
+                    33.8247805
+                ]
+            },
+            "properties": {
+                "churchId": "44ba7040beb1bc0a29546f47910a972878645eab",
+                "name": "イエスキリスト企救エクレシア",
+                "address": "〒802-0974 福岡県北九州市小倉南区徳力４丁目１７−１５",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.589374,
+                    34.5729784
+                ]
+            },
+            "properties": {
+                "churchId": "068a32e9617215186bfae846d5fe81db73f8cd17",
+                "name": "日本基督教団美陵教会",
+                "address": "〒583-0036 大阪府藤井寺市恵美坂１丁目９−１１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.4678212,
+                    34.7357942
+                ]
+            },
+            "properties": {
+                "churchId": "011c22d5b2589546a05a8cf4fe44043a8da478c3",
+                "name": "日本基督教団 神崎川教会",
+                "address": "〒561-0824 大阪府豊中市大島町２丁目１３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.6983889,
+                    35.7681255
+                ]
+            },
+            "properties": {
+                "churchId": "b08b86aeca06fd4d2c597d1835eac00fedf6b8fc",
+                "name": "東京キリスト恵み教会",
+                "address": "〒174-0061 東京都板橋区大原町２３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.8597049,
+                    35.713976
+                ]
+            },
+            "properties": {
+                "churchId": "9c93c2eb5431db77a929e3f07583605ed6a3e2e3",
+                "name": "キリスト教東京インマヌエル教会",
+                "address": "〒124-0024 東京都葛飾区新小岩１丁目３６",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.692497,
+                    35.615227
+                ]
+            },
+            "properties": {
+                "churchId": "465deccbae1af3c6bebbd19b4c6a9a841cfdd63e",
+                "name": "日本基督教団 目黒原町教会",
+                "address": "〒152-0011 東京都目黒区原町２丁目３−４ 目黒原町教会",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.4539535,
+                    33.5927301
+                ]
+            },
+            "properties": {
+                "churchId": "890744da9174444577df02d250e0229f4f8d5dc4",
+                "name": "Hakata Christ Church",
+                "address": "日本バプテスト連盟 博多キリスト教会 １丁目-１０-２８ 青木 博多区 福岡市 福岡県 812-0851",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.467534,
+                    33.541706
+                ]
+            },
+            "properties": {
+                "churchId": "a8b67ceb02647fd4d56a807fa71f75e45a24e234",
+                "name": "日本キリスト教バプテスト会 福岡教会",
+                "address": "〒812-0873 福岡県福岡市博多区西春町３丁目７−１３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.517936,
+                    33.5045471
+                ]
+            },
+            "properties": {
+                "churchId": "d7bb8cfaaf08f30830c3c653bbbf23fc6be88859",
+                "name": "オーバーフローチャーチ",
+                "address": "〒818-0103 福岡県太宰府市朱雀２丁目２３−１４",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.392096,
+                    33.5890913
+                ]
+            },
+            "properties": {
+                "churchId": "0287e09a56a052979535b6743f4a54796068bb90",
+                "name": "シオン・クリスチャン・フェロシップ",
+                "address": "〒810-0041 福岡県福岡市中央区大名２丁目４−３８",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.406384,
+                    33.587558
+                ]
+            },
+            "properties": {
+                "churchId": "6370097a585d58bd47712c079fc8cb5e00e04e15",
+                "name": "福岡中央イエス之御霊教会",
+                "address": "〒810-0003 福岡県福岡市中央区春吉３丁目２６−５ 福岡中央イエスの御霊教会",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.5223914,
+                    33.5039415
+                ]
+            },
+            "properties": {
+                "churchId": "b72fd5f2baac4e2a384c9df601b4066be870ed85",
+                "name": "福岡国際キリスト教会",
+                "address": "〒818-0056 福岡県筑紫野市二日市北３丁目１−７",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    134.6904485,
+                    34.8189822
+                ]
+            },
+            "properties": {
+                "churchId": "1127eb619e6193c3f81fd672d6f27ab2c266fd94",
+                "name": "在日大韓基督教会姫路薬水教会",
+                "address": "〒670-0949 兵庫県姫路市三左衛門堀東の町６７",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    133.5475298,
+                    33.5624174
+                ]
+            },
+            "properties": {
+                "churchId": "4da0dee6ad0f31b21ff0bc65f74008a48d2cfb87",
+                "name": "ニューホープ・チャペル",
+                "address": "〒780-0821 高知県高知市桜井町１丁目７−５",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    133.5475298,
+                    33.5624174
+                ]
+            },
+            "properties": {
+                "churchId": "bd86e473fd5c1b417d0dbbba0d5cfc490a78beff",
+                "name": "高知クリスチャンセンター (New Hope Chapel)",
+                "address": "〒780-0821 高知県高知市桜井町１丁目７−５",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    133.681942,
+                    33.60499
+                ]
+            },
+            "properties": {
+                "churchId": "2aed59b05c85ccc170538957b709c7d305f97636",
+                "name": "ＳＤＡ土佐山田キリスト教会",
+                "address": "〒782-0032 高知県香美市土佐山田町西本町３丁目２−１４",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    133.704121,
+                    33.559663
+                ]
+            },
+            "properties": {
+                "churchId": "9ee0728c602b129d94f6744222ccec932574514c",
+                "name": "野市キリストの教会",
+                "address": "〒781-5213 高知県香南市野市町東野１６５１−１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.9503854,
+                    34.0045181
+                ]
+            },
+            "properties": {
+                "churchId": "cfd086bc9e136ee4ada7eaec1c90265bdd772983",
+                "name": "関門バイブルチャーチ",
+                "address": "〒751-0863 山口県下関市一の宮町２丁目６−７",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    132.2229674,
+                    34.175567
+                ]
+            },
+            "properties": {
+                "churchId": "e6891e5d1f9b85e5e67b7c010efcb3d6054e3e70",
+                "name": "King's Chapel Iwakuni",
+                "address": "５丁目-１５-２５ 麻里布町 岩国市 山口県 740-0018",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    132.6807754,
+                    34.4451023
+                ]
+            },
+            "properties": {
+                "churchId": "5231ebf93664caff5a3553a950630ac1da867533",
+                "name": "廣島基督教生命堂",
+                "address": "〒739-0147 広島県東広島市八本松西１丁目１１−１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    132.2947981,
+                    34.3111017
+                ]
+            },
+            "properties": {
+                "churchId": "fd33c1c50d4cfd0272255c8d8bdd4779dd960594",
+                "name": "宮島プレイズチャペル",
+                "address": "〒739-0421 広島県廿日市市深江３丁目１３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    132.4163305,
+                    34.3896386
+                ]
+            },
+            "properties": {
+                "churchId": "a4765a68e0eda5bb999713686e5134017d0fd134",
+                "name": "広島グレイスチャーチ",
+                "address": "〒733-0871 広島県広島市西区高須２丁目２−２",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    132.546125,
+                    33.510818
+                ]
+            },
+            "properties": {
+                "churchId": "e8f9e54bf27ddf788deee1c418f640c9766f153c",
+                "name": "日本聖公会 大洲聖公会",
+                "address": "〒795-0054 愛媛県大洲市中村８６０−３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    132.6541749,
+                    33.555085
+                ]
+            },
+            "properties": {
+                "churchId": "60ef1db92c42956c5aede9fde45f129eb1bcd69d",
+                "name": "内子キリスト教会",
+                "address": "〒791-3301 愛媛県喜多郡内子町内子２３２０",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    133.2352788,
+                    34.4347046
+                ]
+            },
+            "properties": {
+                "churchId": "aacdd070636a2610c49bc629c327b4cde3ddb834",
+                "name": "広島地の果て宣教教会",
+                "address": "〒729-0141 広島県尾道市高須町４７７３−５",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    134.0439467,
+                    34.3356557
+                ]
+            },
+            "properties": {
+                "churchId": "bbc5496126137040bce04d61bd278ae99e6587c2",
+                "name": "高松中央町キリスト教会",
+                "address": "〒760-0007 香川県高松市中央町１５−３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    133.690609,
+                    34.217988
+                ]
+            },
+            "properties": {
+                "churchId": "49a5bdc961a027c2d2bc1d663ca2b2ed8ed03dec",
+                "name": "三豊中央キリスト教会",
+                "address": "〒769-1102 香川県三豊市詫間町松崎２７７０−２９０",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    134.174911,
+                    34.322016
+                ]
+            },
+            "properties": {
+                "churchId": "66bdb1a25daeb11c48f90d5cb3602a5b3c0f9f4b",
+                "name": "志度キリスト教会(日本伝道隊)",
+                "address": "〒769-2101 香川県さぬき市志度６１６−２",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    136.6095567,
+                    34.9720438
+                ]
+            },
+            "properties": {
+                "churchId": "c23bf7e518d8f60c1cd9b2eb45cd799518c94696",
+                "name": "四日市キリスト恵み教会",
+                "address": "〒510-0821 三重県四日市市久保田１丁目２−２１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    136.1169108,
+                    34.6428163
+                ]
+            },
+            "properties": {
+                "churchId": "7f8ab86717c194cdeed7e5736d1c70a9df1e9b1b",
+                "name": "日本基督教団桔梗が丘伝道所",
+                "address": "〒518-0623 三重県名張市桔梗が丘３番町１−７１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    136.587756,
+                    34.837393
+                ]
+            },
+            "properties": {
+                "churchId": "3c4c165c645b4c5517f7afcf8df9f814584936d9",
+                "name": "鈴鹿オリーブチャペル",
+                "address": "〒510-0244 三重県鈴鹿市白子町５６−２",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.931369,
+                    34.985909
+                ]
+            },
+            "properties": {
+                "churchId": "3e412a9a280dbbc4763366da748ef788a95b28b4",
+                "name": "大津キリスト集会",
+                "address": "〒520-2153 滋賀県大津市一里山１丁目２３−１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    136.5501453,
+                    34.8745552
+                ]
+            },
+            "properties": {
+                "churchId": "216a56aa75ffdc00161d26a1d77ce754bb9b32e0",
+                "name": "ユニバーサルキリスト教会",
+                "address": "〒513-0805 三重県鈴鹿市算所町８３７",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    136.7036524,
+                    34.4943626
+                ]
+            },
+            "properties": {
+                "churchId": "ba44682257345278ab353b6096723dc06f42057d",
+                "name": "日本聖公会伊勢聖マルコ教会",
+                "address": "〒516-0071 三重県伊勢市一之木１丁目８−３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    136.7160291,
+                    34.4825866
+                ]
+            },
+            "properties": {
+                "churchId": "db7aea09e7482a3433092d813f90e9687c59d05f",
+                "name": "伊勢福音教会",
+                "address": "〒516-0035 三重県伊勢市勢田町７２６−１８",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.393103,
+                    33.733661
+                ]
+            },
+            "properties": {
+                "churchId": "9fc62c05768c80fd2283a1c02d1b3150b91f8273",
+                "name": "田辺聖公会",
+                "address": "〒646-0027 和歌山県田辺市朝日ヶ丘１２−２６",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.1694209,
+                    34.2588415
+                ]
+            },
+            "properties": {
+                "churchId": "23d11b2ae059e0d8fb7e98839388a34bd5ce640a",
+                "name": "インマヌエル和歌山キリスト教会",
+                "address": "〒640-8442 和歌山県和歌山市平井",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5993272,
+                    34.4998879
+                ]
+            },
+            "properties": {
+                "churchId": "0d6b511314c2b5f06f26fc4ff17d0f909f77ad0b",
+                "name": "富田林聖アグネス教会",
+                "address": "〒584-0032 大阪府富田林市常盤町１４−１３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.4120086,
+                    34.5095076
+                ]
+            },
+            "properties": {
+                "churchId": "3a95f360469692e6c77f8afd7cedfedf430cea75",
+                "name": "日本キリスト教団 泉大津教会",
+                "address": "〒595-0072 大阪府泉大津市松之浜町２丁目１０−２７",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.4113707,
+                    34.4648572
+                ]
+            },
+            "properties": {
+                "churchId": "4c3144d700df33284310bb64ebf0d759ec59f162",
+                "name": "久米田教会",
+                "address": "〒596-0812 大阪府岸和田市大町４丁目６−１５",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.559009,
+                    34.498735
+                ]
+            },
+            "properties": {
+                "churchId": "ccba91d4d4773f0a40473fab1d296d9c9f23143e",
+                "name": "金剛聖書教会",
+                "address": "〒589-0006 大阪府大阪狭山市金剛２丁目４−８",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.4713017,
+                    34.4764007
+                ]
+            },
+            "properties": {
+                "churchId": "644f5f39f4b288ad4be2c6ca54fbf8f4429f0a15",
+                "name": "光明キリスト教会",
+                "address": "〒594-0031 大阪府和泉市伏屋町３丁目７−９−２０１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.489618,
+                    34.491135
+                ]
+            },
+            "properties": {
+                "churchId": "1244756d897d35800a14aded6cd3376e5fcae850",
+                "name": "イエスの泉教会",
+                "address": "〒590-0141 大阪府堺市南区桃山台１丁１２−２７",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.530186,
+                    34.536439
+                ]
+            },
+            "properties": {
+                "churchId": "f5a39b52d9e0266a2a059800f1273df27e69238d",
+                "name": "日本神の教会連盟南堺キリスト教会",
+                "address": "〒599-8114 大阪府堺市東区日置荘西町５丁３９−６",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5461106,
+                    34.5372475
+                ]
+            },
+            "properties": {
+                "churchId": "73c0ad2ccc8560a8fea3da7f0d3f52dcfa6e8f92",
+                "name": "美原キリスト教会",
+                "address": "〒587-0051 大阪府堺市美原区北余部５９−１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5119324,
+                    34.54216
+                ]
+            },
+            "properties": {
+                "churchId": "82f52c5d5719f7a874715e2536c4e84072df53af",
+                "name": "堺中央キリスト教会",
+                "address": "〒599-8232 大阪府堺市中区新家町５２３−９",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5599932,
+                    34.7318646
+                ]
+            },
+            "properties": {
+                "churchId": "1d396eb49e908a173258000bef9031230759a0e6",
+                "name": "日本聖公会 守口聖オーガスティン教会",
+                "address": "〒570-0073 大阪府守口市土居町６−６",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.6485236,
+                    34.670823
+                ]
+            },
+            "properties": {
+                "churchId": "f0fd6782915ac551db1a253cd81d91f1efd45cac",
+                "name": "クレース宣教会 枚岡チャペル",
+                "address": "〒579-8031 大阪府東大阪市豊浦町１８−４ グレース宣教会 枚岡チャペル",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5311678,
+                    34.6772106
+                ]
+            },
+            "properties": {
+                "churchId": "2b5765d190f4b042d611bb2f1cf10c08595a0ed7",
+                "name": "アドベント玉造キリスト教会",
+                "address": "〒540-0004 大阪府大阪市中央区玉造１丁目１８",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.6374323,
+                    34.7166721
+                ]
+            },
+            "properties": {
+                "churchId": "79eb976de7857b3cf762357ab579e641a1f05a2b",
+                "name": "大東キリストチャペル",
+                "address": "〒574-0015 大阪府大東市野崎１丁目１８−１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.512929,
+                    34.667077
+                ]
+            },
+            "properties": {
+                "churchId": "fe8ddcd31fc76dcbe7c2ce572b25eff98e04c858",
+                "name": "J.J.W.M.大阪弟子教会",
+                "address": "〒542-0072 大阪府大阪市中央区高津１丁目３−番６号",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.588987,
+                    34.6884958
+                ]
+            },
+            "properties": {
+                "churchId": "41b72e8dd442f0e42aaf0513ebb58587f14fa40e",
+                "name": "カナン教会(イエスキリスト長老会)",
+                "address": "〒577-0004 大阪府東大阪市稲田新町２丁目３１−１６",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.328987,
+                    34.759763
+                ]
+            },
+            "properties": {
+                "churchId": "41ad9b494213d3c7cd044cff392bf9d86fdcc3b1",
+                "name": "神園キリストの教会",
+                "address": "〒662-0027 兵庫県西宮市神園町８−４０",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5394468,
+                    34.6939479
+                ]
+            },
+            "properties": {
+                "churchId": "ca294f5448f2641a1096b6dd617532ec5ad95976",
+                "name": "大坂城東基督教会",
+                "address": "〒536-0014 大阪府大阪市城東区鴫野西３丁目６−２",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.4952396,
+                    34.7414657
+                ]
+            },
+            "properties": {
+                "churchId": "387d2543ff95ce4749d24c4092fbedae44c9a31f",
+                "name": "純福音大阪教会",
+                "address": "〒532-0002 大阪府大阪市淀川区東三国４丁目１１−１３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5486447,
+                    34.7776186
+                ]
+            },
+            "properties": {
+                "churchId": "ad22f90f75d8b6bd82fc178d01c0207848c2d313",
+                "name": "ベテルキリスト教会",
+                "address": "〒566-0024 大阪府摂津市正雀本町１丁目３６−２１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.351708,
+                    34.737019
+                ]
+            },
+            "properties": {
+                "churchId": "98aeb40071071f5792d157fdc3fc497f3ba75c67",
+                "name": "シャロンの花イエス・キリスト教会",
+                "address": "〒663-8247 兵庫県西宮市津門稲荷町５−５",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.57802,
+                    34.700683
+                ]
+            },
+            "properties": {
+                "churchId": "e91b3547bc9fe3026e7570f1337d9a043136fc99",
+                "name": "鶴見聖書キリスト教会",
+                "address": "〒538-0051 大阪府大阪市鶴見区諸口１丁目１４−３４",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5290472,
+                    34.6593863
+                ]
+            },
+            "properties": {
+                "churchId": "5c99f3f59040e0d6e2294003a9a350dbac50183c",
+                "name": "桃谷神愛キリスト教会",
+                "address": "〒544-0034 大阪府大阪市生野区桃谷１丁目５−６",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.4985875,
+                    34.6598841
+                ]
+            },
+            "properties": {
+                "churchId": "d7c62424e0ee2eba9aebb3b11ba6aeaf8a783aea",
+                "name": "大和恵みキリスト教会",
+                "address": "〒556-0011 大阪府大阪市浪速区難波中３丁目１６−１１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5047118,
+                    34.7299142
+                ]
+            },
+            "properties": {
+                "churchId": "c171c71a7c0a9cd49e5339f0ef04d8186287d8e6",
+                "name": "新大阪 なぐさめキリスト教会",
+                "address": "〒533-0033 大阪府大阪市東淀川区東中島３丁目２−２２ テクノス",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.6037901,
+                    34.6943171
+                ]
+            },
+            "properties": {
+                "churchId": "57eff988f1f67238399a4587a6dca3a8d1e832a6",
+                "name": "鴻池キリスト教会",
+                "address": "〒578-0961 大阪府東大阪市南鴻池町２丁目１２−９",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.325574,
+                    34.752825
+                ]
+            },
+            "properties": {
+                "churchId": "194dfabf4d277d1b5f90ebe2141ab20de60ed79e",
+                "name": "日本キリスト教会夙川教会",
+                "address": "〒662-0072 兵庫県西宮市豊楽町２−１１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5435982,
+                    34.7275744
+                ]
+            },
+            "properties": {
+                "churchId": "e1177bc841ee937fda913260b955016ae7ebc5e6",
+                "name": "大阪キリスト教会",
+                "address": "〒535-0003 大阪府大阪市旭区中宮４丁目１３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.517585,
+                    34.75515
+                ]
+            },
+            "properties": {
+                "churchId": "d0ba41ad1f9694efe060cd9b740b81b66bebfb8f",
+                "name": "アライアンス大阪キリスト教会",
+                "address": "〒564-0038 大阪府吹田市南清和園町２−２６",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.5445379,
+                    34.6575039
+                ]
+            },
+            "properties": {
+                "churchId": "7d518b335e2b3d923a3ce62b0a3c5fbdd59f27c4",
+                "name": "イエスキリスト長老教会 荒野教会",
+                "address": "〒544-0005 大阪府大阪市生野区中川５丁目６−７",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.534582,
+                    34.702971
+                ]
+            },
+            "properties": {
+                "churchId": "8cdcd4f38e5c44470ba6941037576485d392a1d9",
+                "name": "都島中央キリスト教会",
+                "address": "〒534-0022 大阪府大阪市都島区都島中通３丁目２−１２",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.759855,
+                    35.0120419
+                ]
+            },
+            "properties": {
+                "churchId": "1403c236931867cb5e76189f0a7e176272d06b12",
+                "name": "京都中央チャペル",
+                "address": "〒604-0845 京都府京都市中京区二条殿町５４０",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.7639275,
+                    34.9712162
+                ]
+            },
+            "properties": {
+                "churchId": "379dd2bf51ac8243368e9ca7c85760b8b0bce684",
+                "name": "京都平和キリスト教会",
+                "address": "〒612-0009 京都府京都市伏見区深草西川原町２６−３２",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.767809,
+                    35.047713
+                ]
+            },
+            "properties": {
+                "churchId": "1befca6471d1bf7295fa7847b8e91fd3b2144ee5",
+                "name": "京都みぎわキリスト教会",
+                "address": "〒606-0831 京都府京都市左京区下鴨北園町２２ 京都みぎわ教会",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.920956,
+                    35.158774
+                ]
+            },
+            "properties": {
+                "churchId": "610c91a9a15c1138dfd2453da9459610656da655",
+                "name": "香りキリスト教会",
+                "address": "〒520-0528 滋賀県大津市和邇高城２９−２",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.7964252,
+                    34.9438581
+                ]
+            },
+            "properties": {
+                "churchId": "20dff92e7c71a304d11f1cf228e6c1fb57915b7c",
+                "name": "京都恵みキリスト教会",
+                "address": "〒601-1463 京都府京都市伏見区小栗栖中山田町",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.1596842,
+                    35.2740726
+                ]
+            },
+            "properties": {
+                "churchId": "d5e179eac0ae6ceb51a67d4731fd75499f65d0e8",
+                "name": "インマヌエル小田原",
+                "address": "〒250-0001 神奈川県小田原市扇町５丁目１４−１２−１５０ 教会",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.4574047,
+                    35.7179572
+                ]
+            },
+            "properties": {
+                "churchId": "233b68de30fd6f0df38eaa351bf7222e001e9c05",
+                "name": "恵泉キリスト教会 上水恵みの家",
+                "address": "〒185-0001 東京都国分寺市北町１丁目１２−４４",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.5402652,
+                    35.7485527
+                ]
+            },
+            "properties": {
+                "churchId": "7ede6ffb834bed8b87f1529c99346991fface66b",
+                "name": "ひばりヶ丘グレイス教会",
+                "address": "〒202-0001 東京都西東京市ひばりが丘２丁目１１−６",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.6013002,
+                    35.4951663
+                ]
+            },
+            "properties": {
+                "churchId": "b3bab3acabd0261e3905551fba064487ebac2136",
+                "name": "日本基督教団 新横浜教会",
+                "address": "〒221-0864 神奈川県横浜市神奈川区菅田町２８５１ 日本キリスト教団 神奈川研修所",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.5542757,
+                    35.4773604
+                ]
+            },
+            "properties": {
+                "churchId": "2638a6fa46fa7df1fcefce4e85bef603f363b8d0",
+                "name": "相模イエス之御霊教会",
+                "address": "〒241-0022 神奈川県横浜市旭区 鶴ケ峰2丁目39−9",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.5438853,
+                    35.4757985
+                ]
+            },
+            "properties": {
+                "churchId": "f68222003b3ebf932dae0045adcb574414543819",
+                "name": "あさひ教会カンバーランド長老キリスト教会",
+                "address": "〒241-0021 神奈川県横浜市旭区鶴ケ峰本町１丁目３４−１０",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.738598,
+                    35.642511
+                ]
+            },
+            "properties": {
+                "churchId": "4ad768c126b9d05b8bff7a197b387d515917d1aa",
+                "name": "キリスト友会東京月会",
+                "address": "〒108-0073 東京都港区三田４丁目８−１９ フレンズセンター",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.5362064,
+                    31.5863965
+                ]
+            },
+            "properties": {
+                "churchId": "500bc414269ff6a9afc4284dbcae9069897b7d2e",
+                "name": "鹿児島キリスト集会",
+                "address": "〒890-0046 鹿児島県鹿児島市西田３丁目３２−１２",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7186799,
+                    35.6850923
+                ]
+            },
+            "properties": {
+                "churchId": "30a9ce185277c52a51f57e95153e014d6a53c246",
+                "name": "キリスト集会所",
+                "address": "〒160-0015 東京都新宿区大京町",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.735884,
+                    35.6943295
+                ]
+            },
+            "properties": {
+                "churchId": "91a03b5c39cb2ccace8889f8878298c50d65bc18",
+                "name": "東京基督教会",
+                "address": "〒162-0842 東京都新宿区市谷砂土原町１丁目２−５９ 동경기독교회",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.6729894,
+                    35.6912484
+                ]
+            },
+            "properties": {
+                "churchId": "76c77f1bda3fff14a71b4b12a9af22bcf584ca8e",
+                "name": "日本ナザレン教団中野教会",
+                "address": "〒164-0013 東京都中野区弥生町２丁目３９−１１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.3448093,
+                    35.5961506
+                ]
+            },
+            "properties": {
+                "churchId": "73fb78a2431b5564f47eccdf9ad827e2154abfde",
+                "name": "Agape Lighthouse",
+                "address": "〒252-0143 神奈川県相模原市緑区橋本６丁目２−１",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.6333313,
+                    35.7781817
+                ]
+            },
+            "properties": {
+                "churchId": "7af41edd716aa1408aa310e0343d444afed860e3",
+                "name": "SCF アガペ センター成増",
+                "address": "〒175-0094 東京都板橋区成増３丁目１１−３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.5876194,
+                    35.7481795
+                ]
+            },
+            "properties": {
+                "churchId": "66268ee9165a8c4411f15524bf6f24f4989e91e0",
+                "name": "SCF アガペ センター大泉",
+                "address": "〒178-0063 東京都練馬区東大泉５丁目４０−３６",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.896342,
+                    38.2812954
+                ]
+            },
+            "properties": {
+                "churchId": "064b49eabfe8a23f3027ae1577d39f04a2359cb9",
+                "name": "仙台ユナイテッドペンテコステ教会",
+                "address": "〒981-0907 宮城県仙台市青葉区高松３丁目１７−３４",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7818626,
+                    35.774951
+                ]
+            },
+            "properties": {
+                "churchId": "70aff938d85ab03b8317e6c17a6b52fb7334b08b",
+                "name": "SCF AGAPE CENTER ADACHI",
+                "address": "ナースリーハウス ５丁目-８-１２ 西新井本町 足立区 東京都 123-0845",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.709998,
+                    35.713227
+                ]
+            },
+            "properties": {
+                "churchId": "d0dc0b12f445dbf7fb2204a279c0ad60147a0720",
+                "name": "東京リビングストーン教会",
+                "address": "〒169-0075 東京都新宿区高田馬場２丁目４−１２",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.6968211,
+                    35.7026573
+                ]
+            },
+            "properties": {
+                "churchId": "7152be45b5b74b1b8a0549975c17a3f984ae6066",
+                "name": "ユニバーサルキリスト教会",
+                "address": "〒169-0073 東京都新宿区百人町２丁目２３−４３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.6927905,
+                    35.7309721
+                ]
+            },
+            "properties": {
+                "churchId": "e358007d09f5206b1a180516041506c6987f4007",
+                "name": "キリスト兄弟団 東京新生教会",
+                "address": "〒171-0044 東京都豊島区千早２丁目１−３",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    136.9020398,
+                    35.158449
+                ]
+            },
+            "properties": {
+                "churchId": "91e61d438aa23d7d99bd2b3906ade271ad41920b",
+                "name": "Jesus Is Lord Aichi Prefecture Nagoya",
+                "address": "〒460-0011 愛知県名古屋市中区大須３丁目３８−９",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.415545,
+                    33.567321
+                ]
+            },
+            "properties": {
+                "churchId": "03c9cbba589161de2d9bee0e47f65461c8918c3d",
+                "name": "インマヌエル福岡キリスト教会",
+                "address": "〒815-0082 福岡県福岡市南区大楠３丁目１９−１２ 福岡教会",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.843685,
+                    35.754734
+                ]
+            },
+            "properties": {
+                "churchId": "8469b02f7f038b00f12b122bc1d91d48ddf949a1",
+                "name": "イムマヌエル綜合伝道団白鳥教会",
+                "address": "〒125-0063 東京都葛飾区白鳥３丁目３１−９",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.8001125,
+                    35.7749497
+                ]
+            },
+            "properties": {
+                "churchId": "41a76203eb6ec9c1352ff9b9ccfd73a2f8e85c00",
+                "name": "トポスキリスト教会",
+                "address": "〒121-0816 東京都足立区梅島２丁目１４",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.5139837,
+                    33.2953719
+                ]
+            },
+            "properties": {
+                "churchId": "f200f9e0ae27995fd5a4332a7218b3a8d497dc7d",
+                "name": "プロテスタントキリスト教会単立憩いの森チャペル",
+                "address": "〒830-0038 福岡県久留米市西町１２３−９",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.3445577,
+                    33.5476648
+                ]
+            },
+            "properties": {
+                "churchId": "e7d6d812807ab1c4c56db8f5d58bb2f2fb689b9f",
+                "name": "野芥チャペル",
+                "address": "〒814-0171 福岡県福岡市早良区野芥２丁目２５−７",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.3764554,
+                    33.567982
+                ]
+            },
+            "properties": {
+                "churchId": "cf34ab5bc7501c3c90792eed35818e8de0f45b5b",
+                "name": "福岡聖書キリスト教会",
+                "address": "〒810-0034 福岡県福岡市中央区笹丘１丁目３６−３０",
+                "catholic": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
                     139.6938097,
                     35.5826897
                 ]
@@ -66508,8 +69516,8 @@
             },
             "properties": {
                 "churchId": "2ed75ee7161ccaf96b1ec9a859e3ad699c3ec843",
-                "name": "カトリック玉造教会",
-                "address": "〒540-0004 大阪府大阪市中央区玉造２丁目２４−２２",
+                "name": "カトリック玉造大聖堂",
+                "address": "〒540-0004 大阪府大阪市中央区玉造２丁目２４−２２ カトリック玉造教会",
                 "catholic": true
             }
         },
@@ -72334,6 +75342,70 @@
                 "churchId": "9e51e4a81917439bf7c0a0337e9d39e87e1b0af7",
                 "name": "カトリック東京韓人教会",
                 "address": "〒112-0014 東京都文京区関口３丁目１６−１５",
+                "catholic": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    141.35435,
+                    42.9961899
+                ]
+            },
+            "properties": {
+                "churchId": "aa114dc942c6b9d54db2bdc5c3d238e6a287c226",
+                "name": "カトリック真駒内教会",
+                "address": "〒005-0012 北海道札幌市南区真駒内上町４丁目８−１",
+                "catholic": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.3913385,
+                    33.5885825
+                ]
+            },
+            "properties": {
+                "churchId": "5cb4dc9a80870ddd428189b230515b24df7724d6",
+                "name": "大名教会",
+                "address": "〒810-0041 福岡県福岡市中央区大名２丁目４−１２",
+                "catholic": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    135.6160217,
+                    34.6250675
+                ]
+            },
+            "properties": {
+                "churchId": "d653236c807975710cfebe006089f64f16dc9a59",
+                "name": "カトリック八尾教会",
+                "address": "〒581-0019 大阪府八尾市南小阪合町３丁目２−１５",
+                "catholic": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    139.7325969,
+                    35.6838055
+                ]
+            },
+            "properties": {
+                "churchId": "34356ed46624208c4d92816208f927466d54d728",
+                "name": "クルトゥルハイム聖堂",
+                "address": "〒102-0094 東京都千代田区紀尾井町７−１",
                 "catholic": true
             }
         }
