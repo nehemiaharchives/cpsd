@@ -84,7 +84,7 @@ Following are the expected files to be generated:
 Data for stations and Churches in Japan are located at [data/japan](data/japan) directory in this repo.
 
 ## Visualization
-You can import those GeoJson files into [GIS](https://en.wikipedia.org/wiki/Geographic_information_system) software or services like [MapBox Studio](https://www.mapbox.com/mapbox-studio). Analyze them to improve your Church planting strategy! 
+You can import those GeoJson files into [GIS](https://en.wikipedia.org/wiki/Geographic_information_system) software or services like [MapBox Studio](https://www.mapbox.com/mapbox-studio). For example, [Church & Station](https://github.com/nehemiaharchives/church-station) project at [Christian Today Japan](https://www.linkedin.com/company/christian-today-japan/).
 
 ## Future
 Hoping to apply for other countries, accomodate other type of data and languages.
