@@ -3,6 +3,8 @@ build/*
 .gradle/*
 gradle/
 src/main/resources/db.properties
+src/main/resources/100m-mesh.geojson
+src/main/resources/100m-mesh.csv
 src/main/resources/*.json
 cache/
 !cache/README.md

@@ -10,10 +10,10 @@ val crs84property = Properties(name = "urn:ogc:def:crs:OGC:1.3:CRS84")
 val crs84 = Crs(type = "name", properties = crs84property)
 
 @Serializable
-class Properties(val name: String)
+data class Properties(val name: String)
 
 @Serializable
-class Crs(val type: String, val properties: Properties)
+data class Crs(val type: String, val properties: Properties)
 
 @Serializable
 class MultiPoint(val type: String, val crs: Crs, val coordinates: Array<Array<Double>>)
@@ -36,7 +36,13 @@ class Routes(val type: String, val features: Array<Route>)
 
 // Station Points
 @Serializable
-class StationProperty(val stationId: String, val company: String, val line: String, val name: String, val passengers: Int)
+class StationProperty(
+    val stationId: String,
+    val company: String,
+    val line: String,
+    val name: String,
+    val passengers: Int
+)
 
 @Serializable
 class PointGeometry(val type: String, val coordinates: Array<Double>)
@@ -67,6 +73,98 @@ class Church(val type: String, val geometry: PointGeometry, val properties: Chur
 @Serializable
 class Churches(val type: String, val features: Array<Church>)
 
+// 100 meter mesh Polygons
+@Serializable
+data class MeshPopulationProperty(val P2010TT: Double, val P2025TT: Double, val P2040TT: Double)
+
+@Serializable
+data class MeshPolygonGeometry(val type: String, val coordinates: Array<Array<Array<Array<Double>>>>) {
+
+    fun cord(i: Int) = this.coordinates[0][0][i]
+
+    override fun equals(other: Any?): Boolean {
+        return when (other) {
+            is MeshPolygonGeometry -> {
+                this.type == other.type &&
+                        this.cord(0)[0] == other.cord(0)[0] &&
+                        this.cord(1)[0] == other.cord(1)[0] &&
+                        this.cord(2)[0] == other.cord(2)[0] &&
+                        this.cord(3)[0] == other.cord(3)[0] &&
+                        this.cord(4)[0] == other.cord(4)[0] &&
+
+                        this.cord(0)[1] == other.cord(0)[1] &&
+                        this.cord(1)[1] == other.cord(1)[1] &&
+                        this.cord(2)[1] == other.cord(2)[1] &&
+                        this.cord(3)[1] == other.cord(3)[1] &&
+                        this.cord(4)[1] == other.cord(4)[1]
+
+            }
+            else -> false
+        }
+    }
+}
+
+@Serializable
+data class MeshPolygon(val type: String, val geometry: MeshPolygonGeometry, val properties: MeshPopulationProperty) {
+    override fun equals(other: Any?): Boolean {
+        return when (other) {
+            is MeshPolygon -> {
+                this.type == other.type &&
+                        this.properties == other.properties &&
+                        this.geometry == other.geometry
+            }
+            else -> false
+        }
+    }
+
+    fun toCsvLine(): String {
+
+        val latNE = geometry.cord(0)[1]
+        val lngNE = geometry.cord(0)[0]
+        val latSW = geometry.cord(2)[1]
+        val lngSW = geometry.cord(2)[0]
+
+        val center = centerOf(latNE = latNE, lngNE = lngNE, latSW = latSW, lngSW = lngSW)
+        val latCenter = center[0]
+        val lngCenter = center[1]
+        val p = properties
+
+        return "$latCenter,$lngCenter,${p.P2010TT},${p.P2025TT},${p.P2040TT}"
+    }
+}
+
+fun <T> compareArray(first: Array<T>, second: Array<T>): Boolean {
+    return if (first.size == second.size) {
+        var matches = true
+
+        for ((index, f) in first.withIndex()) {
+            if (f != second[index]) {
+                matches = false
+                break
+            }
+        }
+
+        matches
+    } else {
+        false
+    }
+}
+
+@Serializable
+data class MeshPopulationPolygons(val type: String, val name: String, val crs: Crs, val features: Array<MeshPolygon>) {
+    override fun equals(other: Any?): Boolean {
+        return when (other) {
+            is MeshPopulationPolygons -> {
+                this.type == other.type &&
+                        this.name == other.name &&
+                        this.crs == other.crs &&
+                        compareArray(this.features, other.features)
+            }
+            else -> false
+        }
+    }
+}
+
 fun main() {
     printSingleLineString()
     printMultiPoint()
@@ -74,19 +172,30 @@ fun main() {
     printStationPoints()
     printStationPolygons()
     printChurches()
+    printStationPolygons()
 }
 
 fun printChurches() {
     val c1 = Church(
         type = "Feature",
         geometry = PointGeometry(type = "Point", coordinates = arrayOf(139.6973877, 35.6504898)),
-        properties = ChurchProperty(churchId = "tbc", name = "東京バプテスト教会", address = "〒150-0035 東京都渋谷区鉢山町９−２", catholic = false)
+        properties = ChurchProperty(
+            churchId = "tbc",
+            name = "東京バプテスト教会",
+            address = "〒150-0035 東京都渋谷区鉢山町９−２",
+            catholic = false
+        )
     )
 
     val c2 = Church(
         type = "Feature",
         geometry = PointGeometry(type = "Point", coordinates = arrayOf(139.695138, 35.652867)),
-        properties = ChurchProperty(churchId = "csc", name = "カトリック渋谷教会", address = "〒150-0036 東京都渋谷区南平台町１８−１３", catholic = true)
+        properties = ChurchProperty(
+            churchId = "csc",
+            name = "カトリック渋谷教会",
+            address = "〒150-0036 東京都渋谷区南平台町１８−１３",
+            catholic = true
+        )
     )
 
     val churches = Churches(type = "FeatureCollection", features = arrayOf(c1, c2))

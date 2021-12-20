@@ -37,7 +37,7 @@ fun distanceOf(
  * @param side length of the side of square in meters
  * @return array of 5 coordinates to draw square polygon with GeoJson, order of corner is SW->SE->NE->NW->SW
  */
-fun squareOf(lat: Double, lng: Double, side: Double): Array<Array<Double>>{
+fun squareOf(lat: Double, lng: Double, side: Double): Array<Array<Double>> {
 
     val dLat = side / (111 * 1000) // Latitudinal or north-south distance in degrees
     val dLng = dLat / cos(Math.toRadians(lat)) // Longitudinal or east-west distance in degrees
@@ -65,3 +65,14 @@ fun squareOf(lat: Double, lng: Double, side: Double): Array<Array<Double>>{
         arrayOf(lng1, lat1)
     )
 }
+
+/**
+ * @param latNE latitude of first geo polygon coordinate which is north-east corner
+ * @param lngNE longitude of first geo polygon coordinate which is north-east corner
+ * @param latSW latitude of third geo polygon coordinate which is south-west corner
+ * @param lngSW longitude of third geo polygon coordinate which is south-west corner
+ * @return array of Double representing (latitude, longitude) of center of the square
+ */
+fun centerOf(latNE: Double, lngNE: Double, latSW: Double, lngSW: Double): Array<Double> = arrayOf(
+    (latNE + latSW) * 0.5, (lngNE + lngSW) * 0.5
+)

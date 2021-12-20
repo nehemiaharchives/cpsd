@@ -4,13 +4,14 @@ import com.github.doyaaaaaken.kotlincsv.dsl.csvReader
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 import org.gnit.cpsd.crawler.Church
-import org.spekframework.spek2.Spek
-import org.spekframework.spek2.style.specification.describe
+import kotlin.test.Test
 import java.io.File
 
-object DataCheck : Spek({
-    describe("JCC") {
-        it("matches address") {
+class DataTest{
+
+    @Test
+    fun checkJCC() {
+        //matches address
             val jcc = Json.decodeFromString<List<Church>>(string = loadJson("JCC"))
             val jccAddressList = jcc.map { "〒${it.postalCode} ${it.address}" }
 
@@ -29,6 +30,6 @@ object DataCheck : Spek({
             }
 
             println(contains)
-        }
+
     }
-})
+}
