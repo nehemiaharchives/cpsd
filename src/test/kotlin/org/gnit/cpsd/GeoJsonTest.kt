@@ -49,7 +49,7 @@ class GeoJsonTest {
     )
 
     @Test
-    fun testEqualsMultiPolygonGeometory() {
+    fun testEqualsMultiPolygonGeometry() {
         val first = MeshPolygonGeometry(
             type = "MultiPolygon",
             coordinates = arrayOf(
