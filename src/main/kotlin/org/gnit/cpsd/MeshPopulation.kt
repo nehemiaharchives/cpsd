@@ -9,6 +9,7 @@ import java.nio.file.Paths
 
 /**
  * [Reference](https://stackoverflow.com/questions/453018/number-of-lines-in-a-file-in-java)
+ * @param For example, "src/main/resources/100m-mesh.geojson"
  */
 fun countLines(fileName: String): Int {
     val inputStream: InputStream = BufferedInputStream(FileInputStream(fileName))
@@ -45,12 +46,15 @@ fun countLines(fileName: String): Int {
     }
 }
 
-fun main(){
+/**
+ * @param geoJsonFile For example, "src/main/resources/100m-mesh.geojson"
+ * @return MeshPopulationPolygons.features
+ */
+fun meshPolygons(geoJsonFile: String): Array<MeshPolygon> {
 
-    val geoJsonFile = "src/main/resources/100m-mesh.geojson"
     val totalLines = countLines(geoJsonFile)
 
-    println("started to read line")
+    println("reading $geoJsonFile")
     val lines = Files.lines(Paths.get(geoJsonFile))
     val sb = StringBuilder()
     var lineCount = 0;
@@ -67,6 +71,14 @@ fun main(){
     println("decoding string to MeshPopulationPolygons object")
     val jsonString = sb.toString()
     val meshPopulation = Json.decodeFromString<MeshPopulationPolygons>(jsonString)
+    return meshPopulation.features
+}
+
+fun convertGeojsonToCsv(){
+
+    val geoJsonFile = "src/main/resources/100m-mesh.geojson"
+    val totalLines = countLines(geoJsonFile)
+    val meshPolygons = meshPolygons(geoJsonFile)
 
     println("iterating MeshPolygon")
     var meshCount = 0
@@ -75,7 +87,7 @@ fun main(){
         writer.appendLine("lat,lng,P2010TT,P2025TT,P2040TT")
     }
 
-    meshPopulation.features.forEach { meshPolygon ->
+    meshPolygons.forEach { meshPolygon ->
         val csvLine = meshPolygon.toCsvLine()
 
         FileOutputStream(path.toFile(), true).bufferedWriter().use { writer ->
@@ -92,4 +104,22 @@ fun main(){
             )
         }
     }
+}
+
+fun main(){
+    val driver = getDriver();
+    val session = driver.session()
+
+    val churches = session.run("MATCH (c:Church) RETURN c;").list()
+
+    println(churches.size)
+
+    val geoJsonFile = "src/main/resources/100m-mesh.geojson"
+    val totalLines = countLines(geoJsonFile)
+    val meshPolygons = meshPolygons(geoJsonFile)
+
+    // calculate reached or unreached ?
+
+    session.close()
+    driver.close()
 }

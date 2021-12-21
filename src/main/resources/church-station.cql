@@ -121,3 +121,46 @@ RETURN DISTINCT s;
 MATCH (s:Station)
 WHERE s.passengers > 1000
 RETURN s;
+
+// 100m mesh population
+
+SHOW CONSTRAINTS;
+
+// Query 6
+CREATE CONSTRAINT mesh_constraint FOR (m:Mesh) REQUIRE m.id IS UNIQUE;
+
+LOAD CSV WITH HEADERS FROM 'file:///100m-mesh.csv' AS row
+WITH apoc.util.sha1([row.lat + row.lng]) AS id, toFloat(row.lat) AS lat, toFloat(row.lng) AS lng, toFloat(row.P2010TT) AS P2010TT, toFloat(row.P2025TT) AS P2025TT, toFloat(row.P2040TT) AS P2040TT
+RETURN id, lat, lng, P2010TT, P2025TT, P2040TT
+LIMIT 3;
+
+// Query 7
+:auto USING PERIODIC COMMIT 1000
+LOAD CSV WITH HEADERS FROM 'file:///100m-mesh-test.csv' AS row 
+WITH apoc.util.sha1([row.lat + row.lng]) AS id, toFloat(row.lat) AS lat, toFloat(row.lng) AS lng, toFloat(row.P2010TT) AS P2010TT, toFloat(row.P2025TT) AS P2025TT, toFloat(row.P2040TT) AS P2040TT
+MERGE (m:Mesh {id:id})
+	SET m.lat = lat, m.lng = lng, m.P2010TT = P2010TT, m.P2025TT = P2025TT, m.P2040TT = P2040TT
+RETURN count(m);
+
+MATCH (m:Mesh) DELETE m;
+
+MATCH 
+	(c:Church),
+	(m:Mesh)
+WITH c as church,
+	 m as mesh, 
+	point.distance(point({longitude: c.lng, latitude: c.lat}), 
+	point({longitude: m.lng, latitude: m.lat})) as d
+WHERE d < 3000
+CREATE (church)-[r:REACH {distance: d} ]->(mesh)
+RETURN type(r), r.distance;
+
+MATCH (c:Church)-[r:REACH]->(m:Mesh)
+WHERE r.distance < 400
+RETURN *;
+
+MATCH (c)-[r:REACH]->(m)
+DELETE r;
+
+MATCH (c)-[r:REACH]->(m)
+DELETE c, r, m;

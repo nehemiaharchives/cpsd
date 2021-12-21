@@ -6,6 +6,7 @@ src/main/resources/db.properties
 src/main/resources/100m-mesh.geojson
 src/main/resources/100m-mesh.csv
 src/main/resources/*.json
+src/test/resources/100m-mesh-test.csv
 cache/
 !cache/README.md
 
