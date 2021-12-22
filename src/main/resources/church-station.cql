@@ -1,7 +1,9 @@
 // Churches
 
 // Query 1
-CREATE CONSTRAINT ON (c:Church) ASSERT c.id IS UNIQUE;
+CREATE CONSTRAINT church_constraint FOR (c:Church) REQUIRE c.id IS UNIQUE;
+
+CREATE CONSTRAINT ON (c:Church) ASSERT c.id IS UNIQUE; // deprecated
 
 LOAD CSV WITH HEADERS FROM 'file:///churches.csv' AS row 
 WITH toFloat(row.lat) AS lat, toFloat(row.lng) AS lng, toBoolean(row.catholic) AS catholic
@@ -134,8 +136,12 @@ WITH apoc.util.sha1([row.lat + row.lng]) AS id, toFloat(row.lat) AS lat, toFloat
 RETURN id, lat, lng, P2010TT, P2025TT, P2040TT
 LIMIT 3;
 
-// Query 7
-:auto USING PERIODIC COMMIT 1000
+// Command 7
+// with header:     id:ID,lat:float,lng:float,P2010TT:float,P2025TT:float,P2040TT:float
+// create csv like: 8b694a805003a22563e0ebd88f43f3bc905277ac,42.69958333333334,141.390625,2.0,1.915344,1.724868
+// then run:        bin\neo4j-admin import --database=neo4j --nodes=Mesh=import/100m-mesh.csv
+
+:auto USING PERIODIC COMMIT 1000 // this (Query 7 candidate) caused error with 5 million rows
 LOAD CSV WITH HEADERS FROM 'file:///100m-mesh-test.csv' AS row 
 WITH apoc.util.sha1([row.lat + row.lng]) AS id, toFloat(row.lat) AS lat, toFloat(row.lng) AS lng, toFloat(row.P2010TT) AS P2010TT, toFloat(row.P2025TT) AS P2025TT, toFloat(row.P2040TT) AS P2040TT
 MERGE (m:Mesh {id:id})
@@ -144,6 +150,8 @@ RETURN count(m);
 
 MATCH (m:Mesh) DELETE m;
 
+
+// Query 8
 MATCH 
 	(c:Church),
 	(m:Mesh)

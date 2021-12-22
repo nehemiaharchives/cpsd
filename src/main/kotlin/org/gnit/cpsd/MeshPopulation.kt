@@ -2,10 +2,14 @@ package org.gnit.cpsd
 
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
+import kotlinx.serialization.json.decodeFromStream
 import java.io.*
 import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
+import kotlin.time.DurationUnit
+import kotlin.time.ExperimentalTime
+import kotlin.time.measureTime
 
 /**
  * [Reference](https://stackoverflow.com/questions/453018/number-of-lines-in-a-file-in-java)
@@ -52,29 +56,21 @@ fun countLines(fileName: String): Int {
  */
 fun meshPolygons(geoJsonFile: String): Array<MeshPolygon> {
 
-    val totalLines = countLines(geoJsonFile)
+    val inputStream = File(geoJsonFile).inputStream()
+    val meshPopulation = Json.decodeFromStream<MeshPopulationPolygons>(inputStream)
 
-    println("reading $geoJsonFile")
-    val lines = Files.lines(Paths.get(geoJsonFile))
-    val sb = StringBuilder()
-    var lineCount = 0;
-    lines.forEach { line ->
-        sb.append(line)
-        lineCount++
-
-        if (lineCount % 1000 == 0){
-            val progress = lineCount * 100 / totalLines
-            println("$progress% of lines got in StringBuffer")
-        }
-    }
-
-    println("decoding string to MeshPopulationPolygons object")
-    val jsonString = sb.toString()
-    val meshPopulation = Json.decodeFromString<MeshPopulationPolygons>(jsonString)
     return meshPopulation.features
 }
 
-fun convertGeojsonToCsv(){
+@OptIn(ExperimentalTime::class)
+fun main(){
+    val duration = measureTime {
+        convertGeojsonToCsv()
+    }
+    print("Finished in ${duration.toDouble(DurationUnit.SECONDS)} s.")
+}
+
+fun convertGeojsonToCsv() {
 
     val geoJsonFile = "src/main/resources/100m-mesh.geojson"
     val totalLines = countLines(geoJsonFile)
@@ -84,19 +80,26 @@ fun convertGeojsonToCsv(){
     var meshCount = 0
     val path: Path = Paths.get("src/main/resources/100m-mesh.csv")
     FileOutputStream(path.toFile(), true).bufferedWriter().use { writer ->
-        writer.appendLine("lat,lng,P2010TT,P2025TT,P2040TT")
+        writer.appendLine("id:ID,lat:float,lng:float,P2010TT:float,P2025TT:float,P2040TT:float")
     }
 
-    meshPolygons.forEach { meshPolygon ->
-        val csvLine = meshPolygon.toCsvLine()
+    val ids = mutableSetOf<String>()
 
-        FileOutputStream(path.toFile(), true).bufferedWriter().use { writer ->
-            writer.appendLine(csvLine)
+    meshPolygons.forEach { meshPolygon ->
+        val id = meshPolygon.id()
+        if(ids.contains(id)){
+            println("id $id is duplicated, not included in the csv")
+        }else{
+            val csvLine = meshPolygon.toCsvLine()
+            FileOutputStream(path.toFile(), true).bufferedWriter().use { writer ->
+                writer.appendLine(csvLine)
+            }
+            ids.add(id)
         }
 
         meshCount++
 
-        if (meshCount % 1000 == 0){
+        if (meshCount % 1000 == 0) {
             println(
                 "recording $meshCount mesh points, " +
                         "wrote $meshCount lines of total lines: $totalLines, " +
@@ -106,7 +109,7 @@ fun convertGeojsonToCsv(){
     }
 }
 
-fun main(){
+fun main2() {
     val driver = getDriver();
     val session = driver.session()
 

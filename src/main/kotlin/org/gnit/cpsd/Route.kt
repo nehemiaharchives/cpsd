@@ -14,7 +14,7 @@ fun main(){
     val duration = measureTime {
         extractRoutes()
     }
-    print("Finished in ${duration.inSeconds} s.")
+    print("Finished in ${duration.toDouble(DurationUnit.SECONDS)} s.")
 }
 
 fun extractRoutes() {

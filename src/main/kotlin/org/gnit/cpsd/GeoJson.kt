@@ -117,19 +117,27 @@ data class MeshPolygon(val type: String, val geometry: MeshPolygonGeometry, val 
         }
     }
 
-    fun toCsvLine(): String {
-
+    fun center(): Array<Double> {
         val latNE = geometry.cord(0)[1]
         val lngNE = geometry.cord(0)[0]
         val latSW = geometry.cord(2)[1]
         val lngSW = geometry.cord(2)[0]
 
-        val center = centerOf(latNE = latNE, lngNE = lngNE, latSW = latSW, lngSW = lngSW)
-        val latCenter = center[0]
-        val lngCenter = center[1]
-        val p = properties
+        return centerOf(latNE = latNE, lngNE = lngNE, latSW = latSW, lngSW = lngSW)
+    }
 
-        return "$latCenter,$lngCenter,${p.P2010TT},${p.P2025TT},${p.P2040TT}"
+    fun id(): String {
+        val latCenter = center()[0]
+        val lngCenter = center()[1]
+        return "$latCenter$lngCenter".sha1()
+    }
+
+    fun toCsvLine(): String {
+        val latCenter = center()[0]
+        val lngCenter = center()[1]
+        val id = id()
+        val p = properties
+        return "$id,$latCenter,$lngCenter,${p.P2010TT},${p.P2025TT},${p.P2040TT}"
     }
 }
 

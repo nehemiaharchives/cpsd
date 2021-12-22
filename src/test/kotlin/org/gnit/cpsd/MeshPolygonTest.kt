@@ -16,12 +16,9 @@ class MeshPolygonTest {
     @Test
     fun processMeshPolygonTest() {
 
-        println(meshPolygon.properties)
-
         val geometry = meshPolygon.geometry
         (0..4).forEach { i ->
             val cord = geometry.cord(i)
-            //println("${cord.first()}, ${cord.last()}")
         }
 
         //print csv line with following info: lat, lng, P2010TT, P2025TT, P2040TT
@@ -31,24 +28,21 @@ class MeshPolygonTest {
         val lngSW = geometry.cord(2)[0]
 
         val center = centerOf(latNE = latNE, lngNE = lngNE, latSW = latSW, lngSW = lngSW)
-        println(center.joinToString())
 
         assertEquals(center[0].floor3Digits(), 42.699) //lat center
         assertEquals(center[1].floor3Digits(), 141.390) //lng center
     }
 
     @Test
-    fun toCsvLineTest() {
+    fun testCsvLineConversion() {
+        val expected = "8b694a805003a22563e0ebd88f43f3bc905277ac,42.69958333333334,141.390625,2.0,1.915344,1.724868"
         val actual = meshPolygon.toCsvLine()
-        val expected = "42.69958333333334,141.390625,2.0,1.915344,1.724868"
-
         assertEquals(expected, actual)
     }
 
     @Test
     fun withinWalkingDistanceTest() {
         val meshPolygons = meshPolygons("src/test/resources/100m-mesh-test.geojson")
-        println(meshPolygons.size)
 
         val churches = arrayOf(
             arrayOf(42.82253112262299, 141.6507933230139), // 千歳栄光教会 https://goo.gl/maps/1eZ3BuAdZFGaDRFD8
@@ -61,7 +55,7 @@ class MeshPolygonTest {
         // maybe attempt to simulate reached and unreached grouping
     }
 
-    @Test
+    //@Test
     /**
      * For generating test csv file to import db to check performance.
      * It took 20 min to CREATE RELATIONSHIP between 9500 Church and 100000 Mesh with less than 3000 m distance.

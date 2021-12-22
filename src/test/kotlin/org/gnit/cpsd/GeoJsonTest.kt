@@ -84,9 +84,9 @@ class GeoJsonTest {
     }
 
     @Test
-    fun testCompareArray(){
-        assertTrue(compareArray(arrayOf(1,2,3), arrayOf(1,2,3)))
-        assertFalse(compareArray(arrayOf(1,2,3), arrayOf(1,4,3)))
+    fun testCompareArray() {
+        assertTrue(compareArray(arrayOf(1, 2, 3), arrayOf(1, 2, 3)))
+        assertFalse(compareArray(arrayOf(1, 2, 3), arrayOf(1, 4, 3)))
     }
 
     @Test
@@ -126,12 +126,6 @@ class GeoJsonTest {
 
         val actual = Json.decodeFromString<MeshPolygonGeometry>(samplePloygonGeometry)
         assertEquals(mpgeo2, actual)
-    }
-
-    @Test
-    fun testPrinting() {
-        val string = format.encodeToJsonElement(actual)
-        println(string)
     }
 
     @Test
