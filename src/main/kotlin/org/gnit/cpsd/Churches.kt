@@ -2,7 +2,7 @@ package org.gnit.cpsd
 
 import kotlinx.serialization.encodeToString
 
-fun main(){
+fun main() {
     val driver = getDriver()
     val session = driver.session()
     val records = session.run("MATCH (c:Church) RETURN c.id, c.lng, c.lat, c.name, c.address, c.catholic;").list()
@@ -20,7 +20,12 @@ fun main(){
         val church = Church(
             type = "Feature",
             geometry = PointGeometry(type = "Point", coordinates = arrayOf(churchLng, churchLat)),
-            properties = ChurchProperty(churchId = churchId, name = churchName, address = churchAddress, catholic = isCatholic)
+            properties = ChurchProperty(
+                churchId = churchId,
+                name = churchName,
+                address = churchAddress,
+                catholic = isCatholic
+            )
         )
         churches.add(church)
     }
