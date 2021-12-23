@@ -137,7 +137,8 @@ data class MeshPolygon(val type: String, val geometry: MeshPolygonGeometry, val 
         val lngCenter = center()[1]
         val id = id()
         val p = properties
-        return "$id,$latCenter,$lngCenter,${p.P2010TT},${p.P2025TT},${p.P2040TT}"
+        // e.g. 316a6f63c159915d6e3e4ca104b2ed8aaf7bcaae,10.1,11.1,12.1,"{latitude:42.7, longitude:141.39}"
+        return "$id,${p.P2010TT},${p.P2025TT},${p.P2040TT},\"{latitude:$latCenter,longitude:$lngCenter}\""
     }
 }
 

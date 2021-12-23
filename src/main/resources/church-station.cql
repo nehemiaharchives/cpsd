@@ -172,3 +172,7 @@ DELETE r;
 
 MATCH (c)-[r:REACH]->(m)
 DELETE c, r, m;
+
+MATCH (c:Church {name:'Tokyo Sophia International Church'})-[r:Reach]->(m:Mesh) 
+WHERE r.distance < 500
+RETURN c, r, m;

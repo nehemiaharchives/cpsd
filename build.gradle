@@ -21,9 +21,9 @@ dependencies {
     implementation 'org.jsoup:jsoup:1.13.1'
     implementation 'com.ibm.icu:icu4j:68.2'
     implementation "com.squareup.okhttp3:okhttp:4.9.1"
+    implementation 'com.github.doyaaaaaken:kotlin-csv-jvm:1.2.0'
 
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
-    testImplementation 'com.github.doyaaaaaken:kotlin-csv-jvm:0.15.2'
 }
 
 test {

@@ -35,7 +35,9 @@ class MeshPolygonTest {
 
     @Test
     fun testCsvLineConversion() {
-        val expected = "8b694a805003a22563e0ebd88f43f3bc905277ac,42.69958333333334,141.390625,2.0,1.915344,1.724868"
+        val expected = """
+                8b694a805003a22563e0ebd88f43f3bc905277ac,2.0,1.915344,1.724868,"{latitude:42.69958333333334,longitude:141.390625}"
+            """.trimIndent()
         val actual = meshPolygon.toCsvLine()
         assertEquals(expected, actual)
     }
@@ -63,9 +65,8 @@ class MeshPolygonTest {
      */
     fun headCopyPolygonsCsv() {
         val maxLineCount = 100000
-        val csvFile = "src/main/resources/100m-mesh.csv"
 
-        val lines = Files.lines(Paths.get(csvFile))
+        val lines = Files.lines(Paths.get(meshCsvNeo4jAdminImport))
         var lineCount = 0
 
         val destinationFile = "src/test/resources/100m-mesh-test.csv"

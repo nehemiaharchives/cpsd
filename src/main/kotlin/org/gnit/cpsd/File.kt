@@ -1,8 +1,6 @@
 package org.gnit.cpsd
 
-import java.io.File
-import java.io.FileOutputStream
-import java.io.IOException
+import java.io.*
 import java.nio.file.Path
 import java.nio.file.Paths
 
@@ -37,3 +35,42 @@ fun writeJson(name: String, json: String) {
 }
 
 fun loadJson(jsonName: String): String = File("src/main/resources/$jsonName.json").readText()
+
+/**
+ * [Reference](https://stackoverflow.com/questions/453018/number-of-lines-in-a-file-in-java)
+ * @param For example, "src/main/resources/100m-mesh.geojson"
+ */
+fun countLines(fileName: String): Int {
+    val inputStream: InputStream = BufferedInputStream(FileInputStream(fileName))
+    return inputStream.use { inputStream ->
+        val c = ByteArray(1024)
+        var readChars = inputStream.read(c)
+        if (readChars == -1) {
+            // bail out if nothing to read
+            return 0
+        }
+
+        // make it easy for the optimizer to tune this loop
+        var count = 0
+        while (readChars == 1024) {
+            var i = 0
+            while (i < 1024) {
+                if (c[i++] == '\n'.code.toByte()) {
+                    ++count
+                }
+            }
+            readChars = inputStream.read(c)
+        }
+
+        // count remaining characters
+        while (readChars != -1) {
+            for (i in 0 until readChars) {
+                if (c[i] == '\n'.code.toByte()) {
+                    ++count
+                }
+            }
+            readChars = inputStream.read(c)
+        }
+        if (count == 0) 1 else count
+    }
+}
