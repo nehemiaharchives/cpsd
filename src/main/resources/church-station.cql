@@ -176,3 +176,9 @@ DELETE c, r, m;
 MATCH (c:Church {name:'Tokyo Sophia International Church'})-[r:Reach]->(m:Mesh) 
 WHERE r.distance < 500
 RETURN c, r, m;
+
+MATCH (c:Church)-[r:Reach]->(m:Mesh) RETURN count(r)
+
+MATCH (c:Church)-[r:Reach]->(m:Mesh) WHERE r.distance < 2500 RETURN count(r)
+
+CREATE INDEX reach_distance FOR ()-[r:Reach]-() ON (r.distance)

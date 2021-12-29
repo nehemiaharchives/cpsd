@@ -2,12 +2,16 @@ package org.gnit.cpsd
 
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
-import kotlinx.serialization.json.encodeToJsonElement
-import kotlin.test.*
+import kotlin.test.Test
+import kotlin.test.assertEquals
+import kotlin.test.assertFalse
+import kotlin.test.assertTrue
 
 class GeoJsonTest {
 
     val mpp1 = MeshPopulationProperty(P2010TT = 2.0, P2025TT = 1.915344, P2040TT = 1.724868)
+    val mpp1reach = MeshPopulationProperty(P2010TT = 2.0, P2025TT = 1.915344, P2040TT = 1.724868, reach = null)
+
     val mpgeo1 = MeshPolygonGeometry(
         type = "MultiPolygon",
         coordinates = arrayOf(
@@ -23,8 +27,11 @@ class GeoJsonTest {
         )
     )
     val mp1 = MeshPolygon(type = "Feature", geometry = mpgeo1, properties = mpp1)
+    val mp1reach = MeshPolygon(type = "Feature", geometry = mpgeo1, properties = mpp1reach)
 
     val mpp2 = MeshPopulationProperty(P2010TT = 0.516531, P2025TT = 0.494667, P2040TT = 0.445474)
+    val mpp2reach = MeshPopulationProperty(P2010TT = 0.516531, P2025TT = 0.494667, P2040TT = 0.445474, reach = 1500)
+
     val mpgeo2 = MeshPolygonGeometry(
         type = "MultiPolygon",
         coordinates = arrayOf(
@@ -40,12 +47,20 @@ class GeoJsonTest {
         )
     )
     val mp2 = MeshPolygon(type = "Feature", geometry = mpgeo2, properties = mpp2)
+    val mp2reach = MeshPolygon(type = "Feature", geometry = mpgeo2, properties = mpp2reach)
 
     val actual = MeshPopulationPolygons(
         type = "FeatureCollection",
         name = "100m-mesh",
         crs = crs84,
         features = arrayOf(mp1, mp2)
+    )
+
+    val actualReach = MeshPopulationPolygons(
+        type = "FeatureCollection",
+        name = "100m-mesh",
+        crs = crs84,
+        features = arrayOf(mp1reach, mp2reach)
     )
 
     @Test
@@ -132,5 +147,11 @@ class GeoJsonTest {
     fun testParsing() {
         val expected = Json.decodeFromString<MeshPopulationPolygons>(sampleMeshPolygon)
         assertEquals(expected, actual)
+    }
+
+    @Test
+    fun testParsingReach() {
+        val expected = Json.decodeFromString<MeshPopulationPolygons>(sampleMeshPolygonWithReach)
+        assertEquals(expected, actualReach)
     }
 }

@@ -75,7 +75,7 @@ class Churches(val type: String, val features: Array<Church>)
 
 // 100 meter mesh Polygons
 @Serializable
-data class MeshPopulationProperty(val P2010TT: Double, val P2025TT: Double, val P2040TT: Double)
+data class MeshPopulationProperty(val P2010TT: Double, val P2025TT: Double, val P2040TT: Double, var reach: Int? = null)
 
 @Serializable
 data class MeshPolygonGeometry(val type: String, val coordinates: Array<Array<Array<Array<Double>>>>) {
@@ -132,7 +132,7 @@ data class MeshPolygon(val type: String, val geometry: MeshPolygonGeometry, val 
         return "$latCenter$lngCenter".sha1()
     }
 
-    fun toCsvLine(): String {
+    fun toNeo4jAdminImportCsvLine(): String {
         val latCenter = center()[0]
         val lngCenter = center()[1]
         val id = id()
@@ -160,7 +160,12 @@ fun <T> compareArray(first: Array<T>, second: Array<T>): Boolean {
 }
 
 @Serializable
-data class MeshPopulationPolygons(val type: String, val name: String, val crs: Crs, val features: Array<MeshPolygon>) {
+data class MeshPopulationPolygons(
+    val type: String = "FeatureCollection",
+    val name: String = "100m-mesh",
+    val crs: Crs = crs84,
+    val features: Array<MeshPolygon>
+) {
     override fun equals(other: Any?): Boolean {
         return when (other) {
             is MeshPopulationPolygons -> {

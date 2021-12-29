@@ -38,7 +38,7 @@ class MeshPolygonTest {
         val expected = """
                 8b694a805003a22563e0ebd88f43f3bc905277ac,2.0,1.915344,1.724868,"{latitude:42.69958333333334,longitude:141.390625}"
             """.trimIndent()
-        val actual = meshPolygon.toCsvLine()
+        val actual = meshPolygon.toNeo4jAdminImportCsvLine()
         assertEquals(expected, actual)
     }
 
@@ -84,5 +84,19 @@ class MeshPolygonTest {
             }
         }
         assertEquals(maxLineCount, countLines(destinationFile))
+    }
+
+    @Test
+    fun readModifyWriteGeoJsonTest() {
+        val actual = Json.decodeFromString<MeshPopulationPolygons>(sampleMeshPolygon)
+
+        val first = actual.features[0]
+        val second = actual.features[1]
+
+        first.properties.reach = null
+        second.properties.reach = 1500
+
+        val expected = Json.decodeFromString<MeshPopulationPolygons>(sampleMeshPolygonWithReach)
+        assertEquals(expected, actual)
     }
 }

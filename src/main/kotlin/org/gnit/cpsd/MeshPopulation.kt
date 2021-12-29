@@ -24,14 +24,14 @@ fun meshPolygons(geoJsonFile: String): Array<MeshPolygon> {
 @OptIn(ExperimentalTime::class)
 fun main() {
     val duration = measureTime {
-        convertGeojsonToCsv()
+        convertGeojsonToNeo4jAdminImportCsv()
     }
     print("Finished in ${duration.toDouble(DurationUnit.SECONDS)} s.")
 }
 
 const val meshCsvNeo4jAdminImport = "src/main/resources/mesh.csv"
 
-fun convertGeojsonToCsv() {
+fun convertGeojsonToNeo4jAdminImportCsv() {
 
     val geoJsonFile = "src/main/resources/100m-mesh.geojson"
     val totalLines = countLines(geoJsonFile)
@@ -52,7 +52,7 @@ fun convertGeojsonToCsv() {
         if (ids.contains(id)) {
             println("id $id is duplicated, not included in the csv")
         } else {
-            val csvLine = meshPolygon.toCsvLine()
+            val csvLine = meshPolygon.toNeo4jAdminImportCsvLine()
             FileOutputStream(path.toFile(), true).bufferedWriter().use { writer ->
                 writer.appendLine(csvLine)
             }
