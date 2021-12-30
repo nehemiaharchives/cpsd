@@ -1,5 +1,6 @@
 package org.gnit.cpsd
 
+import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.encodeToStream
 import java.io.File
@@ -12,12 +13,15 @@ import kotlin.time.measureTime
 fun main() {
     val duration = measureTime {
         fromDbToHash()
-        fromHashToFile()
+        val meshPolygons = meshPolygons(meshGeoJsonFromQgisExport)
+        addReachData(meshPolygons)
+        //fromHashToPolygon(meshPolygons)
+        //fromHashToPoint(meshPolygons)
+        fromHashToPoint999(meshPolygons)
+        //fromHashToPointSummary(meshPolygons)
     }
     print("Finished in ${duration.toDouble(DurationUnit.SECONDS)} s.")
 }
-
-const val meshGeoJsonWithReach = "src/main/resources/100m-mesh-reach.geojson"
 
 val reachByDistance = mutableMapOf<String, Int>()
 
@@ -42,10 +46,7 @@ fun fromDbToHash() {
     println("total hash size: ${reachByDistance.size}. counts: $count")
 }
 
-fun fromHashToFile() {
-
-    val geoJsonFile = "src/main/resources/100m-mesh.geojson"
-    val meshPolygons = meshPolygons(geoJsonFile)
+private fun addReachData(meshPolygons: Array<MeshPolygon>) {
     println("iterating MeshPolygon")
 
     meshPolygons.forEach { meshPolygon ->
@@ -56,9 +57,61 @@ fun fromHashToFile() {
             println("reach of mesh: $id set to $found")
         }
     }
+}
+
+const val meshGeoJsonFromQgisExport = "src/main/resources/100m-mesh.geojson"
+
+const val meshGeoJsonPolygonsWithReach = "src/main/resources/100m-mesh-polygons-reach/100m-mesh-polygons-reach.geojson"
+
+@OptIn(ExperimentalSerializationApi::class)
+fun fromHashToPolygon(meshPolygons: Array<MeshPolygon>) {
 
     println("writing modified geojson to file")
-    FileOutputStream(File(meshGeoJsonWithReach)).use {  output ->
+    FileOutputStream(File(meshGeoJsonPolygonsWithReach)).use { output ->
         Json.encodeToStream(MeshPopulationPolygons(features = meshPolygons), output)
+    }
+}
+
+private val jsonFormatter = Json { encodeDefaults = true }
+
+const val meshGeoJsonPointsWithReach = "src/main/resources/100m-mesh-points-reach/100m-mesh-points-reach.geojson"
+
+@OptIn(ExperimentalSerializationApi::class)
+fun fromHashToPoint(meshPolygons: Array<MeshPolygon>) {
+
+    println("converting polygons to points")
+    val meshPointArray = meshPolygons.map { it.toMeshPoint() }.toTypedArray()
+
+    println("writing modified geojson to file")
+    FileOutputStream(File(meshGeoJsonPointsWithReach)).use { output ->
+        jsonFormatter.encodeToStream(MeshPoints(features = meshPointArray), output)
+    }
+}
+
+// mesh population over 9 under 99
+const val meshGeoJsonPoints999 = "src/main/resources/100m-mesh-points-999/100m-mesh-points-999.geojson"
+
+fun fromHashToPoint999(meshPolygons: Array<MeshPolygon>) {
+    println("converting polygons to points")
+    val meshPointArray =
+        meshPolygons.filter { it.properties.P2025TT in 9.0..100.0 }.map { it.toMeshPoint() }.toTypedArray()
+
+    println("writing modified geojson to file")
+    FileOutputStream(File(meshGeoJsonPoints999)).use { output ->
+        jsonFormatter.encodeToStream(MeshPoints(features = meshPointArray), output)
+    }
+}
+
+// mesh population over 100
+const val meshGeoJsonPointsSummary = "src/main/resources/100m-mesh-points-summary/100m-mesh-points-summary.geojson"
+
+@OptIn(ExperimentalSerializationApi::class)
+fun fromHashToPointSummary(meshPolygons: Array<MeshPolygon>) {
+    println("converting polygons to points")
+    val meshPointArray = meshPolygons.filter { it.properties.P2025TT > 100 }.map { it.toMeshPoint() }.toTypedArray()
+
+    println("writing modified geojson to file")
+    FileOutputStream(File(meshGeoJsonPointsSummary)).use { output ->
+        jsonFormatter.encodeToStream(MeshPoints(features = meshPointArray), output)
     }
 }

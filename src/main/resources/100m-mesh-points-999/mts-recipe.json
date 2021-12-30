@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "layers": {
+    "100m-mesh-population-999": {
+      "source": "mapbox://tileset-source/nehemiaharchive/100m-mesh-population-999-src",
+      "minzoom": 0,
+      "maxzoom": 9
+    }
+  }
+}

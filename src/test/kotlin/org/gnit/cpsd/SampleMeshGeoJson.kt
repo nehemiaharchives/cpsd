@@ -1,5 +1,44 @@
 package org.gnit.cpsd
 
+val sampleMeshPointsWithReach = """
+    {
+      "type": "FeatureCollection",
+      "name": "100m-mesh-points",
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+      },
+      "features": [
+        {
+          "type": "Feature",
+          "properties": {
+            "reach": null
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              141.390625, 42.69958333333334
+            ]
+          }
+        },
+        {
+          "type": "Feature",
+          "properties": {
+            "reach": 1500
+          },
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+                141.40437500000002, 42.74208333333333
+            ]
+          }
+        }
+      ]
+    }
+""".trimIndent()
+
 val sampleMeshPolygonWithReach = """
     {
       "type": "FeatureCollection",

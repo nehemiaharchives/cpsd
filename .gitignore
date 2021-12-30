@@ -7,6 +7,8 @@ src/main/resources/*.csv
 src/main/resources/*.json
 src/main/resources/*.geojson
 src/main/resources/*.geojsonl
+src/main/resources/**/*.geojson
+src/main/resources/**/*.geojsonl
 src/test/resources/100m-mesh-test.csv
 cache/
 !cache/README.md

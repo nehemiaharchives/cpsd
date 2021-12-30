@@ -22,7 +22,7 @@ class ImportTest {
             "東京バプテスト教会",
             "〒150-0035 東京都渋谷区鉢山町９−２",
             "FALSE",
-            "\"{latitude:35.6504898, longitude:139.6973877}\""
+            "{latitude:35.6504898,longitude:139.6973877}"
         )
 
         val actual = convertChurchCsvLine(inputRow)

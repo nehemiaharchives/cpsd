@@ -45,10 +45,25 @@ class StationProperty(
 )
 
 @Serializable
-class PointGeometry(val type: String, val coordinates: Array<Double>)
+class PointGeometry(val type: String = "Point", val coordinates: Array<Double>) {
+    override fun equals(other: Any?): Boolean {
+        return when (other) {
+            is PointGeometry -> {
+                this.type == other.type &&
+                        this.coordinates[0] == other.coordinates[0] &&
+                        this.coordinates[1] == other.coordinates[1]
+            }
+            else -> false
+        }
+    }
+
+    override fun toString(): String {
+        return "type:${this.type}, coordinates:${coordinates.joinToString()}"
+    }
+}
 
 @Serializable
-class StationPoint(val type: String, val geometry: PointGeometry, val properties: StationProperty)
+class StationPoint(val type: String = "Feature", val geometry: PointGeometry, val properties: StationProperty)
 
 @Serializable
 class StationPoints(val type: String, val features: Array<StationPoint>)
@@ -75,7 +90,12 @@ class Churches(val type: String, val features: Array<Church>)
 
 // 100 meter mesh Polygons
 @Serializable
-data class MeshPopulationProperty(val P2010TT: Double, val P2025TT: Double, val P2040TT: Double, var reach: Int? = null)
+data class MeshPopulationProperty(
+    val P2010TT: Double,
+    val P2025TT: Double,
+    val P2040TT: Double,
+    var reach: Int? = null
+)
 
 @Serializable
 data class MeshPolygonGeometry(val type: String, val coordinates: Array<Array<Array<Array<Double>>>>) {
@@ -140,6 +160,75 @@ data class MeshPolygon(val type: String, val geometry: MeshPolygonGeometry, val 
         // e.g. 316a6f63c159915d6e3e4ca104b2ed8aaf7bcaae,10.1,11.1,12.1,"{latitude:42.7, longitude:141.39}"
         return "$id,${p.P2010TT},${p.P2025TT},${p.P2040TT},\"{latitude:$latCenter,longitude:$lngCenter}\""
     }
+
+    fun toMeshPoint() = MeshPoint(
+        type = "Feature",
+        geometry = PointGeometry(type = "Point", coordinates = this.center().reversedArray()),
+        properties = MeshPointProperty(reach = this.properties.reach)
+    )
+}
+
+@Serializable
+data class MeshPopulationPolygons(
+    val type: String = "FeatureCollection",
+    val name: String = "100m-mesh-polygons",
+    val crs: Crs = crs84,
+    val features: Array<MeshPolygon>
+) {
+    override fun equals(other: Any?): Boolean {
+        return when (other) {
+            is MeshPopulationPolygons -> {
+                this.type == other.type &&
+                        this.name == other.name &&
+                        this.crs == other.crs &&
+                        compareArray(this.features, other.features)
+            }
+            else -> false
+        }
+    }
+}
+
+// 100 meter mesh Points
+
+@Serializable
+data class MeshPointProperty(val reach: Int?)
+
+@Serializable
+data class MeshPoint(
+    val type: String = "Feature",
+    val geometry: PointGeometry,
+    val properties: MeshPointProperty
+) {
+    override fun equals(other: Any?): Boolean {
+        return when (other) {
+            is MeshPoint -> {
+                this.type == other.type &&
+                        this.geometry == other.geometry &&
+                        this.properties == other.properties
+            }
+            else -> false
+        }
+    }
+}
+
+@Serializable
+data class MeshPoints(
+    val type: String = "FeatureCollection",
+    val name: String = "100m-mesh-points",
+    val crs: Crs = crs84,
+    val features: Array<MeshPoint>
+) {
+    override fun equals(other: Any?): Boolean {
+        return when (other) {
+            is MeshPoints -> {
+                this.type == other.type &&
+                        this.name == other.name &&
+                        this.crs == other.crs &&
+                        compareArray(this.features, other.features)
+            }
+            else -> false
+        }
+    }
 }
 
 fun <T> compareArray(first: Array<T>, second: Array<T>): Boolean {
@@ -159,27 +248,11 @@ fun <T> compareArray(first: Array<T>, second: Array<T>): Boolean {
     }
 }
 
-@Serializable
-data class MeshPopulationPolygons(
-    val type: String = "FeatureCollection",
-    val name: String = "100m-mesh",
-    val crs: Crs = crs84,
-    val features: Array<MeshPolygon>
-) {
-    override fun equals(other: Any?): Boolean {
-        return when (other) {
-            is MeshPopulationPolygons -> {
-                this.type == other.type &&
-                        this.name == other.name &&
-                        this.crs == other.crs &&
-                        compareArray(this.features, other.features)
-            }
-            else -> false
-        }
-    }
+fun main() {
+    printStationPoints()
 }
 
-fun main() {
+fun main2() {
     printSingleLineString()
     printMultiPoint()
     printRoutes()
