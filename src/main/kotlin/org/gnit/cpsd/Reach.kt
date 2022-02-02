@@ -19,12 +19,13 @@ private fun formatInterval(l: Long): String {
 @OptIn(ExperimentalTime::class)
 fun main() {
     val duration = measureTime {
-        reachedAreas()
+        reachedAreas(
+            meshCsvNeo4jAdminImport = "src/main/resources/mesh.csv",
+            reachCsvNeo4jImport = "src/main/resources/reach.csv"
+        )
     }
     print("Finished in ${duration.toDouble(DurationUnit.SECONDS)} s.")
 }
-
-const val reachCsvNeo4jAdminImport = "src/main/resources/reach.csv"
 
 class ChurchRD(val id: String, val lat: Double, val lng: Double)
 
@@ -49,7 +50,7 @@ inline fun List<String>.toMeshRD() = MeshRD(this[0], this[1].toDouble(), this[2]
  * :START_ID,distance:float,:END_ID
  * efd92e8aa759cda7aab9a1def465219a7341c86e,797000.1,316a6f63c159915d6e3e4ca104b2ed8aaf7bcaae
  */
-fun reachedAreas() {
+fun reachedAreas(meshCsvNeo4jAdminImport: String, reachCsvNeo4jImport: String) {
     val begin = System.currentTimeMillis()
 
     val churches = csvReader().readAll(File(churchCsvReachDetection)).map { it.toChurchDR() }.toTypedArray()
@@ -63,10 +64,10 @@ fun reachedAreas() {
     val totalLines = countLines(meshCsvNeo4jAdminImport)
     var distance: Double
 
-    val touch = File(reachCsvNeo4jAdminImport)
+    val touch = File(reachCsvNeo4jImport)
     touch.createNewFile()
 
-    csvWriter().open(reachCsvNeo4jAdminImport) {
+    csvWriter().open(reachCsvNeo4jImport) {
         writeRow(listOf(":START_ID", "distance:float", ":END_ID"))
 
         mesh.asSequence().forEach { area ->

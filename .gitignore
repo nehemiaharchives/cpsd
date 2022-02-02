@@ -9,6 +9,8 @@ src/main/resources/*.geojson
 src/main/resources/*.geojsonl
 src/main/resources/**/*.geojson
 src/main/resources/**/*.geojsonl
+src/main/resources/**/*.json
+src/main/resources/**/*.jsonl
 src/test/resources/100m-mesh-test.csv
 cache/
 !cache/README.md
