@@ -28,7 +28,13 @@ class LineStringGeometry(val type: String, val coordinates: Array<Array<Double>>
 class PolygonGeometry(val type: String, val coordinates: Array<Array<Array<Double>>>)
 
 @Serializable
-data class MultiLineStringGeometry(val type: String = "MultiLineString", val coordinates: Array<Array<Array<Double>>>)
+data class MultiLineStringGeometry(val type: String = "MultiLineString", val coordinates: Array<Array<Array<Double>>>) {
+    override fun toString(): String {
+        return "type:${this.type}, coordinates:${
+            coordinates.map { it.map { it.joinToString() }.joinToString() }.joinToString()
+        }"
+    }
+}
 
 // Routes
 @Serializable
@@ -103,7 +109,47 @@ data class StationLine(
     val type: String = "Feature",
     val properties: StationLineProperty,
     val geometry: MultiLineStringGeometry
-)
+) {
+    fun longName() = "${properties.railroadCompany}${properties.railroad}${properties.station}"
+    fun hasNoPassengerData(): Boolean {
+        val p = this.properties
+        return (p.passenger2011 == 0 &&
+                p.passenger2012 == 0 &&
+                p.passenger2013 == 0 &&
+                p.passenger2014 == 0 &&
+                p.passenger2015 == 0 &&
+                p.passenger2016 == 0 &&
+                p.passenger2017 == 0 &&
+                p.passenger2018 == 0 &&
+                p.passenger2019 == 0)
+    }
+
+    fun latestPassengers() {
+        val p = this.properties
+        var latest: Int
+        if (p.passenger2019 > 0) {
+            latest = p.passenger2019
+        } else if (p.passenger2018 > 0) {
+            latest = p.passenger2018
+        } else if (p.passenger2017 > 0) {
+            latest = p.passenger2017
+        } else if (p.passenger2016 > 0) {
+            latest = p.passenger2016
+        } else if (p.passenger2015 > 0) {
+            latest = p.passenger2015
+        } else if (p.passenger2014 > 0) {
+            latest = p.passenger2014
+        } else if (p.passenger2013 > 0) {
+            latest = p.passenger2013
+        } else if (p.passenger2012 > 0) {
+            latest = p.passenger2012
+        } else if (p.passenger2011 > 0) {
+            latest = p.passenger2011
+        } else {
+            latest = 0
+        }
+    }
+}
 
 /**
  * 1. download daily passengers of stations data, (named S12-{YY}_GML.zip) from
