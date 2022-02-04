@@ -21,10 +21,16 @@ class MultiPoint(val type: String, val crs: Crs, val coordinates: Array<Array<Do
 @Serializable
 class LineString(val type: String, val crs: Crs, val coordinates: Array<Array<Double>>)
 
-// Routes
 @Serializable
 class LineStringGeometry(val type: String, val coordinates: Array<Array<Double>>)
 
+@Serializable
+class PolygonGeometry(val type: String, val coordinates: Array<Array<Array<Double>>>)
+
+@Serializable
+data class MultiLineStringGeometry(val type: String = "MultiLineString", val coordinates: Array<Array<Array<Double>>>)
+
+// Routes
 @Serializable
 class RouteProperty(val distance: Double)
 
@@ -70,13 +76,48 @@ class StationPoints(val type: String, val features: Array<StationPoint>)
 
 // Station Polygons
 @Serializable
-class PolygonGeometry(val type: String, val coordinates: Array<Array<Array<Double>>>)
-
-@Serializable
 class StationPolygon(val type: String, val geometry: PolygonGeometry, val properties: StationProperty)
 
 @Serializable
 class StationPolygons(val type: String, val features: Array<StationPolygon>)
+
+// Station Lines
+@Serializable
+data class StationLineProperty(
+    @SerialName("S12_001") val station: String,
+    @SerialName("S12_002") val railroadCompany: String,
+    @SerialName("S12_003") val railroad: String,
+    @SerialName("S12_009") val passenger2011: Int,
+    @SerialName("S12_013") val passenger2012: Int,
+    @SerialName("S12_017") val passenger2013: Int,
+    @SerialName("S12_021") val passenger2014: Int,
+    @SerialName("S12_025") val passenger2015: Int,
+    @SerialName("S12_029") val passenger2016: Int,
+    @SerialName("S12_033") val passenger2017: Int,
+    @SerialName("S12_037") val passenger2018: Int,
+    @SerialName("S12_041") val passenger2019: Int
+)
+
+@Serializable
+data class StationLine(
+    val type: String = "Feature",
+    val properties: StationLineProperty,
+    val geometry: MultiLineStringGeometry
+)
+
+/**
+ * 1. download daily passengers of stations data, (named S12-{YY}_GML.zip) from
+ * [National Land Information Division, National Spatial Planning and Regional Policy Bureau, MLIT of Japan](https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-S12-v2_7.html)
+ * 2. import S12-{YY}_NumberOfPassengers.geojson into QGIS with option to convert crs to 84
+ * 3. export by only selecting fields required for [StationLineProperty]
+ */
+@Serializable
+class StationLines(
+    val type: String = "FeatureCollection",
+    val name: String,
+    val crs: Crs = crs84,
+    val features: Array<StationLine>
+)
 
 // Churches
 @Serializable

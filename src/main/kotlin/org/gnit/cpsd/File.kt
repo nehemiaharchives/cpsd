@@ -36,6 +36,8 @@ fun writeJson(name: String, json: String) {
 
 fun loadJson(jsonName: String): String = File("src/main/resources/$jsonName.json").readText()
 
+fun loadGeoJson(jsonName: String): String = File("src/main/resources/$jsonName.geojson").readText()
+
 /**
  * [Reference](https://stackoverflow.com/questions/453018/number-of-lines-in-a-file-in-java)
  * @param For example, "src/main/resources/100m-mesh.geojson"
