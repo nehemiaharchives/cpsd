@@ -124,9 +124,9 @@ data class StationLine(
                 p.passenger2019 == 0)
     }
 
-    fun latestPassengers() {
+    fun latestPassengers(): Int {
         val p = this.properties
-        var latest: Int
+        val latest: Int
         if (p.passenger2019 > 0) {
             latest = p.passenger2019
         } else if (p.passenger2018 > 0) {
@@ -148,6 +148,8 @@ data class StationLine(
         } else {
             latest = 0
         }
+
+        return latest
     }
 }
 
